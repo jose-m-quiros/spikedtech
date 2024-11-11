@@ -19,6 +19,26 @@ body {
 }
 
 
+
+/*Main*/
+
+.title {
+  text-align: center;
+  margin: 30px;
+}
+
+.imgcard {
+  margin-top: 1.5em;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.container {
+  margin-bottom: 2em;
+}
+
+
 /*Footer*/
 .bgfooter {
   background-color: black;
@@ -117,6 +137,10 @@ footer {
   flex: 1 0 200px;
   margin-right: 20px;
   margin-top: 30px;
+}
+
+.center1 > a {
+  text-decoration: none;
 }
 
 .abajo {
