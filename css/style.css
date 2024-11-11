@@ -29,10 +29,21 @@ body {
 
 .imgcard {
   margin-top: 1.5em;
-  width: 200px;
-  height: auto;
   border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
 
 .container {
   margin-bottom: 2em;
