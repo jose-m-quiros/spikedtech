@@ -11,5 +11,5 @@ window.onload = () => {
         } else {
             console.error("The container was not found.");
         }
-    }, 1350);
+    }, 900);
 };
