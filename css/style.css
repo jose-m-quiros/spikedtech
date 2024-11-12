@@ -9,6 +9,9 @@
 }
 
 body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   background: url("../img/mainprincipal.jpeg") center/cover no-repeat;
@@ -132,15 +135,14 @@ header {
   }
 }
 
+
 .welcome-container {
-  position: absolute;
-  top: 56%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   width: 90%;
   max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .typing-wrapper {
@@ -149,6 +151,7 @@ header {
 }
 
 .typing-text {
+  margin-top: 1.9em;
   color: #fff;
   font-size: 2.5rem;
   font-weight: 600;
@@ -159,17 +162,16 @@ header {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  
 }
 
 .line1 {
-  animation: typing1 3.5s steps(20) forwards,
+  animation: typing1 2s steps(20) forwards,
     blink-caret 0.75s step-end infinite;
 }
 
 .line2 {
   opacity: 0;
-  animation: typing2 3.5s steps(20) 3.5s forwards, fadeIn 0.5s 3.5s forwards,
+  animation: typing2 2s steps(20) 2s forwards, fadeIn 0.5s 2s forwards,
     blink-caret 0.75s step-end infinite;
 }
 
