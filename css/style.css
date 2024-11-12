@@ -48,6 +48,10 @@ header {
   text-decoration: none;
 }
 
+.servi {
+  text-decoration: none;
+}
+
 .navbar .logo img {
   width: 40px;
   border-radius: 50%;
@@ -134,7 +138,6 @@ header {
   }
 }
 
-
 @media (max-width: 1480px) {
   .loading-screen {
     position: fixed;
@@ -150,11 +153,11 @@ header {
     font-size: 2rem;
     z-index: 1000;
   }
-  
+
   .loading-text {
     animation: fadeInOut 1s infinite;
   }
-  
+
   @keyframes fadeInOut {
     0%,
     100% {
@@ -165,7 +168,6 @@ header {
     }
   }
 }
-
 
 .loading-screen {
   position: fixed;
