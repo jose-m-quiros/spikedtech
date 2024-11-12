@@ -134,6 +134,7 @@ header {
   }
 }
 
+
 @media (max-width: 1480px) {
   .loading-screen {
     position: fixed;
