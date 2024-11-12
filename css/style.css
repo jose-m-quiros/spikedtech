@@ -148,6 +148,7 @@ header {
 .typing-wrapper {
   display: inline-block;
   position: relative;
+  visibility: hidden; /* Oculta el texto inicialmente */
 }
 
 .typing-text {
@@ -167,12 +168,14 @@ header {
 .line1 {
   animation: typing1 2s steps(20) forwards,
     blink-caret 0.75s step-end infinite;
+  visibility: visible; /* Se hace visible cuando empieza la animación */
 }
 
 .line2 {
   opacity: 0;
   animation: typing2 2s steps(20) 2s forwards, fadeIn 0.5s 2s forwards,
     blink-caret 0.75s step-end infinite;
+  visibility: visible; /* Se hace visible cuando empieza la animación */
 }
 
 @keyframes typing1 {
