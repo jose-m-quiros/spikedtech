@@ -24,6 +24,10 @@
           </ul>
         </nav>
       </header>
+      
+  <div class="loading-screen">
+    <div class="loading-text">Cargando...</div>
+  </div>
 
       <div class="welcome-container">
         <div class="typing-wrapper">
@@ -33,8 +37,35 @@
           </div>
         </div>
       </div>
+
+      <script>
+        // Espera a que la página esté completamente cargada
+        window.onload = () => {
+          // Usa setTimeout para retrasar la animación en 1.9 segundos
+          setTimeout(() => {
+            // Muestra el contenedor y activa la animación
+            const typingWrapper = document.querySelector('.typing-wrapper');
+            
+            // Verificar si se encuentra el contenedor
+            if (typingWrapper) {
+              typingWrapper.style.display = 'inline-block'; // Muestra el contenedor
+              typingWrapper.classList.add('start-animation'); // Inicia la animación
+            } else {
+              console.error('El contenedor no se encuentra.');
+            }
+          }, 1300); 
+        };
+      </script>
       
-      
+      <script>
+        // Espera 2 segundos antes de quitar la pantalla de carga
+        setTimeout(() => {
+          // Oculta la pantalla de carga
+          document.querySelector('.loading-screen').style.display = 'none';
+          // Muestra el contenido principal
+          document.querySelector('.main-content').classList.add('loaded');
+        }, 2000); // 2000 ms = 2 segundos
+      </script>
       
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
