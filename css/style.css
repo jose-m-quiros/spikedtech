@@ -14,7 +14,6 @@ body {
   background: url("../img/mainprincipal.jpeg") center/cover no-repeat;
 }
 
-
 header {
   position: fixed;
   width: 100%;
@@ -130,5 +129,96 @@ header {
 
   .navbar .links a:hover {
     color: #00bcd4;
+  }
+}
+
+.welcome-container {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 300px;
+}
+
+.typing-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.typing-text {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.typing-text span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.line1 {
+  animation: typing1 3.5s steps(20) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+.line2 {
+  opacity: 0;
+  animation: typing2 3.5s steps(20) 3.5s forwards, fadeIn 0.5s 3.5s forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes typing2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .typing-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-text {
+    font-size: 1.4rem;
   }
 }

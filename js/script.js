@@ -31,3 +31,4 @@ signupLoginLink.forEach((link) => {
     );
   });
 });
+
