@@ -11,23 +11,8 @@
 body {
   height: 100vh;
   width: 100%;
-  position: relative;
-  margin: 0;
-  overflow: hidden;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: url("../img/mainprincipal.jpeg") center/cover no-repeat;
-  filter: brightness(0.5); /* Ajusta el filtro según tus necesidades */
-  z-index: -1;
 }
-
 
 
 header {
