@@ -8,11 +8,7 @@
 }
 
 body {
-  margin: 0;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  background: url("../img/mainprincipal.jpeg") center/cover no-repeat;
+  background-color: #000 !important;
 }
 
 header {
@@ -258,17 +254,15 @@ header {
 
 .welcome-container {
   text-align: center;
-  width: 100%; /* Asegura que ocupe todo el ancho */
+  width: 100%; 
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 115vh; /* Centra verticalmente */
+  height: 105vh; 
+  background: url("../img/mainprincipal.jpeg") center/cover no-repeat;
 }
 
 .typing-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 
@@ -277,6 +271,7 @@ header {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
+  margin-top: 2em;
 }
 
 .main-content {
@@ -300,7 +295,8 @@ header {
 }
 
 .start-animation .line1 {
-  animation: typing1 2.5s steps(20) forwards, blink-caret 0.75s step-end infinite;
+  animation: typing1 2.5s steps(20) forwards,
+    blink-caret 0.75s step-end infinite;
 }
 
 .start-animation .line2 {
@@ -356,6 +352,19 @@ header {
   .typing-text {
     font-size: 1.4rem;
   }
+}
+
+.main-content {
+  
+  color: #fff; 
+  opacity: 1;
+  margin: 0 20px -8px 20px;
+}
+
+
+.h1-section-title {
+  
+  
 }
 
 /*Footer*/
