@@ -135,7 +135,7 @@ header {
   }
 }
 
-.loading-screen {
+/* .loading-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -251,7 +251,7 @@ header {
     transform: translateY(66%) scale(0.65);
     opacity: 0.8;
   }
-} 
+} */
 
 .welcome-container {
   text-align: center;
@@ -531,6 +531,14 @@ header {
 /*Footer*/
 .bgfooter {
   background-color: black;
+}
+.bandera {
+  width: 3em;
+  height: auto;
+}
+.div-bandera {
+  margin: 6px 0 0 0;
+  text-align: center;
 }
 
 .imglogocolaborador {
