@@ -1,5 +1,5 @@
 const header = document.querySelector("header");
-const titleSection = document.querySelector(".title");
+const titleSection = document.querySelector(".main");
 
 function changeHeaderBackground() {
   const titleTop = titleSection.getBoundingClientRect().top;

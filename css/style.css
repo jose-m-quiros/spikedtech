@@ -135,7 +135,7 @@ header {
   }
 }
 
-/* .loading-screen {
+.loading-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -251,7 +251,7 @@ header {
     transform: translateY(66%) scale(0.65);
     opacity: 0.8;
   }
-} */
+}
 
 .welcome-container {
   text-align: center;
@@ -286,7 +286,6 @@ header {
     margin-top: 4em;
   }
 }
-
 
 .main-content {
   opacity: 0;
@@ -528,7 +527,6 @@ header {
   box-shadow: 5px 5px 15px rgba(255, 76, 76, 0.3);
 }
 
-/*Footer*/
 .bgfooter {
   background-color: black;
 }

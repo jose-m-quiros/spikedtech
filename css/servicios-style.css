@@ -47,6 +47,7 @@ header {
 .servi {
   text-decoration: none;
   color: #fff;
+  margin: 0 20px 0 0;
 }
 
 .navbar .logo img {
@@ -136,7 +137,7 @@ header {
   }
 }
 
-/* .loading-screen {
+.loading-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -150,7 +151,6 @@ header {
   font-size: 2rem;
   z-index: 1000;
 }
-
 
 .three-body {
   --uib-size: 35px;
@@ -253,9 +253,8 @@ header {
     transform: translateY(66%) scale(0.65);
     opacity: 0.8;
   }
-} */
+}
 
-/* Main */
 .title {
   text-align: center;
   margin: 70px 30px 50px 30px;
@@ -311,7 +310,6 @@ header {
   color: #f8f8f8;
 }
 
-/* Botones 3D */
 .btn-primary {
   background: linear-gradient(145deg, #ff5e5e, #cc0000);
   border: none;
@@ -326,7 +324,6 @@ header {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-/*Footer*/
 .bandera {
   width: 3em;
   height: auto;
