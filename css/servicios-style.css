@@ -33,7 +33,6 @@ body {
   text-decoration: none !important;
 }
 
-
 .loading-screen {
   position: fixed;
   top: 0;
@@ -48,6 +47,7 @@ body {
   font-size: 2rem;
   z-index: 1000;
 }
+
 
 .three-body {
   --uib-size: 35px;
