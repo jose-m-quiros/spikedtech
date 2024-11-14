@@ -385,12 +385,12 @@ header {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 410px) {
+@media (max-width: 480px) {
   .about-title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
   .company-mission-title {
-    font-size: 1.7rem !important;
+    font-size: 1.8rem !important;
   }
   .company-values-title {
     font-size: 1.9rem !important;
