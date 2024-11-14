@@ -7,7 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #000000 !important;
   line-height: 1.6;
   margin: 0;
 }
@@ -17,16 +17,34 @@ body {
   width: 4%;
   height: auto;
 }
+.navbar.bg-body-tertiary {
+  background-color: #490c0c98 !important; /* Color de fondo personalizado */
+}
 
-/*Main*/
+.navbar-brand {
+  color: #ffffff !important;
+  font-size: 1.5em !important;
+  font-weight: 600;
+}
 
+.brand {
+  color: #ffffff !important;
+  font-size: 1.2em !important;
+  text-decoration: none !important;
+}
+
+
+/* Main */
 .title {
   text-align: center;
   margin: 30px;
+  color: #ffffff;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 .services-list > li {
   margin: 5px;
+  color: #ffffff;
 }
 
 .imgcard {
@@ -43,17 +61,59 @@ body {
 
 .container {
   margin-top: 20px;
-}
-
-.card {
-  margin-bottom: 20px;
-}
-
-.container {
   margin-bottom: 2em;
 }
 
+/* Tarjetas con efecto 3D */
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(145deg, #1a1a1a, #333333);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-header, .card-footer {
+  background: linear-gradient(145deg, #ff5e5e, #b30000);
+  color: white;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #f8f8f8;
+}
+
+/* Botones 3D */
+.btn-primary {
+  background: linear-gradient(145deg, #ff5e5e, #cc0000);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
 /*Footer*/
+.bandera{
+  width: 3em;
+  height: auto;
+}
+.div-bandera{
+  margin: 6px 0 0 0;
+  text-align: center;
+}
 .bgfooter {
   background-color: black;
 }
@@ -84,7 +144,7 @@ a > i {
 }
 
 .iconos {
-  font-size: 0;
+  font-size: 0; 
 }
 
 .iconos i {
