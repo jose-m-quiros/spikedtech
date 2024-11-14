@@ -385,6 +385,21 @@ header {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 410px) {
+  .about-title {
+    font-size: 1.7rem;
+  }
+  .company-mission-title {
+    font-size: 1.7rem !important;
+  }
+  .company-values-title {
+    font-size: 1.9rem !important;
+  }
+  .services-title {
+    font-size: 1.9rem !important;
+  }
+}
+
 .about-text {
   color: #cccccc;
   font-size: 1.2rem;
