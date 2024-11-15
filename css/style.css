@@ -376,13 +376,16 @@ header {
     -10px -10px 20px rgba(255, 255, 255, 0.05);
 }
 
-.about-title {
-  color: #ff5e5e;
-  font-size: 2.8rem;
+.company-mission-title,
+.about-title,
+.company-values-title,
+.services-title {
+  color: #ff7575;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-top: 30px;
   text-align: center;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 480px) {
@@ -478,15 +481,6 @@ header {
     -10px -10px 20px rgba(255, 255, 255, 0.05);
 }
 
-.services-title {
-  color: #ff5e5e;
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin-bottom: 25px;
-  text-align: center;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
-}
-
 .service-card {
   background: #222222;
   color: #ffffff;
@@ -522,24 +516,6 @@ header {
 
 .service-item:hover {
   color: #ff4c4c;
-}
-
-.button-link {
-  background-color: #ff4c4c;
-  color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 10px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-
-.button-link:hover {
-  background-color: #b22222;
-  transform: translateY(-3px);
-  box-shadow: 5px 5px 15px rgba(255, 76, 76, 0.3);
 }
 
 .bgfooter {

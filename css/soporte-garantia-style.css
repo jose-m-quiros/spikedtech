@@ -356,6 +356,20 @@ header {
   color: #fff;
 }
 
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background: #25D366;
+  color: #fff;
+}
+
+.whatsapp svg {
+  width: 51%;
+  height: 46%;
+  object-fit: contain; 
+}
+
+
 .wrapper .icon svg {
   fill: black;
   transition: fill 0.2s ease;
