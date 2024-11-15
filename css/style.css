@@ -518,6 +518,25 @@ header {
   color: #ff4c4c;
 }
 
+.button-link {
+  background-color: #ff4c4c;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.button-link:hover {
+  background-color: #b22222;
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 15px rgba(255, 76, 76, 0.3);
+}
+
+
 .bgfooter {
   background-color: black;
 }
