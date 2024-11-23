@@ -85,7 +85,7 @@ header {
 }
 
 .navbar .links a:hover {
-  color: #b22222;
+  color: #279eff;
   font-weight: bold;
 }
 
@@ -295,7 +295,7 @@ header {
 .hero p {
   font-size: 1.125rem;
   color: #d1d5db;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn-group {
@@ -359,7 +359,7 @@ header {
 }
 
 .card-tag {
-  color: #f97316;
+  color: #d5ffd0;
   text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 600;
@@ -369,12 +369,33 @@ header {
   font-size: 1.25rem;
   font-weight: bold;
   margin: 0.5rem 0;
-  color: #b22222 !important;
+  color: #40f8ff !important;
+}
+
+.point {
+  list-style-type: disc;
 }
 
 .card-text {
-  color: #4b5563;
+  font-size: 1.125rem;
+  color: #d1d5db;
   margin-bottom: 1rem;
+}
+
+.card-text ul {
+  list-style-type: disc;
+}
+
+.espaciado {
+  margin-bottom: 2.9em;
+}
+
+.list-unstyled {
+  margin: 0 1em 0 0;
+}
+
+.list-unstyled li {
+  white-space: nowrap;
 }
 
 .card-link {
@@ -555,7 +576,7 @@ header {
 .about-title,
 .company-values-title,
 .services-title {
-  color: #ff7575;
+  color: #40f8ff !important;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 30px;
@@ -593,15 +614,6 @@ header {
   align-items: center;
   gap: 20px;
   margin-top: 40px;
-}
-
-.company-mission-title,
-.company-values-title {
-  color: #ff7575;
-  font-size: 2rem;
-  margin-top: 30px;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .company-values-list {
@@ -644,7 +656,7 @@ header {
 
 .company-values-item:hover {
   background-color: #292929;
-  box-shadow: 4px 4px 15px rgba(255, 76, 76, 0.3);
+  box-shadow: 4px 4px 15px #279eff;
 }
 
 .services-overview {
@@ -670,7 +682,14 @@ header {
 
 .service-card:hover {
   transform: scale(1.05) translateY(-5px);
-  box-shadow: 10px 10px 30px rgba(255, 76, 76, 0.2);
+  box-shadow: 10px 10px 30px #279eff;
+}
+
+@media (max-width: 500px) {
+  .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .service-card-body {
@@ -690,12 +709,12 @@ header {
 }
 
 .service-item:hover {
-  color: #ff4c4c;
+  color: #279eff;
 }
 
 .button-link {
-  background-color: #ff4c4c;
-  color: #ffffff;
+  background-color: #40f8ff;
+  color: #0c356a;
   padding: 12px 24px;
   border-radius: 10px;
   text-decoration: none;
@@ -706,9 +725,10 @@ header {
 }
 
 .button-link:hover {
-  background-color: #b22222;
+  background-color: #0c356a;
+  color: #fff;
   transform: translateY(-3px);
-  box-shadow: 5px 5px 15px rgba(255, 76, 76, 0.3);
+  box-shadow: 5px 5px 15px #279eff;
 }
 
 .bgfooter {

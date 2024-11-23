@@ -86,7 +86,7 @@ header {
 }
 
 .navbar .links a:hover {
-  color: #b22222;
+  color: #279eff;
   font-weight: bold;
 }
 
@@ -268,7 +268,6 @@ header {
 .wrapper {
   display: inline-flex;
   list-style: none;
-
   font-family: "Poppins", sans-serif;
   justify-content: center;
 }
@@ -359,16 +358,22 @@ header {
 .wrapper .whatsapp:hover,
 .wrapper .whatsapp:hover .tooltip,
 .wrapper .whatsapp:hover .tooltip::before {
-  background: #25D366;
+  background: #25d366;
   color: #fff;
 }
 
 .whatsapp svg {
   width: 51%;
   height: 46%;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+  background: #4caf50;
+  color: #fff;
+}
 
 .wrapper .icon svg {
   fill: black;
@@ -417,13 +422,13 @@ ul {
 
 .card-header,
 .card-footer {
-  background: linear-gradient(145deg, #ff5e5e, #b30000);
+  background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
   color: white;
 }
 
 .card-title {
   font-weight: bold;
-  color: #f8f8f8 !important;
+  color: var(--bs-card-title-color);
 }
 
 .services-list {

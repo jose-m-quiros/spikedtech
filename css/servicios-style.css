@@ -86,7 +86,7 @@ header {
 }
 
 .navbar .links a:hover {
-  color: #b22222;
+  color: #279eff;
   font-weight: bold;
 }
 
@@ -304,7 +304,7 @@ header {
 
 .card-header,
 .card-footer {
-  background: linear-gradient(145deg, #ff5e5e, #b30000);
+  background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
   color: white;
 }
 
