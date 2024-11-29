@@ -384,6 +384,54 @@ header {
   fill: white;
 }
 
+
+.accordion {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto; 
+  color: #fff; 
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.accordion-body {
+  text-align: justify; 
+  color: #fff;
+}
+
+
+
+.accordion-header {
+  background-color: #333; 
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.accordion-button {
+  background-color: #444; 
+  color: #fff; 
+}
+
+.accordion-button:focus {
+  box-shadow: none; 
+}
+
+.accordion-button.collapsed {
+  background-color: #333; 
+  color: #fff; 
+
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #555; /* Fondo más claro cuando está abierto */
+  color: #fff; /* Texto blanco */
+}
+  .accordion-collapse {
+  background-color: #222; /* Fondo oscuro para el contenido desplegado */
+}
+
+
+
 ol,
 ul {
   padding-left: 0 !important;
