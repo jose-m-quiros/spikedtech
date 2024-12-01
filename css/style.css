@@ -894,3 +894,8 @@ a > i:hover {
 .contact-column {
   width: 100%;
 }
+
+#map {
+  width: 100%;
+  height: 100%;
+}
