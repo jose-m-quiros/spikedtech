@@ -6,9 +6,9 @@ function changeHeaderBackground() {
   const headerHeight = header.offsetHeight;
 
   if (titleTop <= headerHeight) {
-    header.style.backgroundColor = "black";
+    header.style.background = "linear-gradient(135deg, #1b1b1b, #000000)";
   } else {
-    header.style.backgroundColor = "";
+    header.style.background = "";
   }
 }
 
