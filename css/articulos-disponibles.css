@@ -255,8 +255,6 @@ header {
   }
 }
 
-
-
 .wrapper {
   display: inline-flex;
   list-style: none;
@@ -396,7 +394,6 @@ header {
   height: 300px;
   object-fit: cover;
 }
-
 
 .carousel-inner img {
   width: 100%;
