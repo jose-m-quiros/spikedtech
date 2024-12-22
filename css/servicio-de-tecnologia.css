@@ -395,6 +395,11 @@ header {
   color: #ffffff;
 }
 
+.btn {
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+}
+
 .proximamente {
   color: rgb(114, 150, 161) !important;
 }
