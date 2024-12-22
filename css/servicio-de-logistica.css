@@ -630,3 +630,8 @@ a > i:hover {
 .wrapper .icon:hover svg {
   fill: white;
 }
+
+.btn {
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+}
