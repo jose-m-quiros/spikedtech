@@ -631,7 +631,14 @@ a > i:hover {
   fill: white;
 }
 
+.card-body {
+  background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
+  color: white;
+}
+
 .btn {
-  font-weight: bold !important;
-  font-size: 1.2em !important;
+  margin-top: 1em;
+  font-size: 1.2rem !important;
+  padding: 1rem 2rem !important; 
+  border-radius: 8px !important;
 }
