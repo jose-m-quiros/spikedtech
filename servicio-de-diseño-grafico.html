@@ -98,6 +98,71 @@
             </div>
         </div>
     </section>
+    <section class="container main">
+        <!-- Botón para abrir el modal -->
+        <div class="text-center my-4">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryModal">
+                Cotizar Categoría
+            </button>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="categoryModalLabel">Selecciona una Categoría</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Selecciona una categoría para cotizar tu servicio:</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Logotipos.%0AEspecificaciones:%0A">
+                                Logotipos
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20papelería.%0AEspecificaciones:%0A">
+                                Diseño de papelería
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20folletos.%0AEspecificaciones:%0A">
+                                Folletos y Volantes
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20infografías.%0AEspecificaciones:%0A">
+                                Infografías
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20web.%0AEspecificaciones:%0A">
+                                Diseño Web
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20email%20marketing.%0AEspecificaciones:%0A">
+                                Email Marketing
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20redes%20sociales.%0AEspecificaciones:%0A">
+                                Redes Sociales
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Optimización%20para%20medios.%0AEspecificaciones:%0A">
+                                Optimización para Medios
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" 
+                                    data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Retratos.%0AEspecificaciones:%0A">
+                                Retratos
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <footer class="bgfooter" id="footer">
         <div class="footer-container">
@@ -200,6 +265,7 @@
     <script src="js/loading-servicios.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/nav.js"></script>
+    <script src="modal-diseño.js"></script>
 </body>
 
 </html>

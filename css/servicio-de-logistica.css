@@ -255,11 +255,7 @@ header {
   }
 }
 
-.main {
-  margin-top: 7em;
-}
-
-.title {
+.title { 
   text-align: center;
   color: #fff;
   margin-bottom: 1em;
