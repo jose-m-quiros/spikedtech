@@ -255,50 +255,6 @@ header {
   }
 }
 
-/* Botones dentro del modal */
-.platform-btn, .colors {
-  background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
-  color: rgb(0, 0, 0) !important;
-  font-weight: bold !important;
-  border: none;
-  padding: 10px 20px;
-  transition: all 0.3s ease;
-}
-
-.btn-info {
-  font-weight: bold !important;
-}
-
-.platform-btn:hover {
-  opacity: 0.9;
-  transform: scale(1.05);
-}
-
-/* Modal personalizado */
-.custom-modal {
-  background: linear-gradient(135deg, #1b1b1b, #000000) !important;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.modal-title, .minimodal{
-  color: #fff;
-}
-
-.custom-modal .modal-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.custom-modal .modal-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-
-.main {
-  margin-top: 7em;
-}
-
 .title {
   text-align: center;
   color: #fff;
@@ -674,11 +630,57 @@ a > i:hover {
 .card-body {
   background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
   color: white;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .btn {
   margin-top: 1em;
   font-size: 1.2rem !important;
-  padding: 1rem 2rem !important; 
+  padding: 1rem 2rem !important;
   border-radius: 8px !important;
+}
+
+.category-btn, .colors {
+  background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold !important;
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-info {
+  font-weight: bold !important;
+}
+
+
+
+.main {
+  margin-top: 6em;
+}
+
+.modal-title, .minimodal{
+    color: #fff;
+}
+
+.category-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Modal personalizado */
+.custom-modal {
+    background: linear-gradient(135deg, #1b1b1b, #000000) !important;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-modal .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }

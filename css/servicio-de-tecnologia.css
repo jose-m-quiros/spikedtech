@@ -137,6 +137,44 @@ header {
   }
 }
 
+/* Botones dentro del modal */
+.category-btn {
+  background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
+  font-weight: bold !important;
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.main {
+margin-top: 6em;
+}
+
+.modal-title, .minimodal{
+  color: #fff;
+}
+
+.category-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Modal personalizado */
+.modal-content {
+  background: linear-gradient(135deg, #1b1b1b, #000000) !important;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content .modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-modal .modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .loading-screen {
   position: fixed;
   top: 0;
