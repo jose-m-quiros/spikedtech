@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   categoryButtons.forEach((button) => {
     button.addEventListener("click", function () {
       const link = this.getAttribute("data-link");
-      window.open(link, "_blank"); 
+      window.open(link, "_blank");
     });
   });
 });
