@@ -630,6 +630,8 @@ a > i:hover {
 .card-body {
   background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
   color: white;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .btn {
