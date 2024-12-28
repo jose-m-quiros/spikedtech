@@ -255,8 +255,8 @@ header {
   }
 }
 
-/* Botones dentro del modal */
-.platform-btn, .colors {
+.platform-btn,
+.colors {
   background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
   color: rgb(0, 0, 0) !important;
   font-weight: bold !important;
@@ -274,7 +274,6 @@ header {
   transform: scale(1.05);
 }
 
-/* Modal personalizado */
 .custom-modal {
   background: linear-gradient(135deg, #1b1b1b, #000000) !important;
   color: white;
@@ -282,7 +281,8 @@ header {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.modal-title, .minimodal{
+.modal-title,
+.minimodal {
   color: #fff;
 }
 
@@ -293,7 +293,6 @@ header {
 .custom-modal .modal-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 
 .main {
   margin-top: 7em;
@@ -679,7 +678,7 @@ a > i:hover {
 .btn {
   margin-top: 1em;
   font-size: 1.2rem !important;
-  padding: 1rem 2rem !important; 
+  padding: 1rem 2rem !important;
   border-radius: 8px !important;
 }
 

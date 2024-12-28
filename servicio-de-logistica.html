@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar">
             <span class="hamburger-btn material-symbols-rounded"><a class="servi" href="index.html">Inicio</a></span>
@@ -36,112 +35,84 @@
         </div>
     </div>
 
-
     <section class="container main">
         <h1 class="title text-center">Plataformas</h1>
-
         <div class="container d-flex flex-wrap justify-content-center gap-4 text-center">
-
             <div class="card" style="width: 18rem;">
                 <img src="img/amazon.png" class="card-img-top img-uniform" alt="img/amazon.png">
                 <div class="card-body"></div>
             </div>
-
             <div class="card" style="width: 18rem;">
                 <img src="img/aliexpress.png" class="card-img-top img-uniform" alt="img/aliexpress.png">
                 <div class="card-body"></div>
             </div>
-
             <div class="card" style="width: 18rem;">
                 <img src="img/ebay.png" class="card-img-top img-uniform" alt="img/ebay.png">
                 <div class="card-body"></div>
             </div>
-
             <div class="card" style="width: 18rem;">
                 <img src="img/wish.png" class="card-img-top img-uniform" alt="img/wish.png">
                 <div class="card-body"></div>
             </div>
-
             <div class="card" style="width: 18rem;">
                 <img src="img/shein.png" class="card-img-top img-uniform" alt="img/shein.png">
                 <div class="card-body"></div>
             </div>
-
             <div class="card" style="width: 18rem;">
                 <img src="img/Target_logo.svg.png" class="card-img-top img-uniform" alt="img/Target_logo.svg.png">
                 <div class="card-body"></div>
             </div>
-
             <div class="card" style="width: 18rem;">
                 <img src="img/temu.png" class="card-img-top img-uniform" alt="img/temu.png">
                 <div class="card-body"></div>
             </div>
         </div>
 
- 
-
-   <!-- Botón para abrir el modal -->
-<div class="text-center my-4">
-    <button class="btn btn-primary colors" data-bs-toggle="modal" data-bs-target="#platformModal">
-        Cotizar Producto
-    </button>
-</div>
-
-<div class="modal fade" id="platformModal" tabindex="-1" aria-labelledby="platformModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content custom-modal">
-            <div class="modal-header">
-                <h5 class="modal-title" id="platformModalLabel">Selecciona una Plataforma</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p class="minimodal">Selecciona una plataforma para cotizar tu producto:</p>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <button class="btn platform-btn" 
-                            data-platform="Amazon" 
-                            data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Amazon.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
-                        Amazon
-                    </button>
-                    <button class="btn platform-btn" 
-                            data-platform="AliExpress" 
-                            data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20AliExpress.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
-                        AliExpress
-                    </button>
-                    <button class="btn platform-btn" 
-                            data-platform="eBay" 
-                            data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20eBay.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
-                        eBay
-                    </button>
-                    <button class="btn platform-btn" 
-                            data-platform="Wish" 
-                            data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Wish.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
-                        Wish
-                    </button>
-                    <button class="btn platform-btn" 
-                            data-platform="Shein" 
-                            data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Shein.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
-                        Shein
-                    </button>
-                    <button class="btn platform-btn" 
-                            data-platform="Target" 
-                            data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Target.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
-                        Target
-                    </button>
-                    <button class="btn platform-btn" 
-                            data-platform="Temu" 
-                            data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Temu.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
-                        Temu
-                    </button>
+        <div class="text-center my-4">
+            <button class="btn btn-primary colors" data-bs-toggle="modal" data-bs-target="#platformModal">
+                Cotizar Producto
+            </button>
+        </div>
+        <div class="modal fade" id="platformModal" tabindex="-1" aria-labelledby="platformModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content custom-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="platformModalLabel">Selecciona una Plataforma</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="minimodal">Selecciona una plataforma para cotizar tu producto:</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <button class="btn platform-btn" data-platform="Amazon" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Amazon.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
+                                Amazon
+                            </button>
+                            <button class="btn platform-btn" data-platform="AliExpress" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20AliExpress.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
+                                AliExpress
+                            </button>
+                            <button class="btn platform-btn" data-platform="eBay" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20eBay.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
+                                eBay
+                            </button>
+                            <button class="btn platform-btn" data-platform="Wish" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Wish.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
+                                Wish
+                            </button>
+                            <button class="btn platform-btn" data-platform="Shein" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Shein.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
+                                Shein
+                            </button>
+                            <button class="btn platform-btn" data-platform="Target" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Target.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
+                                Target
+                            </button>
+                            <button class="btn platform-btn" data-platform="Temu" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Temu.%0AEnlace%20del%20Producto:%0AImagen%20del%20Producto:%0ANombre:%0AApellido:%0AProducto%20o%20Solicitud%20detallada:">
+                                Temu
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
-    </div>
-</div>
 
-    
         <div class="container mt-5">
             <div class="secion-de-pedidos">
                 <h3 class="title-h3">Cómo se hacen los pedidos</h3>
@@ -156,7 +127,6 @@
             </div>
         </div>
     </section>
-    
 
     <footer class="bgfooter" id="footer">
         <div class="footer-container">
@@ -200,7 +170,6 @@
                             </svg>
                         </li>
                     </a>
-
                     <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp">
                         <li class="icon instagram">
                             <span class="tooltip">Instagram</span>
@@ -209,7 +178,6 @@
                             </svg>
                         </li>
                     </a>
-                    
                     <li class="icon email">
                         <a href="mailto:spikedtech19@gmail.com">
                             <span class="tooltip">Email</span>
@@ -228,7 +196,6 @@
                             </svg>
                         </li>
                     </a>
-
                     <li class="icon phone">
                         <a href="tel:+50663868608">
                             <span class="tooltip">Llamar</span>
@@ -240,7 +207,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="div-footer">
             <h3 class="text-footer">Somos una tienda virtual, pero estamos ubicados en: </h3>
             <p class="text-footer"><strong>Atenas, Alajuela, Costa Rica</strong></p>

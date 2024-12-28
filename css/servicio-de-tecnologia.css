@@ -137,7 +137,6 @@ header {
   }
 }
 
-/* Botones dentro del modal */
 .category-btn {
   background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
   font-weight: bold !important;
@@ -147,10 +146,11 @@ header {
 }
 
 .main {
-margin-top: 6em;
+  margin-top: 6em;
 }
 
-.modal-title, .minimodal{
+.modal-title,
+.minimodal {
   color: #fff;
 }
 
@@ -159,7 +159,6 @@ margin-top: 6em;
   transform: scale(1.05);
 }
 
-/* Modal personalizado */
 .modal-content {
   background: linear-gradient(135deg, #1b1b1b, #000000) !important;
   color: white;
@@ -539,10 +538,9 @@ margin-top: 6em;
 
 .btn {
   font-size: 1.2rem !important;
-  padding: 1rem 2rem !important; 
+  padding: 1rem 2rem !important;
   border-radius: 8px !important;
 }
-
 
 .tooltip {
   position: absolute;

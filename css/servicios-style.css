@@ -366,7 +366,6 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Tooltip estilizado */
 .tooltip {
   position: absolute;
   top: -35px;
@@ -387,7 +386,6 @@ header {
   visibility: visible;
 }
 
-/* Animación de aparición del tooltip */
 .icon:hover .tooltip {
   animation: fadeIn 0.3s ease-in-out forwards;
 }
