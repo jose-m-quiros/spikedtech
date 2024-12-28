@@ -641,6 +641,11 @@ a > i:hover {
   border-radius: 8px !important;
 }
 
+.btn:hover {
+  opacity: 0.9 !important;
+  transform: scale(1.05) !important;
+}
+
 .category-btn, .colors {
   background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
   color: rgb(0, 0, 0) !important;

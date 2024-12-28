@@ -261,6 +261,11 @@ header {
   font-weight: bold !important;
 }
 
+.btn:hover {
+  opacity: 0.9 !important;
+  transform: scale(1.05) !important;
+}
+
 .card-body {
   background: linear-gradient(135deg, #1b1b1b, #000000) !important;
   color: #fff !important;

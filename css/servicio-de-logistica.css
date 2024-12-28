@@ -682,3 +682,8 @@ a > i:hover {
   padding: 1rem 2rem !important; 
   border-radius: 8px !important;
 }
+
+.btn:hover {
+  opacity: 0.9 !important;
+  transform: scale(1.05) !important;
+}
