@@ -280,9 +280,20 @@ header {
 
 .hero-content {
   position: relative;
+  text-align: center;
   padding-top: 96px;
   color: white;
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.text-hero {
+  margin: 3em 0 1em 0 !important;
+  width: 700px;
+  text-align: center;
 }
 
 .hero h1 {
@@ -373,7 +384,7 @@ header {
 }
 
 .point {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 .card-text {
@@ -383,7 +394,7 @@ header {
 }
 
 .card-text ul {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 .espaciado {
@@ -695,10 +706,12 @@ header {
 .service-list {
   list-style-type: none;
   padding: 0;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 .service-item {
-  color: #cccccc;
+  color: #ffffff;
   font-size: 1.1rem;
   margin-bottom: 10px;
   transition: color 0.3s ease;

@@ -460,6 +460,14 @@ ul li {
   color: var(--bs-card-title-color);
 }
 
+.metodos-de-pago {
+  color: #fff !important;
+}
+p.text-muted {
+  color: #fff !important;
+  font-size: 1.2em;
+}
+
 .services-list {
   color: #fff !important;
   text-align: justify;
@@ -792,6 +800,11 @@ a > i:hover {
 
 .wrapper .icon:hover svg {
   fill: white;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
 :root {
