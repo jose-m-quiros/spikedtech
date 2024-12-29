@@ -794,7 +794,6 @@ a > i:hover {
   fill: white;
 }
 
-/* Variables globales */
 :root {
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
@@ -808,7 +807,6 @@ a > i:hover {
   --transition: all 0.3s ease;
 }
 
-/* Contenedor principal del formulario */
 .form-container {
   max-width: 535px;
   margin: 2rem auto 4em auto;
@@ -818,7 +816,6 @@ a > i:hover {
   box-shadow: var(--box-shadow);
 }
 
-/* Título del formulario */
 .form-title {
   color: #ccdaf0;
   font-size: 2rem;
@@ -841,27 +838,23 @@ a > i:hover {
   border-radius: 2px;
 }
 
-/* Contenido del formulario */
 .form-content {
   display: grid;
   gap: 1.5rem;
 }
 
-/* Grupos de formulario */
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-/* Labels */
 .form-group label {
   font-weight: 500;
   color: var(--secondary-color);
   font-size: 0.95rem;
 }
 
-/* Inputs generales */
 .form-input,
 .form-select,
 .form-textarea {
@@ -881,7 +874,6 @@ a > i:hover {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-/* Select específico */
 .form-select {
   cursor: pointer;
   appearance: none;
@@ -892,13 +884,11 @@ a > i:hover {
   padding-right: 2.5rem;
 }
 
-/* Textarea específico */
 .form-textarea {
   min-height: 120px;
   resize: vertical;
 }
 
-/* Botón de envío */
 .form-button {
   background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
   color: rgb(0, 0, 0);
@@ -927,7 +917,6 @@ a > i:hover {
   transform: translateY(0);
 }
 
-/* Estilos del Modal */
 .modal {
   display: none;
   position: fixed;
@@ -1028,7 +1017,6 @@ a > i:hover {
   transform: rotate(90deg);
 }
 
-/* Animaciones */
 @keyframes modalAppear {
   0% {
     transform: scale(0.7);
@@ -1040,7 +1028,6 @@ a > i:hover {
   }
 }
 
-/* Validación de formulario */
 .form-input:invalid:not(:placeholder-shown),
 .form-select:invalid:not(:placeholder-shown) {
   border-color: var(--danger-color);
@@ -1093,7 +1080,6 @@ a > i:hover {
   }
 }
 
-/* Aplica estilos directamente al botón con el id #boton-limpiar-spikedtech */
 .limpiar-boton-spikedtech {
   color: rgb(0, 0, 0);
   padding: 1rem 2rem;
@@ -1105,11 +1091,9 @@ a > i:hover {
   transition: var(--transition);
   width: 100%;
   margin-top: 1rem;
-  background-color: #94a3b8 !important; /* Color gris */
+  background-color: #94a3b8 !important;
 }
 
-/* Efecto hover para el botón */
 .limpiar-boton-spikedtech:hover {
-  background-color: #64748b !important; /* Un gris más oscuro al hover */
+  background-color: #64748b !important;
 }
-
