@@ -287,6 +287,78 @@
         </div>
     </section>
 
+    <section class="form">
+        <div class="form-container" id="formulario-spikedtech">
+            <h1 class="form-title">Formulario SPIKEDTECH</h1>
+            <form id="form-spikedtech" class="form-content" onsubmit="mostrarModal(event)">
+                <div class="form-group">
+                    <label for="nombre-spikedtech">Nombre:</label>
+                    <input type="text" id="nombre-spikedtech" class="form-input" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido-spikedtech">Apellido:</label>
+                    <input type="text" id="apellido-spikedtech" class="form-input" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo-spikedtech">Correo Electrónico:</label>
+                    <input type="email" id="correo-spikedtech" class="form-input" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono-spikedtech">Número de Teléfono:</label>
+                    <input type="tel" id="telefono-spikedtech" class="form-input" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="servicio-spikedtech">Servicio:</label>
+                    <select id="servicio-spikedtech" class="form-select" name="servicio" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Tecnología">Tecnología</option>
+                        <option value="Servicios de Logística">Servicios de Logística</option>
+                        <option value="Diseño Gráfico">Diseño Gráfico</option>
+                        <option value="Productos Disponibles">Productos Disponibles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensajes-spikedtech">Selecciona un mensaje preescrito:</label>
+                    <select id="mensajes-spikedtech" class="form-select" onchange="actualizarDescripcion()">
+                        <option value="">Seleccione un mensaje preescrito...</option>
+                        <option value="Deseo que me contacten para obtener más información.">Deseo que me contacten para obtener más información.</option>
+                        <option value="Quiero recibir una cotización de sus servicios.">Quiero recibir una cotización de sus servicios.</option>
+                        <option value="Estoy interesado en sus productos disponibles.">Estoy interesado en sus productos disponibles.</option>
+                        <option value="Tengo dudas sobre el soporte técnico que ofrecen.">Tengo dudas sobre el soporte técnico que ofrecen.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion-spikedtech">Descripción:</label>
+                    <textarea id="descripcion-spikedtech" class="form-textarea" name="descripcion" placeholder="Escribe aquí o selecciona un mensaje preescrito"></textarea>
+                </div>
+                <div class="form-group">
+                    <div style="display: flex; gap: 1rem;">
+                        <button type="submit" id="boton-enviar-spikedtech" class="form-button">Enviar Formulario</button>
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <button type="button" id="boton-limpiar-spikedtech" class="limpiar-boton-spikedtech limpiar-boton" onclick="limpiarFormulario()">Limpiar Formulario</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+            
+        <!-- Modal -->
+        <div id="modal-spikedtech" class="modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="cerrarModal()">X</button>
+                <h2 class="modal-title">¿Cómo deseas enviar el formulario?</h2>
+                <div class="modal-options">
+                    <button id="whatsapp-button" class="modal-button" onclick="enviarPorWhatsApp()">WhatsApp</button>
+                    <button id="correo-button" class="modal-button" onclick="enviarPorCorreo()">Correo Electrónico</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
     <footer class="bgfooter" id="footer">
         <div class="footer-container">
             <div class="info-column">
@@ -383,7 +455,7 @@
     <script src="js/animation.js"></script>
     <script src="js/loading.js"></script>
     <script src="js/nav-soporte.js"></script>
-
+    <script src="js/email.js"></script>
 </body>
 
 </html>
