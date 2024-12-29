@@ -949,6 +949,12 @@ a > i:hover {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .modal-content {
+    width: 400px !important;
+  }
+}
+
 .modal-close {
   position: absolute;
   top: 10px;
