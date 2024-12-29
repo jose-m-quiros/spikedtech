@@ -453,6 +453,20 @@ header {
   }
 }
 
+@media (max-width: 1400px) {
+  .camaras-de-seguridad {
+    padding-bottom: 1.1em !important;
+  }
+}
+
+
+@media (max-width: 991.112px) {
+  .IoT {
+    padding-bottom: 1.1em !important;
+  }
+}
+
+
 .container {
   margin-top: 20px;
   margin-bottom: 2em;
