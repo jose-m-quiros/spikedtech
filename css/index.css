@@ -296,6 +296,36 @@ header {
   text-align: center;
 }
 
+@media (max-width: 700px) {
+  .text-hero {
+    width: 550px;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-hero {
+    width: 450px;
+  }
+}
+
+@media (max-width: 450px) {
+  .text-hero {
+    width: 355px;
+  }
+}
+
+@media (max-width: 380px) {
+  .text-hero {
+    width: 300px;
+  }
+}
+
+@media (max-width: 280px) {
+  .text-hero {
+    width: 280px;
+  }
+}
+
 .hero h1 {
   font-size: 2.5rem;
   font-weight: bold;
