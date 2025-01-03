@@ -1,212 +1,328 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/soporte-garantia-style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg">
-    <title>Soporte & Garantia</title>
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <span class="hamburger-btn material-symbols-rounded"><a class="servi" href="index.html">Inicio</a></span>
-            <a href="" class="logo">
-                <img src="img/logoSpikedtechredondo.png" alt="logo" />
-                <h2>SPIKEDTECH</h2>
-            </a>
-            <ul class="links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pagina-de-servicios.html">Servicios</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="loading-screen">
-        <div class="three-body">
-            <div class="three-body__dot"></div>
-            <div class="three-body__dot"></div>
-            <div class="three-body__dot"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/soporte-garantia-style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg">
+        <title>Soporte & Garantia</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="hamburger-btn material-symbols-rounded"><a class="servi" href="index.html">Inicio</a></span>
+                <a href="" class="logo">
+                    <img src="img/logoSpikedtechredondo.png" alt="logo" />
+                    <h2>SPIKEDTECH</h2>
+                </a>
+                <ul class="links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pagina-de-servicios.html">Servicios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="loading-screen">
+            <div class="three-body">
+                <div class="three-body__dot"></div>
+                <div class="three-body__dot"></div>
+                <div class="three-body__dot"></div>
+            </div>
         </div>
-    </div>
-
-    <section class="form main">
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-md-7 col-12">
-                    <div class="card text-center">
-                        <div class="card-header"></div>
-                        <div class="card-body">
-                            <div class="form-container" id="formulario-spikedtech">
-                                <h1 class="form-title">Contáctenos</h1>
-                                <form id="form-spikedtech" class="form-content" onsubmit="mostrarModal(event)">
-                                    <div class="form-group">
-                                        <label for="nombre-spikedtech">Nombre:</label>
-                                        <input type="text" id="nombre-spikedtech" class="form-input" name="nombre" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="apellido-spikedtech">Apellido:</label>
-                                        <input type="text" id="apellido-spikedtech" class="form-input" name="apellido" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="correo-spikedtech">Correo Electrónico:</label>
-                                        <input type="email" id="correo-spikedtech" class="form-input" name="correo" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="telefono-spikedtech">Número de Teléfono:</label>
-                                        <input type="tel" id="telefono-spikedtech" class="form-input" name="telefono" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="servicio-spikedtech">Servicio:</label>
-                                        <select id="servicio-spikedtech" class="form-select" name="servicio" required onchange="actualizarMensajesSegunServicio()">
-                                            <option value="">Seleccione...</option>
-                                            <option value="Tecnología">Tecnología</option>
-                                            <option value="Servicios de Logística">Servicios de Logística</option>
-                                            <option value="Diseño Gráfico">Diseño Gráfico</option>
-                                            <option value="Productos Disponibles">Productos Disponibles</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="mensajes-spikedtech">Selecciona un mensaje preescrito:</label>
-                                        <select id="mensajes-spikedtech" class="form-select" onchange="actualizarDescripcion()">
-                                            <option value="">Seleccione un mensaje preescrito...</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="descripcion-spikedtech">Descripción:</label>
-                                        <textarea id="descripcion-spikedtech" class="form-textarea" name="descripcion"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="form-button">Enviar Formulario</button>
-                                        <button type="button" class="limpiar-boton-spikedtech" onclick="limpiarFormulario()">Limpiar</button>
-                                    </div>
-                                </form>
+        <section class="form main">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-12">
+                        <div class="card text-center">
+                            <div class="card-header"></div>
+                            <div class="card-body">
+                                <div class="form-container" id="formulario-spikedtech">
+                                    <h1 class="form-title">Contáctenos</h1>
+                                    <form id="form-spikedtech" class="form-content" onsubmit="mostrarModal(event)">
+                                        <div class="form-group">
+                                            <label for="nombre-spikedtech">Nombre:</label>
+                                            <input type="text" id="nombre-spikedtech" class="form-input" name="nombre" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="apellido-spikedtech">Apellido:</label>
+                                            <input type="text" id="apellido-spikedtech" class="form-input" name="apellido" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="correo-spikedtech">Correo Electrónico:</label>
+                                            <input type="email" id="correo-spikedtech" class="form-input" name="correo" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="telefono-spikedtech">Número de Teléfono:</label>
+                                            <input type="tel" id="telefono-spikedtech" class="form-input" name="telefono" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="servicio-spikedtech">Servicio:</label>
+                                            <select id="servicio-spikedtech" class="form-select" name="servicio" required onchange="actualizarMensajesSegunServicio()">
+                                                <option value="">Seleccione...</option>
+                                                <option value="Tecnología">Tecnología</option>
+                                                <option value="Servicios de Logística">Servicios de Logística</option>
+                                                <option value="Diseño Gráfico">Diseño Gráfico</option>
+                                                <option value="Productos Disponibles">Productos Disponibles</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mensajes-spikedtech">Selecciona un mensaje preescrito:</label>
+                                            <select id="mensajes-spikedtech" class="form-select" onchange="actualizarDescripcion()">
+                                                <option value="">Seleccione un mensaje preescrito...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="descripcion-spikedtech">Descripción:</label>
+                                            <textarea id="descripcion-spikedtech" class="form-textarea" name="descripcion"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="form-button">Enviar Formulario</button>
+                                            <button type="button" class="limpiar-boton-spikedtech" onclick="limpiarFormulario()">Limpiar</button>
+                                        </div>
+                                    </form>
+                                    <div id="politicas-garantias"></div>
+                                </div>
                             </div>
+                            <div class="card-footer"></div>
                         </div>
-                        <div class="card-footer"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <div id="modal-spikedtech" class="modal">
-            <div class="modal-content">
-                <button class="modal-close" onclick="cerrarModal()">X</button>
-                <h2 class="modal-title">¿Cómo deseas enviar el formulario?</h2>
-                <div class="modal-options">
-                    <button id="whatsapp-button" class="modal-button" onclick="enviarPorWhatsApp()">WhatsApp</button>
-                    <button id="correo-button" class="modal-button" onclick="enviarPorCorreo()">Correo Electrónico</button>
+            <div id="modal-spikedtech" class="modal">
+                <div class="modal-content">
+                    <button class="modal-close" onclick="cerrarModal()">X</button>
+                    <h2 class="modal-title">¿Cómo deseas enviar el formulario?</h2>
+                    <div class="modal-options">
+                        <button id="whatsapp-button" class="modal-button" onclick="enviarPorWhatsApp()">WhatsApp</button>
+                        <button id="correo-button" class="modal-button" onclick="enviarPorCorreo()">Correo Electrónico</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-md-7 col-12">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h5 class="card-title">Políticas y Garantías</h5>
+        </section>
+        <section>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h5 class="card-title">Políticas y Garantías</h5>
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Tecnología
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="text-center">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="card-body">
+                                                            <ul class="services-list">
+                                                                <p>Nuestra garantía cubre tanto productos como servicios de soporte técnico.</p>
+                                                                <li class="list">- <strong>Productos:</strong> Cada producto cuenta con un período de garantía específico, el cual cubre defectos de fabricación. Para hacer válida la garantía, es necesario conservar la factura
+                                                                    de compra. Esta garantía no cubre daños por uso indebido, desgaste natural o manipulación incorrecta.
+                                                                </li>
+                                                                <li>- <strong>Servicios de Soporte Técnico:</strong> La garantía de nuestros servicios de soporte TI incluye una cobertura de hasta 30 días tras la realización del servicio. Esto asegura que cualquier
+                                                                    inconveniente relacionado con el servicio inicial será atendido sin costo adicional dentro de este período. Sin embargo, esta garantía no cubre daños causados por virus, malware o alteraciones
+                                                                    en la configuración realizada por el usuario después del servicio.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Diseño Gráfico
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="text-center">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="card-body">
+                                                            <ul class="services-list">
+                                                                <h2 class="text-center">Políticas</h2>
+                                                                <ul>
+                                                                    <li><strong>- Revisiones:</strong> Una revision gratuitas. Revisiones adicionales tendrán un costo extra.</li>
+                                                                    <li><strong>- Entrega de Archivos:</strong> Archivos finales en formatos acordados (.AI, .PSD, .PDF, etc.).</li>
+                                                                    <li><strong>- Plazos de Entrega:</strong> Entregas según el acuerdo. Retrasos por cambios del cliente pueden modificar la fecha.</li>
+                                                                    <li><strong>- Pagos:</strong> 50% adelantado, saldo al finalizar.</li>
+                                                                    <li><strong>- Confidencialidad:</strong> Compromiso de mantener la privacidad de los proyectos.</li>
+                                                                    <li><strong>- Cancelaciones:</strong> Se cobrará por el trabajo realizado si el cliente cancela antes de la entrega.</li>
+                                                                </ul>
+                                                                <h2 class="text-center">Garantías</h2>
+                                                                <ul>
+                                                                    <li><strong>- Satisfacción:</strong> Una revision gratuita si el cliente no está satisfecho.</li>
+                                                                    <li><strong>- Cumplimiento:</strong> El diseño cumplirá con las especificaciones acordadas.</li>
+                                                                    <li><strong>- Archivos:</strong> Si hay problemas con los archivos, se reemplazarán sin costo.</li>
+                                                                    <li><strong>- Soporte Post-Entrega:</strong> Soporte durante 15 días tras la entrega.</li>
+                                                                </ul>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Servicios de logística
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="text-center">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="card-body">
+                                                            <ul class="services-list">
+                                                                <h2 class="text-center">Políticas</h2>
+                                                                <ul>
+                                                                    <li><strong>- Responsabilidad:</strong> Manejo cuidadoso de envíos.</li>
+                                                                    <li><strong>- Prohibiciones:</strong> No se transportan artículos ilegales o peligrosos.</li>
+                                                                    <li><strong>- Pagos:</strong> Se requiere el 50% del pago por adelantado para procesar el pedido.</li>
+                                                                    <li><strong>- Rastreo:</strong> Todos los envíos incluyen seguimiento.</li>
+                                                                </ul>
+                                                                <hr>
+                                                                <h2 class="text-center">Garantías</h2>
+                                                                <ul>
+                                                                    <li><strong>- Entrega Puntual:</strong> Si el paquete se retrasa, informaremos al cliente sobre la causa del retraso.</li>
+                                                                    <li><strong>- Devoluciones:</strong> Paquetes no entregados se devuelven bajo acuerdo previo.</li>
+                                                                    <li><strong>- Información Transparente:</strong> Ofrecemos actualizaciones constantes sobre el estado del envío y la ubicación del paquete en tiempo real.</li>
+                                                                    <li><strong>- Atención al Cliente:</strong> Disponibilidad de soporte para resolver cualquier incidencia durante el proceso de envío y entrega.</li>
+                                                                    <li><strong>- Cumplimiento de Normativas:</strong> Nos aseguramos de que todos nuestros servicios cumplan con las normativas locales e internacionales de transporte.</li>
+                                                                </ul>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-body-secondary"></div>
+                            </div>
                         </div>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Tecnología
-                                </button>
-                              </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="text-center">
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h5 class="card-title">Métodos de Pago</h5>
+                            </div>
+                            <div class="text-center">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card-body">
                                             <div class="row">
-                                                <div class="col-12">
-                                                    <div class="card-body">
-                                                        <ul class="services-list">
-                                                            <p>Nuestra garantía cubre tanto productos como servicios de soporte técnico.</p>
-                                                            <li class="list">- <strong>Productos:</strong> Cada producto cuenta con un período de garantía específico, el cual cubre defectos de fabricación. Para hacer válida la garantía, es necesario conservar la factura
-                                                                de compra. Esta garantía no cubre daños por uso indebido, desgaste natural o manipulación incorrecta.</li>
-                                                            <li>- <strong>Servicios de Soporte Técnico:</strong> La garantía de nuestros servicios de soporte TI incluye una cobertura de hasta 30 días tras la realización del servicio. Esto asegura que cualquier
-                                                                inconveniente relacionado con el servicio inicial será atendido sin costo adicional dentro de este período. Sin embargo, esta garantía no cubre daños causados por virus, malware o alteraciones
-                                                                en la configuración realizada por el usuario después del servicio.</li>
-                                                        </ul>
+                                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                                    <div class="card">
+                                                        <img src="img/sinpe_logo.png" class="card-img-top" alt="Descripción de imagen 1">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title metodos-de-pago">Sinpe</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="card">
+                                                        <img src="img/dinero.jpg" class="card-img-top" alt="Descripción de imagen 2">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title metodos-de-pago">Efectivo</h5>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="card text-center mt-3">
+                                                <img src="img/transferencia.avif" class="card-img-top" alt="Descripción de imagen destacada">
+                                                <div class="card-body">
+                                                    <h5 class="card-title metodos-de-pago">Transferencias</h5>
+                                                </div>
+                                            </div>
+                                            <p class="text-muted">
+                                                Elige el método de pago que mejor se adapte a tus necesidades. Ofrecemos opciones rápidas, seguras y convenientes para facilitar tus transacciones.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                    Diseño Gráfico
-                                </button>
-                              </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="text-center">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="card-body">
-                                                        <ul class="services-list">
-                                                            <h2 class="text-center">Políticas</h2>
-                                                            <ul>
-                                                                <li><strong>- Revisiones:</strong> Una revision gratuitas. Revisiones adicionales tendrán un costo extra.</li>
-                                                                <li><strong>- Entrega de Archivos:</strong> Archivos finales en formatos acordados (.AI, .PSD, .PDF, etc.).</li>
-                                                                <li><strong>- Plazos de Entrega:</strong> Entregas según el acuerdo. Retrasos por cambios del cliente pueden modificar la fecha.</li>
-                                                                <li><strong>- Pagos:</strong> 50% adelantado, saldo al finalizar.</li>
-                                                                <li><strong>- Confidencialidad:</strong> Compromiso de mantener la privacidad de los proyectos.</li>
-                                                                <li><strong>- Cancelaciones:</strong> Se cobrará por el trabajo realizado si el cliente cancela antes de la entrega.</li>
-                                                            </ul>
-
-                                                            <h2 class="text-center">Garantías</h2>
-                                                            <ul>
-                                                                <li><strong>- Satisfacción:</strong> Una revision gratuita si el cliente no está satisfecho.</li>
-                                                                <li><strong>- Cumplimiento:</strong> El diseño cumplirá con las especificaciones acordadas.</li>
-                                                                <li><strong>- Archivos:</strong> Si hay problemas con los archivos, se reemplazarán sin costo.</li>
-                                                                <li><strong>- Soporte Post-Entrega:</strong> Soporte durante 15 días tras la entrega.</li>
-                                                            </ul>
+                            <div class="card-footer text-body-secondary"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h5 class="card-title">Encargados De SPIKEDTECH</h5>
+                            </div>
+                            <div class="text-center">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card-body">
+                                            <div class="custom-cards-container">
+                                                <div class="custom-card" style="width: 18rem;">
+                                                    <img src="img/encargado-spikedtech.jpeg" class="custom-card-img-top" alt="...">
+                                                    <div class="custom-card-body">
+                                                        <h5 class="custom-card-title">Jose Quiros</h5>
+                                                        <p class="custom-card-text">Con un título técnico en Desarrollo Web y actualmente cursando la carrera de Ingeniería en Seguridad Informática en la Universidad Fidélitas, junto con Steven, se fundó SPIKEDTECH, un proyecto que inició hace 2 años ofreciendo servicios de soporte, mantenimiento y redes. En sus inicios, se enfocaron en brindar soluciones a amigos y familiares, y con el tiempo, el proyecto ha ido creciendo. Su objetivo es continuar aprendiendo y enfrentando nuevos desafíos en el ámbito tecnológico, ofreciendo soluciones efectivas y personalizadas que se adapten a las necesidades de cada cliente.</p>
+                                                        <ul class="wrapper">
+                                                            <a href="https://www.facebook.com/share/1AhjVyR8gb/">
+                                                                <li class="icon facebook">
+                                                                    <span class="tooltip">Facebook</span>
+                                                                    <svg viewBox="0 0 320 512" height="1.2em" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                                                                    </svg>
+                                                                </li>
+                                                            </a>
+                                                            <a href="https://www.instagram.com/jm_quiros19?igsh=MXBoYzdjMDBrYXdubg==">
+                                                                <li class="icon instagram">
+                                                                    <span class="tooltip">Instagram</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                                                    </svg>
+                                                                </li>
+                                                            </a>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    Servicios de logística
-                                </button>
-                              </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="text-center">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="card-body">
-                                                        <ul class="services-list">
-                                                            <h2 class="text-center">Políticas</h2>
-                                                            <ul>
-                                                                <li><strong>- Responsabilidad:</strong> Manejo cuidadoso de envíos.</li>
-                                                                <li><strong>- Prohibiciones:</strong> No se transportan artículos ilegales o peligrosos.</li>
-                                                                <li><strong>- Pagos:</strong> Se requiere el 50% del pago por adelantado para procesar el pedido.</li>
-                                                                <li><strong>- Rastreo:</strong> Todos los envíos incluyen seguimiento.</li>
-                                                            </ul>
-                                                            <hr>
-                                                            <h2 class="text-center">Garantías</h2>
-                                                            <ul>
-                                                                <li><strong>- Entrega Puntual:</strong> Si el paquete se retrasa, informaremos al cliente sobre la causa del retraso.</li>
-                                                                <li><strong>- Devoluciones:</strong> Paquetes no entregados se devuelven bajo acuerdo previo.</li>
-                                                                <li><strong>- Información Transparente:</strong> Ofrecemos actualizaciones constantes sobre el estado del envío y la ubicación del paquete en tiempo real.</li>
-                                                                <li><strong>- Atención al Cliente:</strong> Disponibilidad de soporte para resolver cualquier incidencia durante el proceso de envío y entrega.</li>
-                                                                <li><strong>- Cumplimiento de Normativas:</strong> Nos aseguramos de que todos nuestros servicios cumplan con las normativas locales e internacionales de transporte.</li>
-                                                            </ul>
+                                                <div class="custom-card" style="width: 18rem;">
+                                                    <img src="img/sinfoto.webp" class="custom-card-img-top" alt="...">
+                                                    <div class="custom-card-body">
+                                                        <h5 class="custom-card-title">Steven Salas</h5>
+                                                        <p class="custom-card-text">Con un técnico medio en Desarrollo Web, con experiencia en el manejo de HTML5, CSS3 y JavaScript para diseñar páginas web básicas con diseño responsivo y funcional. También cuenta con conocimientos en soporte TI, incluyendo habilidades para resolver problemas técnicos y enfocarse en redes, como la configuración de routers, creación de redes locales y solución de problemas de conectividad. Su enfoque está en combinar estas habilidades para ofrecer soluciones prácticas y efectivas.</p>
+                                                        <ul class="wrapper">
+                                                            <a href="https://www.facebook.com/steven.salas.73932?mibextid=ZbWKwL">
+                                                                <li class="icon facebook">
+                                                                    <span class="tooltip">Facebook</span>
+                                                                    <svg viewBox="0 0 320 512" height="1.2em" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                                                                    </svg>
+                                                                </li>
+                                                            </a>
+                                                            <a href="https://www.instagram.com/steven.30_cr?igsh=MTk4NGc4azMwM3k3aw==">
+                                                                <li class="icon instagram">
+                                                                    <span class="tooltip">Instagram</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                                                    </svg>
+                                                                </li>
+                                                            </a>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -220,158 +336,125 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-md-7 col-12">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h5 class="card-title">Métodos de Pago</h5>
-                        </div>
-                        <div class="text-center">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                                <div class="card">
-                                                    <img src="img/sinpe_logo.png" class="card-img-top" alt="Descripción de imagen 1">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title metodos-de-pago">Sinpe</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="card">
-                                                    <img src="img/dinero.jpg" class="card-img-top" alt="Descripción de imagen 2">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title metodos-de-pago">Efectivo</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card text-center mt-3">
-                                            <img src="img/transferencia.avif" class="card-img-top" alt="Descripción de imagen destacada">
-                                            <div class="card-body">
-                                                <h5 class="card-title metodos-de-pago">Transferencias</h5>
-                                            </div>
-                                        </div>
-                                        <p class="text-muted">
-                                            Elige el método de pago que mejor se adapte a tus necesidades. Ofrecemos opciones rápidas, seguras y convenientes para facilitar tus transacciones.
-                                        </p>
-                                    </div>
-                                </div>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h5 class="card-title">Sobre SPIKEDTECH</h5>
                             </div>
+                            <p class="text-muted text-muted-historia">
+                                SPIKEDTECH nació como un emprendimiento destinado a ofrecer servicios tecnológicos a amigos y familiares, lo que nos permitió ganar una excelente aceptación. Con el tiempo, comenzamos a moldear nuestra empresa para adaptarnos mejor a las necesidades y exigencias del mercado. Ahora, con la creación de nuestra página web oficial, buscamos expandir nuestras fronteras y ofrecer una variedad de servicios, incluyendo soluciones tecnológicas, logística, diseño web y, en el futuro, mucho más.
+                                Detrás de SPIKEDTECH, no solo hay dos encargados, sino también un equipo comprometido que apoya en diversas áreas. Contamos con técnicos especializados, cada uno con habilidades únicas, para asegurar que nuestros clientes reciban un servicio de calidad. Nuestro objetivo es que cada usuario se sienta cómodo y confiado al recibir nuestras soluciones, apoyo y seguimiento en diferentes procesos tecnológicos y servicios.
+                                <br> <br>
+                                Agradecemos profundamente a todos aquellos que nos han apoyado desde nuestros primeros pasos, confiando en nuestro trabajo y ayudándonos a crecer. Sin su respaldo, SPIKEDTECH no sería lo que es hoy.
+                            </p>
                         </div>
-                        <div class="card-footer text-body-secondary"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        </div>
-        </div>
-    </section>
-
-    
-
-    <footer class="bgfooter" id="footer">
-        <div class="footer-container">
-            <div class="info-column">
-                <h4 class="abajo">Colaboradores</h4>
-                <hr>
-                <ul>
-                    <div class="center1">
-                        <img class="imglogocolaborador" src="img/LogoCSW.png" alt="Logo" />
-                    </div>
-                </ul>
+            <div class="card-footer text-body-secondary"></div>
             </div>
-            <div class="services-column">
-                <h4 class="abajo">Servicios</h4>
-                <hr>
-                <ul>
-                    <div class="center1">
-                        <a href="pagina-de-servicios.html" rel="noopener noreferrer">Servicios Disponibles</a>
-                    </div>
-                </ul>
             </div>
-            <div class="services-column">
-                <h4 class="abajo">Garantia</h4>
-                <hr>
-                <ul>
-                    <div class="center1">
-                        <a href="soporte-garantia.html" rel="noopener noreferrer">Garantia & Soporte</a>
-                    </div>
-                </ul>
             </div>
-            <div class="services-column">
-                <h4 class="abajo">Contáctenos</h4>
-                <hr>
-                <ul class="wrapper">
-                    <a href="https://www.facebook.com/share/14UfJH6s7Y/">
-                        <li class="icon facebook">
-                            <span class="tooltip">Facebook</span>
-                            <svg viewBox="0 0 320 512" height="1.2em" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
-                            </svg>
-                        </li>
-                    </a>
-                    <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp">
-                        <li class="icon instagram">
-                            <span class="tooltip">Instagram</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
-                            </svg>
-                        </li>
-                    </a>
-                    <li class="icon email">
-                        <a href="mailto:spikedtech19@gmail.com">
-                            <span class="tooltip">Email</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="black" height="1.6em" viewBox="0 0 24 24">
-                                <path d="M2 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H2zm0 2h20v2l-10 5L2 8V6zm0 4.8 8.8 4.4c.6.3 1.4.3 2 0L22 10.8V18H2v-7.2z"></path>
-                            </svg>
+            </div>
+            </div>
+            </div>
+        </section>
+        <footer class="bgfooter" id="footer">
+            <div class="footer-container">
+                <div class="info-column">
+                    <h4 class="abajo">Colaboradores</h4>
+                    <hr>
+                    <ul>
+                        <div class="center1">
+                            <img class="imglogocolaborador" src="img/LogoCSW.png" alt="Logo" />
+                        </div>
+                    </ul>
+                </div>
+                <div class="services-column">
+                    <h4 class="abajo">Servicios</h4>
+                    <hr>
+                    <ul>
+                        <div class="center1">
+                            <a href="pagina-de-servicios.html" rel="noopener noreferrer">Servicios Disponibles</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="services-column">
+                    <h4 class="abajo">Garantia</h4>
+                    <hr>
+                    <ul>
+                        <div class="center1">
+                            <a href="soporte-garantia.html" rel="noopener noreferrer">Garantia & Soporte</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="services-column">
+                    <h4 class="abajo">Contáctenos</h4>
+                    <hr>
+                    <ul class="wrapper">
+                        <a href="https://www.facebook.com/share/14UfJH6s7Y/">
+                            <li class="icon facebook">
+                                <span class="tooltip">Facebook</span>
+                                <svg viewBox="0 0 320 512" height="1.2em" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                                </svg>
+                            </li>
                         </a>
-                    </li>
-                </ul>
-                <ul class="wrapper">
-                    <a href="https://wa.me/+50663868608" target="_blank">
-                        <li class="icon whatsapp">
-                            <span class="tooltip">WhatsApp</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height=".8em" fill="black" viewBox="0 0 50 50">
-                                <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"></path>
-                            </svg>
-                        </li>
-                    </a>
-                    <li class="icon phone">
-                        <a href="tel:+50663868608">
-                            <span class="tooltip">Llamar</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="black" height="1.6em" viewBox="0 0 24 24">
-                                <path d="M6.62 10.79a15.52 15.52 0 006.59 6.59l2.2-2.2a1.5 1.5 0 011.5-.36c1.06.35 2.2.54 3.4.54a1.5 1.5 0 011.5 1.5v3.5c0 .83-.67 1.5-1.5 1.5A19.5 19.5 0 012 4c0-.83.67-1.5 1.5-1.5h3.5c.83 0 1.5.67 1.5 1.5 0 1.2.2 2.34.54 3.4.14.51.03 1.07-.36 1.5l-2.2 2.2z"></path>
-                            </svg>
+                        <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp">
+                            <li class="icon instagram">
+                                <span class="tooltip">Instagram</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                </svg>
+                            </li>
                         </a>
-                    </li>
-                </ul>
+                        <li class="icon email">
+                            <a href="mailto:spikedtech19@gmail.com">
+                                <span class="tooltip">Email</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="black" height="1.6em" viewBox="0 0 24 24">
+                                    <path d="M2 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H2zm0 2h20v2l-10 5L2 8V6zm0 4.8 8.8 4.4c.6.3 1.4.3 2 0L22 10.8V18H2v-7.2z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="wrapper">
+                        <a href="https://wa.me/+50663868608" target="_blank">
+                            <li class="icon whatsapp">
+                                <span class="tooltip">WhatsApp</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height=".8em" fill="black" viewBox="0 0 50 50">
+                                    <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"></path>
+                                </svg>
+                            </li>
+                        </a>
+                        <li class="icon phone">
+                            <a href="tel:+50663868608">
+                                <span class="tooltip">Llamar</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="black" height="1.6em" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79a15.52 15.52 0 006.59 6.59l2.2-2.2a1.5 1.5 0 011.5-.36c1.06.35 2.2.54 3.4.54a1.5 1.5 0 011.5 1.5v3.5c0 .83-.67 1.5-1.5 1.5A19.5 19.5 0 012 4c0-.83.67-1.5 1.5-1.5h3.5c.83 0 1.5.67 1.5 1.5 0 1.2.2 2.34.54 3.4.14.51.03 1.07-.36 1.5l-2.2 2.2z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="div-footer">
-            <h3 class="text-footer">Somos una tienda virtual, pero estamos ubicados en: </h3>
-            <p class="text-footer"><strong>Atenas, Alajuela, Costa Rica</strong></p>
-            <div class="maps-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28407.47553848057!2d-84.43981413842558!3d9.986062719641719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa05119604dc297%3A0xaf69ee57a14c8979!2sAlajuela%20Province%2C%20Atenas!5e1!3m2!1sen!2scr!4v1733013555594!5m2!1sen!2scr"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="div-footer">
+                <h3 class="text-footer">Somos una tienda virtual, pero estamos ubicados en: </h3>
+                <p class="text-footer"><strong>Atenas, Alajuela, Costa Rica</strong></p>
+                <div class="maps-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28407.47553848057!2d-84.43981413842558!3d9.986062719641719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa05119604dc297%3A0xaf69ee57a14c8979!2sAlajuela%20Province%2C%20Atenas!5e1!3m2!1sen!2scr!4v1733013555594!5m2!1sen!2scr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </div>
-
-        <div class="copyright">© SPIKEDTECH Costa Rica - 2024. Todos los Derechos Reservados.</div>
-        <div class="div-bandera"><img class="bandera" src="img/file.png" alt=""></div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="js/loading.js"></script>
-    <script src="js/nav-soporte.js"></script>
-    <script src="js/email.js"></script>
-</body>
-
+            <div class="copyright">© SPIKEDTECH Costa Rica - 2025. Todos los Derechos Reservados.</div>
+            <div class="div-bandera"><img class="bandera" src="img/file.png" alt=""></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/animation.js"></script>
+        <script src="js/loading.js"></script>
+        <script src="js/nav-soporte.js"></script>
+        <script src="js/email.js"></script>
+    </body>
 </html>

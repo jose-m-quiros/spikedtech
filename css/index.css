@@ -278,6 +278,11 @@ header {
   padding: 0 1rem;
 }
 
+.soporte-garantia {
+  text-decoration: none;
+  color: #d1d5db;
+}
+
 .hero-content {
   position: relative;
   text-align: center;
