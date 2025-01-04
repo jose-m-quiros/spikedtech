@@ -127,7 +127,7 @@ ${descripcion}
 ----------------------------------------
     `;
 
-  const mailtoLink = `mailto:jqchaves1928@gmail.com?subject=Formulario SPIKEDTECH | Datos del Usuario&body=${encodeURIComponent(
+  const mailtoLink = `mailto:spikedtech19@gmail.com?subject=Formulario SPIKEDTECH | Datos del Usuario&body=${encodeURIComponent(
     mensaje
   )}`;
 
