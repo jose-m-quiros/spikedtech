@@ -40,6 +40,12 @@ header {
   }
 }
 
+@media (max-width: 951px) {
+  .navigation{
+    top: 3.1em;
+  }
+}
+
 .arrow-btn {
   width: 37px;
   height: 37px;

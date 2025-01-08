@@ -23,7 +23,7 @@ header {
 
 .navigation {
   display: flex;
-  margin-top: .5em;
+  margin-top: 0.5em;
   justify-content: space-between;
   align-items: center;
   padding: 7px 7px;
@@ -35,8 +35,14 @@ header {
 }
 
 @media (max-width: 1289px) {
-  .navigation{
+  .navigation {
     top: 3.8em;
+  }
+}
+
+@media (max-width: 951px) {
+  .navigation {
+    top: 3.1em;
   }
 }
 
