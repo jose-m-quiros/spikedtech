@@ -21,6 +21,48 @@ header {
   padding: 10px 10px 0 10px;
 }
 
+.navigation {
+  display: flex;
+  margin-top: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 7px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+
+@media (max-width: 1289px) {
+  .navigation {
+    top: 3.8em;
+  }
+}
+
+.arrow-btn {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #0c356a, #279eff, #40f8ff, #d5ffd0);
+  color: #000000;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #0056b3;
+}
+
+.arrow-btn:active {
+  transform: scale(0.95);
+}
+
 .navbar {
   display: flex;
   padding: 22px 0;
