@@ -204,6 +204,25 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(145deg, #1a1a1a, #333333);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.active {
+  color: #000 !important;
+}
+
+.white {
+  color: #fff !important;
 }
 
 .card-body {
@@ -290,12 +309,12 @@ header {
 
 .specs-table td:first-child {
   font-weight: 500;
-  color: #212529;
+  color: #fff;
   width: 40%;
 }
 
 .specs-table td:last-child {
-  color: #6c757d;
+  color: #fff;
 }
 
 .tab-pane {
