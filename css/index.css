@@ -307,6 +307,12 @@ header {
   }
 }
 
+@media (max-width: 575px) {
+  .text-hero {
+    width: 500px;
+  }
+}
+
 @media (max-width: 500px) {
   .text-hero {
     width: 450px;

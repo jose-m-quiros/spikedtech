@@ -28,7 +28,7 @@ header {
   align-items: center;
   padding: 7px 7px;
   position: fixed;
-  width: 100%;
+  width: 10%;
   top: 0;
   left: 0;
   z-index: 101;
@@ -36,7 +36,7 @@ header {
 
 @media (max-width: 1289px) {
   .navigation {
-    top: 3.8em;
+    top: 3.6em;
   }
 }
 @media (max-width: 951px) {
