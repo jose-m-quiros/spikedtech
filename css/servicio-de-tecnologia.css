@@ -663,7 +663,7 @@ main {
 .info-column,
 .services-column,
 .contact-column {
-  flex: 1 0 250px;
+  flex: 1 0 10px;
   margin-right: 20px;
   margin-top: 30px;
 }
