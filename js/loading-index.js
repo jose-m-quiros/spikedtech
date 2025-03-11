@@ -1,4 +1,5 @@
-// Script para la pantalla de carga mejorada
+// Archivo loading.js corregido para asegurar que la barra de progreso se anime correctamente
+
 document.addEventListener('DOMContentLoaded', function() {
   // Seleccionamos la pantalla de carga
   const loadingScreen = document.querySelector('.loading-screen');
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Insertar mensaje después de la animación
   loadingScreen.appendChild(loadingMessage);
   
-  // Establecer un tiempo mínimo de visualización (en milisegundos)
+  // Establece un tiempo mínimo de visualización (en milisegundos)
   const minLoadingTime = 3000; // 3 segundos mínimo
   let loadingStartTime = Date.now();
   
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const progressBar = document.createElement('div');
   progressBar.className = 'loading-progress-bar';
+  progressBar.style.width = '0%'; // Asegurarse de que empiece en 0%
   
   const progressText = document.createElement('div');
   progressText.className = 'loading-progress-text';
@@ -49,15 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
   // Añadir el contenedor de progreso después del mensaje
   loadingScreen.appendChild(progressContainer);
   
-  // Mensajes para mostrar durante la carga (mejorados para ser más atractivos)
+  // Mensajes para mostrar durante la carga
   const loadingMessages = [
-    "Preparando la experiencia SPIKEDTECH...",
-    "Optimizando el rendimiento...",
-    "Cargando recursos digitales...",
-    "Casi listo para la experiencia completa..."
+    "Cargando recursos...",
+    "Preparando la experiencia...",
+    "Optimizando rendimiento...",
+    "Casi listo..."
   ];
 
-  // Cambiar el mensaje cada 2 segundos con transición suave
+  // Cambiar el mensaje cada 2 segundos
   let messageIndex = 0;
   const messageInterval = setInterval(() => {
     loadingMessage.style.opacity = '0';
@@ -74,11 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const progressInterval = setInterval(() => {
       // Aumenta el progreso simulado gradualmente, más lento cerca del final
       if (simulatedProgress < 70) {
-        simulatedProgress += 2 + Math.random() * 2; // Añade algo de aleatoriedad
+        simulatedProgress += 1 + Math.random() * 1.5; // Más aleatorio para parecer real
       } else if (simulatedProgress < 90) {
-        simulatedProgress += 0.8 + Math.random() * 0.8;
+        simulatedProgress += 0.5 + Math.random() * 0.5;
       } else if (simulatedProgress < 98) {
-        simulatedProgress += 0.2 + Math.random() * 0.2;
+        simulatedProgress += 0.1 + Math.random() * 0.2;
       }
       
       // Limita el progreso a 99% hasta que todos los recursos estén cargados
@@ -93,30 +95,55 @@ document.addEventListener('DOMContentLoaded', function() {
         clearInterval(progressInterval);
         
         // Completamos el progreso visualmente
-        progressBar.style.width = '100%';
-        progressText.textContent = '100%';
-        setTimeout(hideLoadingScreen, 500);
+        setTimeout(() => {
+          progressBar.style.width = '100%';
+          progressText.textContent = '100%';
+          setTimeout(hideLoadingScreen, 500);
+        }, 200);
       }
-    }, 150); // Actualiza el progreso cada 150ms
+    }, 100); // Actualiza el progreso cada 100ms
     
     return progressInterval;
   }
 
-  // Inicia la simulación de progreso
-  const progressSimulation = simulateProgress();
-  
-  // Función para actualizar el progreso real
-  function updateProgress() {
-    resourcesLoaded++;
+  // Inicia la simulación de progreso con un pequeño retraso para asegurar que se vea la animación
+  setTimeout(() => {
+    const progressSimulation = simulateProgress();
     
-    // Si todos los recursos están cargados y la simulación llegó al 99%
-    if (resourcesLoaded >= totalResources && parseFloat(progressBar.style.width || '0') >= 99) {
-      progressBar.style.width = '100%';
-      progressText.textContent = '100%';
-      clearInterval(progressSimulation); // Detiene la simulación
-      setTimeout(hideLoadingScreen, 500);
+    // Función para actualizar el progreso real
+    function updateProgress() {
+      resourcesLoaded++;
+      
+      // Si todos los recursos están cargados y la simulación llegó al 99%
+      if (resourcesLoaded >= totalResources && parseFloat(progressBar.style.width || '0') >= 99) {
+        progressBar.style.width = '100%';
+        progressText.textContent = '100%';
+        clearInterval(progressSimulation); // Detiene la simulación
+        setTimeout(hideLoadingScreen, 500);
+      }
     }
-  }
+    
+    // Verificar si hay imágenes para cargar
+    if (totalResources > 0) {
+      // Escuchar eventos de carga para cada imagen
+      images.forEach(img => {
+        // Si la imagen ya está cargada
+        if (img.complete) {
+          updateProgress();
+        } else {
+          // Si la imagen aún no está cargada, añadir un listener
+          img.addEventListener('load', updateProgress);
+          img.addEventListener('error', updateProgress); // Contar incluso si hay error
+        }
+      });
+    } else {
+      // Si no hay imágenes, igualmente mostramos la pantalla de carga por el tiempo mínimo
+      setTimeout(hideLoadingScreen, minLoadingTime);
+    }
+    
+    // Establecemos un tiempo máximo para la pantalla de carga (8 segundos)
+    setTimeout(hideLoadingScreen, 8000);
+  }, 500); // Retraso inicial para asegurar que se vea la animación desde 0%
   
   // Función para ocultar la pantalla de carga con una transición suave
   function hideLoadingScreen() {
@@ -172,28 +199,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
   }
   
-  // Verificar si hay imágenes para cargar
-  if (totalResources > 0) {
-    // Escuchar eventos de carga para cada imagen
-    images.forEach(img => {
-      // Si la imagen ya está cargada
-      if (img.complete) {
-        updateProgress();
-      } else {
-        // Si la imagen aún no está cargada, añadir un listener
-        img.addEventListener('load', updateProgress);
-        img.addEventListener('error', updateProgress); // Contar incluso si hay error
-      }
-    });
-  } else {
-    // Si no hay imágenes, igualmente mostramos la pantalla de carga por el tiempo mínimo
-    setTimeout(hideLoadingScreen, minLoadingTime);
-  }
-  
-  // Establecemos un tiempo máximo para la pantalla de carga (8 segundos)
-  // Esto asegura que los usuarios no queden atrapados en la pantalla de carga
-  setTimeout(hideLoadingScreen, 8000);
-  
   // Añadir efecto de scroll al header
   window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -203,31 +208,4 @@ document.addEventListener('DOMContentLoaded', function() {
       header.classList.remove('header-scrolled');
     }
   });
-  
-  // Animación para elementos cuando entran en el viewport
-  const animateOnScroll = function() {
-    const elements = document.querySelectorAll('.secion-de-pedidos, .footer-container > div');
-    
-    elements.forEach(element => {
-      const elementPosition = element.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.3;
-      
-      if (elementPosition < screenPosition) {
-        element.style.opacity = '1';
-        element.style.transform = 'translateY(0)';
-      }
-    });
-  };
-  
-  // Aplicar estilos iniciales para la animación
-  document.querySelectorAll('.secion-de-pedidos, .footer-container > div').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  });
-  
-  // Activar animaciones al hacer scroll
-  window.addEventListener('scroll', animateOnScroll);
-  // Comprobar también al cargar la página
-  setTimeout(animateOnScroll, 1000);
 });
