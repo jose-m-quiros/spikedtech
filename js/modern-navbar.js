@@ -543,55 +543,7 @@ class NavbarUtils {
     );
   }
 
-  static addBreadcrumbs() {
-    // Add breadcrumb navigation
-    const breadcrumbContainer = document.createElement("nav");
-    breadcrumbContainer.setAttribute("aria-label", "Breadcrumb");
-    breadcrumbContainer.style.cssText = `
-      position: fixed;
-      top: 100px;
-      left: 20px;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(10px);
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 12px;
-      z-index: 999;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    `;
-
-    const updateBreadcrumbs = () => {
-      const path = window.location.pathname;
-      const pathSegments = path.split("/").filter((segment) => segment);
-
-      if (pathSegments.length > 0) {
-        breadcrumbContainer.innerHTML = `
-          <a href="/" style="color: var(--text-secondary); text-decoration: none;">Inicio</a>
-          ${pathSegments
-            .map(
-              (segment) => `
-            <span style="color: var(--text-muted); margin: 0 8px;">/</span>
-            <span style="color: var(--text-primary);">${
-              segment.charAt(0).toUpperCase() + segment.slice(1)
-            }</span>
-          `
-            )
-            .join("")}
-        `;
-        breadcrumbContainer.style.opacity = "1";
-      } else {
-        breadcrumbContainer.style.opacity = "0";
-      }
-    };
-
-    document.body.appendChild(breadcrumbContainer);
-    updateBreadcrumbs();
-
-    // Update on navigation
-    window.addEventListener("popstate", updateBreadcrumbs);
   }
-}
 
 /**
  * Initialize navbar when DOM is ready
@@ -613,7 +565,6 @@ document.addEventListener("DOMContentLoaded", () => {
     !window.location.pathname.includes("index") &&
     window.location.pathname !== "/"
   ) {
-    NavbarUtils.addBreadcrumbs();
   }
 });
 
