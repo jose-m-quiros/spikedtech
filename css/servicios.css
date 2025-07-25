@@ -1206,9 +1206,9 @@ header.scrolled,
 }
 
 .footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .footer-links li {
@@ -1218,10 +1218,12 @@ header.scrolled,
 .footer-links a {
   color: var(--text-secondary);
   text-decoration: none;
-  padding: var(--space-xs) 0;
+  padding: var(--space-sm) 0;
   transition: all var(--transition-normal);
   position: relative;
-  display: inline-block;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  margin: auto;
 }
 
 .footer-links a::before {
@@ -1238,6 +1240,7 @@ header.scrolled,
 .footer-links a:hover {
   color: var(--primary);
   padding-left: var(--space-sm);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .footer-links a:hover::before {
@@ -1797,6 +1800,11 @@ header.scrolled,
 /* ========================================
    FOOTER
 ======================================== */
+
+/* ============================================
+   9. FOOTER
+   ============================================ */
+
 .modern-footer {
   background: var(--bg-primary);
   border-top: 1px solid var(--glass-border);
@@ -1834,12 +1842,8 @@ header.scrolled,
   margin-bottom: var(--space-3xl);
 }
 
-.footer-section {
-  text-align: left;
-}
-
 .footer-section h4 {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: 700;
   margin-bottom: var(--space-lg);
   color: var(--primary);
@@ -1847,20 +1851,8 @@ header.scrolled,
   letter-spacing: -0.01em;
 }
 
-.footer-section h4::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background: var(--primary);
-  border-radius: var(--radius-sm);
-}
-
 .collaborator-logo {
   display: flex;
-  justify-content: flex-start;
 }
 
 .collaborator-logo img {
@@ -1885,10 +1877,10 @@ header.scrolled,
 .footer-links a {
   color: var(--text-secondary);
   text-decoration: none;
-  padding: var(--space-xs) 0;
+  padding: var(--space-sm) 0;
   transition: all var(--transition-normal);
   position: relative;
-  display: inline-block;
+  border-radius: var(--radius-sm);
 }
 
 .footer-links a::before {
@@ -1905,6 +1897,7 @@ header.scrolled,
 .footer-links a:hover {
   color: var(--primary);
   padding-left: var(--space-sm);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .footer-links a:hover::before {
@@ -1929,21 +1922,23 @@ header.scrolled,
   transition: all var(--transition-normal);
   backdrop-filter: var(--glass-backdrop);
   text-decoration: none;
+  will-change: transform;
 }
 
 .social-link svg {
   width: 20px;
   height: 20px;
   fill: var(--text-secondary);
-  transition: all var(--transition-normal);
+  transition: fill var(--transition-normal);
 }
 
 .social-link:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
+  will-change: auto;
 }
 
-/* Social Media Hover Colors */
+/* COLORES HOVER PARA REDES SOCIALES EN FOOTER */
 .social-link.facebook:hover,
 .social-link[href*="facebook"]:hover {
   background: #1877f2 !important;
@@ -1987,11 +1982,9 @@ header.scrolled,
   transform: scale(1.1);
 }
 
-/* Footer Location Section */
 .footer-location {
   text-align: center;
   margin-bottom: var(--space-2xl);
-  grid-column: 1 / -1; /* Spans all columns */
 }
 
 .footer-location h4 {
@@ -1999,12 +1992,6 @@ header.scrolled,
   font-weight: 700;
   margin-bottom: var(--space-md);
   color: var(--primary);
-  text-align: center;
-}
-
-.footer-location h4::after {
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .footer-location p {
@@ -2033,23 +2020,18 @@ header.scrolled,
   transform: scale(1.02);
 }
 
-/* Footer Bottom */
 .footer-bottom {
   padding-top: var(--space-xl);
   border-top: 1px solid var(--glass-border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   gap: var(--space-md);
-  position: relative;
-  z-index: 1;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer-bottom p {
   color: var(--text-muted);
   font-size: var(--text-sm);
-  margin: 0;
 }
 
 .costa-rica-flag img {
@@ -2095,7 +2077,7 @@ header.scrolled,
   .navbar,
   .nav-container {
     padding: 0 1rem;
-    height: 70px;
+    height: 86px;
   }
 
   .nav-right,

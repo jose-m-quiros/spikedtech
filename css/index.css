@@ -1557,17 +1557,6 @@ body:not(.content-loaded) {
   letter-spacing: -0.01em;
 }
 
-.footer-section h4::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background: var(--primary);
-  border-radius: var(--radius-sm);
-}
-
 .collaborator-logo {
   display: flex;
 }
@@ -2063,9 +2052,10 @@ body:not(.content-loaded) {
 }
 
 @media (max-width: 768px) {
+  .navbar,
   .nav-container {
-    padding: 0 1rem !important;
-    height: 70px;
+    padding: 0 1rem;
+    height: 86px;
   }
 
   .nav-right,

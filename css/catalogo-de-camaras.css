@@ -1151,6 +1151,8 @@ body:not(.content-loaded) {
   transition: all var(--transition-normal);
   position: relative;
   border-radius: var(--radius-sm);
+  width: fit-content;
+  margin: auto;
 }
 
 .footer-links a::before {
@@ -1456,9 +1458,16 @@ body:not(.content-loaded) {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .nav-right,
-  .nav-links {
-    display: none;
+  .navbar,
+  .nav-container {
+    padding: 0 1rem;
+    height: 86px;
+  }
+
+  .navbar,
+  .nav-container {
+    padding: 0 1rem;
+    height: 86px;
   }
 
   .mobile-menu-btn {

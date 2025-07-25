@@ -1517,8 +1517,8 @@ header,
 @media (max-width: 768px) {
   .navbar,
   .nav-container {
-    padding: 0 1rem !important;
-    height: 70px;
+    padding: 0 1rem;
+    height: 86px;
   }
 
   .nav-right,
