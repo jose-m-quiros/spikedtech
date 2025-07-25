@@ -103,7 +103,7 @@ function enviarPorWhatsApp() {
   const descripcion = document.getElementById("descripcion-spikedtech").value;
 
   const mensaje = `Hola, soy ${nombre} ${apellido}. Estoy interesado en el servicio de ${servicio}. Descripción: ${descripcion}`;
-  const whatsappURL = `https://wa.me/50663868608?text=${encodeURIComponent(
+  const whatsappURL = `https://wa.me/50687394231?text=${encodeURIComponent(
     mensaje
   )}`;
 
