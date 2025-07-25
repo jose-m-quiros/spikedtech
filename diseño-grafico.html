@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de diseño gráfico profesional - SPIKEDTECH: Logotipos, papelería, web, redes sociales y más">
+    <meta name="keywords" content="diseño gráfico, logotipos, papelería, diseño web, redes sociales, SPIKEDTECH, Costa Rica">
+    <link rel="stylesheet" href="css/servicio-de-diseño.css">
+    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg">
+    <title>Servicios de Diseño Gráfico - SPIKEDTECH</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH">
+            </div>
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <div class="loading-progress">
+                    <div class="loading-progress-bar"></div>
+                </div>
+                <div class="loading-progress-text">0%</div>
+                <div class="loading-message">Cargando categorías de diseño...</div>
+            </div>
+        </div>
+    </div>
+
+       <!-- Header Corregido con Mejor Espaciado -->
+<header class="modern-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- LOGO - LADO IZQUIERDO -->
+            <a href="index.html" class="logo">
+                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH" class="logo-img">
+                <span class="logo-text">SPIKEDTECH</span>
+            </a>
+            
+            <!-- NAVEGACIÓN - LADO DERECHO -->
+            <div class="nav-right">
+                <!-- Links de Navegación -->
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="soporte-garantia.html" class="nav-link">Soporte</a></li>
+                </ul>
+                
+                <!-- Botón CTA -->
+                <div class="nav-cta">
+                    <a href="soporte-garantia.html" class="btn-nav-cta">
+                        <span>Contactar</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Botón Mobile Menu -->
+            <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        
+        <!-- MENÚ MÓVIL -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu">
+                <!-- Header del Menú Móvil -->
+                <div class="mobile-menu-header">
+                    <div class="mobile-logo">
+                        <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH">
+                        <span>SPIKEDTECH</span>
+                    </div>
+                    <button class="mobile-menu-close" aria-label="Cerrar menú">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Contenido del Menú Móvil -->
+                <div class="mobile-menu-content">
+                    <!-- Links de Navegación Móvil -->
+                    <ul class="mobile-nav-links">
+                        <li>
+                            <a href="index.html" class="mobile-nav-link">
+                                <span class="mobile-link-icon">🏠</span>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicios.html" class="mobile-nav-link">
+                                <span class="mobile-link-icon">⚙️</span>
+                                <span>Servicios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="soporte-garantia.html" class="mobile-nav-link">
+                                <span class="mobile-link-icon">🛠️</span>
+                                <span>Soporte</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Botón CTA Móvil -->
+                    <div class="mobile-menu-cta">
+                        <a href="soporte-garantia.html" class="btn-mobile-cta">
+                            Obtener Soporte
+                        </a>
+                    </div>
+                    
+                    <!-- Redes Sociales Móvil -->
+                    <div class="mobile-social">
+                        <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="mobile-social-link" title="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/spikedtech19" class="mobile-social-link" title="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/+50663868608" class="mobile-social-link" title="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text animate-on-scroll">
+                        <h1 class="hero-title">Categorías de Diseño</h1>
+                        <p class="hero-subtitle">Servicios profesionales de diseño gráfico para todas tus necesidades</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="container">
+                <div class="categories-grid">
+                    <!-- Logotipos -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/logos.jpg" alt="Diseño de Logotipos" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Logotipos</h3>
+                            <p class="category-description">Identidad visual única para tu marca</p>
+                        </div>
+                    </article>
+
+                    <!-- Papelería -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/diseno-papeleria-formato-vectorial_157027-1627.avif" alt="Diseño de Papelería" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Diseño de papelería</h3>
+                            <p class="category-description">Papelería corporativa profesional</p>
+                        </div>
+                    </article>
+
+                    <!-- Folletos -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/mockup-folleto-triptico_23-2147861664.avif" alt="Diseño de Folletos" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Diseño de folletos y volantes</h3>
+                            <p class="category-description">Material promocional efectivo</p>
+                        </div>
+                    </article>
+
+                    <!-- Infografías -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/infografias.jpg" alt="Diseño de Infografías" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Diseño de infografías</h3>
+                            <p class="category-description">Comunicación visual impactante</p>
+                        </div>
+                    </article>
+
+                    <!-- Diseño Web -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/diseno-web-todo-lo-que-debes-saber_1200x1200.webp" alt="Diseño Web" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Diseño web</h3>
+                            <p class="category-description">Sitios web modernos y funcionales</p>
+                        </div>
+                    </article>
+
+                    <!-- Email Marketing -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/mail-s-1.jpg" alt="Diseño Email Marketing" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Diseño de email marketing</h3>
+                            <p class="category-description">Campañas de email efectivas</p>
+                        </div>
+                    </article>
+
+                    <!-- Redes Sociales -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/Diseño-de-Redes-Sociales-08.png" alt="Diseño Redes Sociales" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Diseño de redes sociales</h3>
+                            <p class="category-description">Contenido visual para redes</p>
+                        </div>
+                    </article>
+
+                    <!-- Optimización -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/smo-optimizacion-de-redes-sociales.jpg" alt="Optimización para Medios" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Optimización para medios</h3>
+                            <p class="category-description">Contenido optimizado para plataformas</p>
+                        </div>
+                    </article>
+
+                    <!-- Retratos -->
+                    <article class="category-card feature-card">
+                        <div class="category-image">
+                            <img src="img/kit-de-porta-retratos-20x30-cm-04-unidades-porta-retratos.webp" alt="Retratos" class="card-img">
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Retratos</h3>
+                            <p class="category-description">Retratos profesionales personalizados</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2 class="cta-title">¿Listo para cotizar tu proyecto?</h2>
+                    <p class="cta-description">Selecciona la categoría que necesitas y obtén una cotización personalizada</p>
+                    <button class="cta-button primary colors" data-bs-toggle="modal" data-bs-target="#categoryModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                        Cotizar Categoría
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Quote Modal -->
+    <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content custom-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="categoryModalLabel">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        Selecciona una Categoría
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-description">Selecciona una categoría para cotizar tu servicio de diseño:</p>
+                    <div class="category-buttons-grid">
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Logotipos">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            Logotipos
+                        </button>
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20papelería">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Diseño de papelería
+                        </button>
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20folletos%20y%20volantes">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                            </svg>
+                            Folletos y Volantes
+                        </button>
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20infografías">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                            Infografías
+                        </button>
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20web">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                            Diseño Web
+                        </button>
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20email%20marketing">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Email Marketing
+                        </button>
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Diseño%20de%20redes%20sociales">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            Redes Sociales
+                        </button>
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Optimización%20para%20medios">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                            Optimización para Medios
+                        </button>
+                        <button class="btn category-btn" data-link="https://wa.me/50663868608?text=Estoy%20interesado%20en%20el%20servicio%20de%20Retratos">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            Retratos
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Colaboradores</h4>
+                    <div class="collaborator-logo">
+                        <img src="img/LogoCSW.png" alt="CSW Logo">
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <div class="footer-links">
+                        <a href="tecnologia.html">Tecnología</a>
+                        <a href="logistica.html">Servicio de logística</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <div class="footer-links">
+                        <a href="soporte-garantia.html">Garantía & Soporte</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contáctanos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="social-link facebook" target="_blank" title="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp" class="social-link instagram" target="_blank" title="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:spikedtech19@gmail.com" class="social-link email" title="Email">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.082L12 10.874l9.282-7.053h1.082A1.636 1.636 0 0 1 24 5.457z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/+50663868608" class="social-link whatsapp" target="_blank" title="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"/>
+                            </svg>
+                        </a>
+                        <a href="tel:+50663868608" class="social-link phone" title="Llamar">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-location">
+                <h4>Ubicación</h4>
+                <p><strong>Atenas, Alajuela, Costa Rica</strong></p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28407.47553848057!2d-84.43981413842558!3d9.986062719641719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa05119604dc297%3A0xaf69ee57a14c8979!2sAlajuela%20Province%2C%20Atenas!5e1!3m2!1sen!2scr!4v1733013555594!5m2!1sen!2scr"
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SPIKEDTECH Costa Rica. Todos los derechos reservados.</p>
+                <div class="costa-rica-flag">
+                    <img src="img/file.png" alt="Costa Rica">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/index-animations.js"></script>
+    <script src="js/modal-diseño.js"></script>
+    <script src="js/modern-navbar.js"></script>
+        <script src="js/cursor-fixed.js"></script>
+</body>
+</html>
