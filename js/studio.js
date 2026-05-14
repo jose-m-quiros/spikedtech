@@ -1,4 +1,36 @@
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
+const WHATSAPP_PHONE = "50687394231";
+const WHATSAPP_WEB_BASE_URL = `https://wa.me/${WHATSAPP_PHONE}`;
+
+function isProbablyMobileDevice() {
+  return (
+    window.matchMedia?.("(pointer: coarse)")?.matches ||
+    /Android|iPhone|iPad|iPod/i.test(window.navigator.userAgent)
+  );
+}
+
+function buildWhatsAppUrls(message = "") {
+  const encodedMessage = message ? encodeURIComponent(message) : "";
+  const webUrl = encodedMessage
+    ? `${WHATSAPP_WEB_BASE_URL}?text=${encodedMessage}`
+    : WHATSAPP_WEB_BASE_URL;
+  const appUrl = encodedMessage
+    ? `whatsapp://send?phone=${WHATSAPP_PHONE}&text=${encodedMessage}`
+    : `whatsapp://send?phone=${WHATSAPP_PHONE}`;
+
+  return { appUrl, webUrl };
+}
+
+function openWhatsApp(message = "") {
+  const { appUrl, webUrl } = buildWhatsAppUrls(message);
+
+  if (isProbablyMobileDevice()) {
+    window.location.assign(appUrl);
+    return;
+  }
+
+  window.open(webUrl, "_blank", "noopener");
+}
 
 function markActiveLinks() {
   const links = document.querySelectorAll(".nav-link, .mobile-link");
@@ -196,8 +228,7 @@ function initContactForm() {
     }
 
     const message = buildProjectMessage(form);
-    const url = `https://wa.me/50687394231?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank", "noopener");
+    openWhatsApp(message);
   };
 
   const sendViaEmail = () => {
@@ -220,6 +251,25 @@ function initContactForm() {
   resetButton?.addEventListener("click", () => {
     form.reset();
     clearIntentSelection();
+  });
+}
+
+function initWhatsAppLinks() {
+  const whatsappLinks = document.querySelectorAll('a[href^="https://wa.me/"]');
+
+  if (!whatsappLinks.length) {
+    return;
+  }
+
+  whatsappLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      if (!isProbablyMobileDevice()) {
+        return;
+      }
+
+      event.preventDefault();
+      openWhatsApp();
+    });
   });
 }
 
@@ -300,6 +350,7 @@ document.addEventListener("DOMContentLoaded", () => {
   markActiveLinks();
   initMobileMenu();
   initRevealObserver();
+  initWhatsAppLinks();
   initContactForm();
   initFaqAccordions();
   initEqualPanelHeights();
