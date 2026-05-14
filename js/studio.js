@@ -75,6 +75,18 @@ function initRevealObserver() {
     return;
   }
 
+  const revealImmediatelyIfVisible = (element) => {
+    const rect = element.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.top <= viewportHeight - 48 && rect.bottom >= 0) {
+      element.classList.add("is-visible");
+      return true;
+    }
+
+    return false;
+  };
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -94,8 +106,25 @@ function initRevealObserver() {
 
   revealElements.forEach((element, index) => {
     element.style.transitionDelay = `${Math.min(index * 60, 320)}ms`;
+
+    if (revealImmediatelyIfVisible(element)) {
+      return;
+    }
+
     observer.observe(element);
   });
+
+  window.addEventListener(
+    "load",
+    () => {
+      revealElements.forEach((element) => {
+        if (!element.classList.contains("is-visible")) {
+          revealImmediatelyIfVisible(element);
+        }
+      });
+    },
+    { once: true }
+  );
 }
 
 function buildProjectMessage(form) {
@@ -106,7 +135,7 @@ function buildProjectMessage(form) {
   const stage = form.querySelector("#project-stage")?.value.trim() || "";
   const budget = form.querySelector("#project-budget")?.value.trim() || "";
   const timeline = form.querySelector("#project-timeline")?.value.trim() || "";
-  const brief = form.querySelector("#project-brief")?.value.trim() || "";
+  const summary = form.querySelector("#project-summary")?.value.trim() || "";
 
   return [
     "Hola SPIKEDTECH, quiero solicitar una propuesta.",
@@ -117,15 +146,15 @@ function buildProjectMessage(form) {
     `Etapa del proyecto: ${stage || "No indicado"}`,
     `Presupuesto estimado: ${budget || "No indicado"}`,
     `Ventana de entrega: ${timeline || "No indicado"}`,
-    `Resumen del proyecto: ${brief || "Sin descripción"}`,
+    `Resumen del proyecto: ${summary || "Sin descripción"}`,
   ].join("\n");
 }
 
 function initQuickIntents(form) {
   const chips = form.querySelectorAll(".intent-chip");
-  const briefField = form.querySelector("#project-brief");
+  const summaryField = form.querySelector("#project-summary");
 
-  if (!chips.length || !briefField) {
+  if (!chips.length || !summaryField) {
     return;
   }
 
@@ -136,8 +165,8 @@ function initQuickIntents(form) {
       chips.forEach((item) => item.classList.remove("is-selected"));
       chip.classList.add("is-selected");
 
-      briefField.value = message;
-      briefField.focus();
+      summaryField.value = message;
+      summaryField.focus();
     });
   });
 }
@@ -194,6 +223,70 @@ function initContactForm() {
   });
 }
 
+function initFaqAccordions() {
+  const faqGroups = document.querySelectorAll(".faq-grid");
+
+  if (!faqGroups.length) {
+    return;
+  }
+
+  faqGroups.forEach((group) => {
+    const items = Array.from(group.querySelectorAll("details"));
+
+    items.forEach((item) => {
+      item.addEventListener("toggle", () => {
+        if (!item.open) {
+          return;
+        }
+
+        items.forEach((otherItem) => {
+          if (otherItem !== item) {
+            otherItem.open = false;
+          }
+        });
+      });
+    });
+  });
+}
+
+function initEqualPanelHeights() {
+  const groups = document.querySelectorAll(".split-layout-equal");
+
+  if (!groups.length) {
+    return;
+  }
+
+  const syncGroupHeights = (group) => {
+    const panels = Array.from(group.querySelectorAll(":scope > .panel"));
+
+    if (panels.length < 2) {
+      return;
+    }
+
+    panels.forEach((panel) => {
+      panel.style.minHeight = "";
+    });
+
+    const maxHeight = Math.max(...panels.map((panel) => panel.offsetHeight));
+
+    panels.forEach((panel) => {
+      panel.style.minHeight = `${maxHeight}px`;
+    });
+  };
+
+  const syncAllGroups = () => {
+    groups.forEach(syncGroupHeights);
+  };
+
+  syncAllGroups();
+  window.addEventListener("resize", syncAllGroups);
+  window.addEventListener("load", syncAllGroups, { once: true });
+
+  if (document.fonts?.ready) {
+    document.fonts.ready.then(syncAllGroups);
+  }
+}
+
 function setCurrentYear() {
   const yearNodes = document.querySelectorAll("[data-year]");
   const year = String(new Date().getFullYear());
@@ -208,5 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initRevealObserver();
   initContactForm();
+  initFaqAccordions();
+  initEqualPanelHeights();
   setCurrentYear();
 });

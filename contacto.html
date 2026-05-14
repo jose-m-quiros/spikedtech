@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Contacto comercial SPIKEDTECH: formulario de proyecto, WhatsApp, correo, modalidades de trabajo y preguntas frecuentes para contratar servicios web."
+      content="Contacto SPIKEDTECH: formulario de proyecto, WhatsApp, correo y preguntas frecuentes para contratar servicios de programación y desarrollo web."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,13 +31,14 @@
         <nav class="desktop-nav" aria-label="Navegación principal">
           <a class="nav-link" href="index.html">Inicio</a>
           <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="desarrollo-web.html">Desarrollo</a>
           <a class="nav-link" href="proyectos.html">Proyectos</a>
           <a class="nav-link" href="contacto.html">Contacto</a>
         </nav>
 
         <div class="nav-actions">
-          <a class="button primary" href="#brief">
-            Enviar brief
+          <a class="button primary" href="#formulario">
+            Contar mi proyecto
             <span class="button-arrow">→</span>
           </a>
         </div>
@@ -47,77 +48,78 @@
           <span></span>
           <span></span>
         </button>
-      </div>
 
-      <div class="mobile-menu" data-mobile-menu>
-        <nav class="mobile-links" aria-label="Navegación móvil">
-          <a class="mobile-link" href="index.html">Inicio</a>
-          <a class="mobile-link" href="servicios.html">Servicios</a>
-          <a class="mobile-link" href="desarrollo-web.html">Desarrollo a medida</a>
-          <a class="mobile-link" href="proyectos.html">Proyectos</a>
-          <a class="mobile-link" href="contacto.html">Contacto</a>
-        </nav>
-        <div class="mobile-cta">
-          <a class="button primary" href="#brief">Completar brief</a>
+        <div class="mobile-menu" data-mobile-menu>
+          <nav class="mobile-links" aria-label="Navegación móvil">
+            <a class="mobile-link" href="index.html">Inicio</a>
+            <a class="mobile-link" href="servicios.html">Servicios</a>
+            <a class="mobile-link" href="desarrollo-web.html">Desarrollo</a>
+            <a class="mobile-link" href="proyectos.html">Proyectos</a>
+            <a class="mobile-link" href="contacto.html">Contacto</a>
+          </nav>
+          <div class="mobile-cta">
+            <a class="button primary" href="#formulario">Abrir formulario</a>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <section class="page-hero">
-        <div class="container page-hero-grid">
-          <article class="hero-panel" data-reveal>
-            <span class="kicker">Contacto comercial</span>
-            <h1 class="page-title">Hablemos de tu proyecto web con datos claros desde el inicio.</h1>
-            <p class="page-lead">
-              Si ya sabes lo que necesitas, usa el brief y te responderemos con una ruta más concreta.
-              Si aún estás ordenando la idea, también sirve: el formulario está pensado para aterrizar el alcance.
+        <div class="container page-layout">
+          <article class="panel">
+            <span class="eyebrow">Contacto comercial</span>
+            <h1 class="page-title">Cuéntanos el proyecto con claridad y te respondemos con una ruta más concreta.</h1>
+            <p class="lead">
+              Si ya sabes lo que necesitas, usa el formulario. Si todavía estás ordenando la idea,
+              también te sirve: la estructura del formulario ayuda a aterrizar alcance, prioridades,
+              tiempos y tipo de solución antes de empezar a hablar de implementación.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#brief">Completar brief</a>
+              <a class="button primary" href="#formulario">Completar formulario</a>
               <a class="button secondary" href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp directo</a>
             </div>
           </article>
 
-          <aside class="contact-card" data-reveal>
-            <span class="kicker alt">Canales</span>
+          <aside class="panel">
+            <span class="eyebrow">Canales</span>
             <div class="contact-list">
               <div class="contact-line">
+                <strong>Formulario del proyecto</strong>
+                <span class="copy">La mejor vía para una respuesta más clara, porque llega con contexto y prioridades.</span>
+              </div>
+              <div class="contact-line">
                 <strong>WhatsApp</strong>
-                <span class="copy">Canal rápido para consultas, propuestas y seguimiento inicial.</span>
+                <span class="copy">Útil para consultas rápidas, seguimiento inicial o para continuar después del formulario.</span>
               </div>
               <div class="contact-line">
                 <strong>Correo</strong>
-                <span class="copy">Útil para alcances extensos, documentación y detalles de proyecto.</span>
-              </div>
-              <div class="contact-line">
-                <strong>Brief comercial</strong>
-                <span class="copy">Ideal para que el proyecto llegue mejor definido desde el primer contacto.</span>
+                <span class="copy">Conveniente si necesitas compartir detalles largos, documentos o referencias del proyecto.</span>
               </div>
             </div>
             <div class="inline-stat">
               <span>Modalidad</span>
-              <strong>Remoto o local</strong>
+              <strong>Local o remota</strong>
             </div>
             <div class="inline-stat">
-              <span>Tipo de proyecto</span>
-              <strong>Servicios, plataformas y rediseños</strong>
+              <span>Tipo de trabajo</span>
+              <strong>Webs, sistemas e integraciones</strong>
             </div>
             <div class="inline-stat">
               <span>Canal recomendado</span>
-              <strong>Brief + WhatsApp</strong>
+              <strong>Formulario + WhatsApp</strong>
             </div>
           </aside>
         </div>
       </section>
 
-      <section id="brief" class="section">
-        <div class="container contact-grid">
-          <form id="project-form" class="form-panel" data-reveal>
-            <span class="kicker">Brief comercial</span>
-            <h2 class="form-title">Cuéntanos qué necesitas construir.</h2>
+      <section id="formulario" class="section">
+        <div class="container contact-layout contact-layout-stack">
+          <form id="project-form" class="form-panel">
+            <span class="eyebrow">Formulario del proyecto</span>
+            <h2 class="form-title">Cuéntanos qué necesitas construir o mejorar.</h2>
             <p class="helper-text">
-              Puedes enviarlo por WhatsApp o preparar un correo con la misma información.
+              Al completar estos datos, luego puedes enviarlos por WhatsApp o preparar el correo con la información ya organizada.
             </p>
 
             <div class="form-grid">
@@ -137,20 +139,20 @@
                 <label for="project-service">Servicio principal</label>
                 <select id="project-service" name="service" required>
                   <option value="">Selecciona una línea principal</option>
-                  <option value="Desarrollo web">Desarrollo web</option>
+                  <option value="Sitio comercial o corporativo">Sitio comercial o corporativo</option>
                   <option value="Sistema a medida">Sistema a medida</option>
-                  <option value="APIs e integraciones">APIs e integraciones</option>
-                  <option value="Rediseño técnico del sitio">Rediseño técnico del sitio</option>
-                  <option value="Mantenimiento evolutivo">Mantenimiento evolutivo</option>
+                  <option value="Integraciones y automatización">Integraciones y automatización</option>
+                  <option value="Reestructura completa">Reestructura completa</option>
+                  <option value="Soporte evolutivo">Soporte evolutivo</option>
                 </select>
               </div>
               <div class="field">
                 <label for="project-stage">Etapa del proyecto</label>
                 <select id="project-stage" name="stage">
                   <option value="Idea inicial">Idea inicial</option>
-                  <option value="Ya tengo una web pero quiero mejorarla">Ya tengo una web pero quiero mejorarla</option>
+                  <option value="Ya tengo una web y quiero rehacerla">Ya tengo una web y quiero rehacerla</option>
                   <option value="Necesito reemplazar una solución actual">Necesito reemplazar una solución actual</option>
-                  <option value="Quiero escalar una plataforma existente">Quiero escalar una plataforma existente</option>
+                  <option value="Quiero escalar una base existente">Quiero escalar una base existente</option>
                 </select>
               </div>
               <div class="field">
@@ -172,12 +174,12 @@
                 </select>
               </div>
               <div class="field full">
-                <label for="project-brief">Resumen del proyecto</label>
+                <label for="project-summary">Resumen del proyecto</label>
                 <textarea
-                  id="project-brief"
-                  name="brief"
+                  id="project-summary"
+                  name="summary"
                   required
-                  placeholder="Describe el objetivo, lo que necesitas construir o mejorar y cualquier detalle relevante."
+                  placeholder="Describe qué quieres resolver, qué necesitas construir o mejorar y cualquier detalle que ayude a entender el alcance."
                 ></textarea>
               </div>
             </div>
@@ -185,17 +187,17 @@
             <div class="field full">
               <label>Intenciones rápidas</label>
               <div class="quick-intents">
-                <button class="intent-chip" type="button" data-message="Necesito una landing o sitio profesional para captar clientes y presentar mejor mis servicios.">
-                  Landing de captación
+                <button class="intent-chip" type="button" data-message="Necesito una web comercial clara para presentar mis servicios y captar clientes con mejor estructura.">
+                  Web comercial
                 </button>
-                <button class="intent-chip" type="button" data-message="Quiero rehacer o mejorar mi sitio actual para que tenga una base técnica más seria y mantenible.">
-                  Rediseño técnico
+                <button class="intent-chip" type="button" data-message="Quiero reestructurar mi sitio actual porque ya no comunica bien, no convierte o su base técnica se quedó corta.">
+                  Reestructura completa
                 </button>
-                <button class="intent-chip" type="button" data-message="Necesito una plataforma o panel con flujos, usuarios, formularios y procesos internos.">
+                <button class="intent-chip" type="button" data-message="Necesito un sistema o panel con usuarios, formularios, módulos y flujos internos para operar mejor.">
                   Sistema a medida
                 </button>
-                <button class="intent-chip" type="button" data-message="Necesito integrar APIs, automatizar tareas o conectar mi sitio con otras herramientas del negocio.">
-                  APIs y automatización
+                <button class="intent-chip" type="button" data-message="Necesito integrar mi proyecto con otras herramientas, automatizar pasos o conectar procesos digitales.">
+                  Integraciones
                 </button>
               </div>
             </div>
@@ -207,18 +209,19 @@
             </div>
           </form>
 
-          <aside class="section-panel" data-reveal>
-            <span class="kicker alt">Qué ayuda a estimar mejor</span>
+          <aside class="panel">
+            <span class="eyebrow">Qué ayuda a estimar mejor</span>
             <h2 class="section-title">Mientras más claro llegue el contexto, más útil será la primera respuesta.</h2>
             <ul class="clean-list">
-              <li>Qué problema estás tratando de resolver.</li>
-              <li>Si ya tienes sitio, marca o contenido existente.</li>
-              <li>Cuántas secciones, módulos o tipos de usuario imaginas.</li>
-              <li>Si el proyecto necesita pagos, CRM, automatización o paneles internos.</li>
-              <li>Si buscas algo rápido para salir al mercado o una base más robusta para crecer.</li>
+              <li>Qué problema quieres resolver y por qué ahora es importante atenderlo.</li>
+              <li>Si ya existe una web, una marca, contenido o una solución previa que deba evaluarse.</li>
+              <li>Cuántas secciones, módulos, tipos de usuario o recorridos imaginas.</li>
+              <li>Si necesitas pagos, correo, automatización, paneles o conexión con otras herramientas.</li>
+              <li>Si buscas una salida rápida al mercado o una base más robusta para sostener crecimiento.</li>
             </ul>
-            <div class="callout">
-              <strong>Recomendación:</strong> si tu proyecto es amplio, usa primero el brief y luego continúa la conversación por WhatsApp.
+            <div class="button-row">
+              <a class="button secondary" href="https://wa.me/50687394231" target="_blank" rel="noreferrer">Abrir WhatsApp</a>
+              <a class="button ghost" href="mailto:spikedtech19@gmail.com">Escribir correo</a>
             </div>
           </aside>
         </div>
@@ -226,28 +229,33 @@
 
       <section class="section">
         <div class="container">
-          <div class="section-heading compact">
+          <div class="section-head">
             <div>
-              <span class="kicker">Modalidades</span>
-              <h2 class="section-title">Formas comunes de colaboración.</h2>
+              <span class="eyebrow">Qué pasa después</span>
+              <h2 class="section-title">Así suele avanzar la conversación después de recibir tu solicitud.</h2>
             </div>
           </div>
 
-          <div class="cards-grid">
-            <article class="card service-card highlight" data-reveal>
-              <span class="card-label">Proyecto desde cero</span>
-              <h3 class="card-title">Construcción completa</h3>
-              <p class="card-copy">Ideal para negocios que todavía no tienen una base web profesional o necesitan reemplazar la actual.</p>
+          <div class="process-grid">
+            <article class="card process-card">
+              <span class="process-number">01</span>
+              <h3 class="card-title">Lectura del contexto</h3>
+              <p class="card-copy">Revisamos el formulario, el punto actual del proyecto y la línea principal de trabajo.</p>
             </article>
-            <article class="card" data-reveal>
-              <span class="card-label">Reestructura</span>
-              <h3 class="card-title">Rediseño con nueva narrativa</h3>
-              <p class="card-copy">Pensado para webs que ya existen pero no están ayudando a vender, comunicar o operar mejor.</p>
+            <article class="card process-card">
+              <span class="process-number">02</span>
+              <h3 class="card-title">Aterrizaje del alcance</h3>
+              <p class="card-copy">Se ordenan prioridades, restricciones y tipo de estructura que más conviene.</p>
             </article>
-            <article class="card" data-reveal>
-              <span class="card-label">Continuidad</span>
-              <h3 class="card-title">Soporte evolutivo mensual</h3>
-              <p class="card-copy">Para mejoras continuas, nuevas secciones, integraciones y optimización posterior al lanzamiento.</p>
+            <article class="card process-card">
+              <span class="process-number">03</span>
+              <h3 class="card-title">Ruta recomendada</h3>
+              <p class="card-copy">Se propone si conviene una web comercial, una reestructura, un sistema o una combinación.</p>
+            </article>
+            <article class="card process-card">
+              <span class="process-number">04</span>
+              <h3 class="card-title">Siguiente conversación</h3>
+              <p class="card-copy">Se aclaran dudas, se ajustan prioridades y se define el siguiente paso del proyecto.</p>
             </article>
           </div>
         </div>
@@ -255,29 +263,30 @@
 
       <section class="section">
         <div class="container">
-          <div class="section-heading compact">
+          <div class="section-head section-head-stack">
             <div>
-              <span class="kicker">Preguntas frecuentes</span>
+              <span class="eyebrow">Preguntas frecuentes</span>
               <h2 class="section-title">Dudas habituales antes de arrancar.</h2>
             </div>
+            <p class="section-text faq-hint">Haz clic o toca cada pregunta para ver la respuesta.</p>
           </div>
 
           <div class="faq-grid">
-            <details class="faq-item" data-reveal>
+            <details class="faq-item">
               <summary>¿Necesito tener todo definido para pedir una propuesta?</summary>
-              <p>No. Basta con entender qué problema quieres resolver y qué tan avanzado está el proyecto. El resto se aterriza contigo.</p>
+              <p>No. Basta con entender qué problema quieres resolver y en qué etapa está el proyecto. El resto se termina de ordenar contigo.</p>
             </details>
-            <details class="faq-item" data-reveal>
+            <details class="faq-item">
               <summary>¿Pueden trabajar sobre una web existente?</summary>
-              <p>Sí. Podemos reestructurar, rediseñar o usar la base actual como punto de partida si técnicamente conviene.</p>
+              <p>Sí. Podemos reestructurar, rediseñar o evaluar si la base actual conviene aprovecharse parcial o totalmente.</p>
             </details>
-            <details class="faq-item" data-reveal>
+            <details class="faq-item">
               <summary>¿También hacen mantenimiento y mejoras después del lanzamiento?</summary>
-              <p>Sí. Podemos continuar con soporte evolutivo para nuevas funcionalidades, ajustes visuales, integraciones y mejoras técnicas.</p>
+              <p>Sí. Podemos continuar con soporte evolutivo para nuevas funciones, ajustes visuales, integraciones y mejoras técnicas.</p>
             </details>
-            <details class="faq-item" data-reveal>
+            <details class="faq-item">
               <summary>¿Trabajan proyectos remotos?</summary>
-              <p>Sí. El proceso está pensado para funcionar tanto con clientes locales como remotos, con seguimiento digital y comunicación directa.</p>
+              <p>Sí. El proceso está pensado para funcionar tanto con clientes locales como remotos, con seguimiento directo y comunicación digital.</p>
             </details>
           </div>
         </div>
@@ -285,14 +294,14 @@
 
       <section class="section">
         <div class="container">
-          <article class="quote-panel dark" data-reveal>
-            <span class="kicker alt">Empecemos bien</span>
-            <h2 class="page-title">Si el proyecto importa, vale la pena definirlo con claridad desde el principio.</h2>
-            <p class="page-lead">
-              Un brief bien planteado reduce ruido, mejora la estimación y acelera el arranque del trabajo correcto.
+          <article class="panel panel-dark">
+            <span class="eyebrow">Empecemos bien</span>
+            <h2 class="page-title">Si el proyecto importa, vale la pena explicarlo con claridad desde el principio.</h2>
+            <p class="lead">
+              Una solicitud bien explicada reduce dudas, mejora la estimación y acelera el arranque de la solución correcta.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#brief">Completar brief</a>
+              <a class="button primary" href="#formulario">Completar formulario</a>
               <a class="button secondary" href="https://wa.me/50687394231" target="_blank" rel="noreferrer">Escribir por WhatsApp</a>
             </div>
           </article>
@@ -302,33 +311,34 @@
 
     <footer class="footer">
       <div class="container footer-layout">
-        <section class="footer-panel dark">
-          <span class="kicker alt">SPIKEDTECH</span>
-          <h2 class="footer-title">Contacto comercial para servicios de programación, desarrollo web y sistemas a medida.</h2>
-          <p class="copy">
-            Usa el brief si quieres una conversación más productiva desde el primer intercambio.
+        <section class="footer-primary">
+          <span class="eyebrow">SPIKEDTECH</span>
+          <h2 class="footer-title">Programación web, plataformas y sistemas a medida para negocios que necesitan una base seria.</h2>
+          <p class="footer-copy">
+            Trabajamos desde el alcance hasta la publicación con foco en estructura, integración y
+            evolución técnica, para que el proyecto siga sirviendo cuando el negocio crece.
           </p>
           <div class="footer-meta">
-            <span>Atenas, Alajuela, Costa Rica</span>
+            <span>Alajuela, Costa Rica</span>
             <span>Proyectos locales y remotos</span>
           </div>
         </section>
 
-        <section class="footer-grid">
+        <section class="footer-links-grid">
           <article class="footer-panel">
             <h2 class="footer-title">Servicios</h2>
             <div class="footer-links">
               <a href="servicios.html">Panorama general</a>
               <a href="desarrollo-web.html">Desarrollo a medida</a>
-              <a href="#brief">Completar brief</a>
+              <a href="contacto.html">Solicitar propuesta</a>
             </div>
           </article>
           <article class="footer-panel">
             <h2 class="footer-title">Explorar</h2>
             <div class="footer-links">
-              <a href="proyectos.html">Proyectos</a>
-              <a href="desarrollo-web.html">Detalle técnico</a>
-              <a href="servicios.html">Servicios</a>
+              <a href="index.html">Inicio</a>
+              <a href="proyectos.html">Tipos de proyecto</a>
+              <a href="contacto.html">Contacto</a>
             </div>
           </article>
           <article class="footer-panel">
@@ -336,7 +346,7 @@
             <div class="footer-links">
               <a href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp</a>
               <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
-              <a href="#brief">Brief comercial</a>
+              <a href="contacto.html">Formulario del proyecto</a>
             </div>
           </article>
         </section>
@@ -344,7 +354,7 @@
 
       <div class="container footer-meta">
         <span>© <span data-year></span> SPIKEDTECH</span>
-        <span>Contacto comercial y brief de proyecto</span>
+        <span>Programación, sistemas web, integraciones y evolución técnica</span>
       </div>
     </footer>
 
