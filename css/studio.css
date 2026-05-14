@@ -227,8 +227,7 @@ textarea {
   transform: translateY(-1px);
 }
 
-.button,
-.inline-link {
+.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -250,13 +249,11 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-.button:hover,
-.inline-link:hover {
+.button:hover {
   transform: translateY(-2px);
 }
 
-.button:active,
-.inline-link:active {
+.button:active {
   transform: translateY(0);
 }
 
@@ -290,12 +287,6 @@ textarea {
 .footer-primary .button.ghost {
   color: var(--text-inverse);
   border-color: rgba(255, 255, 255, 0.16);
-}
-
-.inline-link {
-  padding: 0.55rem 0;
-  color: var(--accent-strong);
-  font-weight: 700;
 }
 
 .button-arrow {
