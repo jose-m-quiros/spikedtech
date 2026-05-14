@@ -1,0 +1,9 @@
+SPIKEDTECH.code-workspace
+
+# OS artifacts
+Thumbs.db
+.DS_Store
+
+# Editor folders
+.idea/
+.vs/

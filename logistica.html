@@ -1,469 +1,296 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servicios de logística internacional - SPIKEDTECH: Importación desde Amazon, AliExpress, eBay, Wish, Shein, Target y Temu">
-    <meta name="keywords" content="logística, importación, Amazon, AliExpress, eBay, Wish, Shein, Target, Temu, SPIKEDTECH, Costa Rica">
-    <link rel="stylesheet" href="css/logistica.css">
-    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg">
-    <title>Servicios de Logística - SPIKEDTECH</title>
-</head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-container">
-            <div class="loading-logo">
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH">
-            </div>
-            <div class="loading-content">
-                <div class="loading-spinner"></div>
-                <div class="loading-progress">
-                    <div class="loading-progress-bar"></div>
-                </div>
-                <div class="loading-progress-text">0%</div>
-                <div class="loading-message">Cargando plataformas de logística...</div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SPIKEDTECH define rutas digitales, funnels, recorridos de usuario y plataformas operativas para productos web y procesos internos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/studio.css" />
+    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg" />
+    <title>Rutas y Plataformas | SPIKEDTECH</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Ir al inicio de SPIKEDTECH">
+          <img class="brand-mark" src="img/logoSpikedtechredondo.png" alt="Logo SPIKEDTECH" />
+          <span class="brand-copy">
+            <span class="brand-name">SPIKEDTECH</span>
+            <span class="brand-tag">Estudio de productos web</span>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="tecnologia.html">Desarrollo</a>
+          <a class="nav-link" href="diseño-grafico.html">Diseño</a>
+          <a class="nav-link" href="logistica.html">Plataformas</a>
+          <a class="nav-link" href="articulos-disponibles.html">Portafolio</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="button primary" href="soporte-garantia.html">
+            Diseñar mi ruta
+            <span class="button-arrow">→</span>
+          </a>
         </div>
-    </div>
 
-       <!-- Header Corregido con Mejor Espaciado -->
-<header class="modern-header">
-    <nav class="navbar">
-        <div class="nav-container">
-            <!-- LOGO - LADO IZQUIERDO -->
-            <a href="index.html" class="logo">
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH" class="logo-img">
-                <span class="logo-text">SPIKEDTECH</span>
-            </a>
-            
-            <!-- NAVEGACIÓN - LADO DERECHO -->
-            <div class="nav-right">
-                <!-- Links de Navegación -->
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
-                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                    <li><a href="soporte-garantia.html" class="nav-link">Soporte</a></li>
-                </ul>
-                
-                <!-- Botón CTA -->
-                <div class="nav-cta">
-                    <a href="soporte-garantia.html" class="btn-nav-cta">
-                        <span>Contactar</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Botón Mobile Menu -->
-            <button class="mobile-menu-btn" aria-label="Abrir menú">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu>
+        <nav class="mobile-links" aria-label="Navegación móvil">
+          <a class="mobile-link" href="index.html">Inicio</a>
+          <a class="mobile-link" href="servicios.html">Servicios</a>
+          <a class="mobile-link" href="tecnologia.html">Desarrollo web</a>
+          <a class="mobile-link" href="diseño-grafico.html">Diseño UX/UI</a>
+          <a class="mobile-link" href="logistica.html">Rutas y plataformas</a>
+          <a class="mobile-link" href="articulos-disponibles.html">Portafolio</a>
+          <a class="mobile-link" href="catalogo-de-camaras.html">Stack e integraciones</a>
+          <a class="mobile-link" href="soporte-garantia.html">Contacto</a>
+        </nav>
+        <div class="mobile-cta">
+          <a class="button primary" href="soporte-garantia.html">Solicitar propuesta</a>
         </div>
-        
-        <!-- MENÚ MÓVIL -->
-        <div class="mobile-menu-overlay">
-            <div class="mobile-menu">
-                <!-- Header del Menú Móvil -->
-                <div class="mobile-menu-header">
-                    <div class="mobile-logo">
-                        <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH">
-                        <span>SPIKEDTECH</span>
-                    </div>
-                    <button class="mobile-menu-close" aria-label="Cerrar menú">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </div>
-                
-                <!-- Contenido del Menú Móvil -->
-                <div class="mobile-menu-content">
-                    <!-- Links de Navegación Móvil -->
-                    <ul class="mobile-nav-links">
-                        <li>
-                            <a href="index.html" class="mobile-nav-link">
-                                <span class="mobile-link-icon">🏠</span>
-                                <span>Inicio</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="servicios.html" class="mobile-nav-link">
-                                <span class="mobile-link-icon">⚙️</span>
-                                <span>Servicios</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="soporte-garantia.html" class="mobile-nav-link">
-                                <span class="mobile-link-icon">🛠️</span>
-                                <span>Soporte</span>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <!-- Botón CTA Móvil -->
-                    <div class="mobile-menu-cta">
-                        <a href="soporte-garantia.html" class="btn-mobile-cta">
-                            Obtener Soporte
-                        </a>
-                    </div>
-                    
-                    <!-- Redes Sociales Móvil -->
-                    <div class="mobile-social">
-                        <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="mobile-social-link" title="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/spikedtech19" class="mobile-social-link" title="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/+50687394231" class="mobile-social-link" title="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <article class="hero-panel" data-reveal>
+            <span class="kicker">Rutas digitales y plataformas</span>
+            <h1 class="page-title">Diseñamos la lógica de navegación y operación detrás de una plataforma seria.</h1>
+            <p class="page-lead">
+              Cuando un producto tiene muchas páginas, acciones, formularios o usuarios,
+              la experiencia deja de depender solo del diseño visual. Necesita rutas, reglas,
+              estados y recorridos bien pensados. Ahí entra esta capa del trabajo.
+            </p>
+            <div class="button-row">
+              <a class="button primary" href="soporte-garantia.html">Mapear mi proyecto</a>
+              <a class="button secondary" href="servicios.html">Volver a servicios</a>
             </div>
+          </article>
+
+          <aside class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Qué resolvemos</span>
+            <ul class="check-list">
+              <li>Funnels de captación, venta o onboarding.</li>
+              <li>Rutas para áreas privadas, paneles y backoffice.</li>
+              <li>Conexión entre formularios, notificaciones y CRM.</li>
+              <li>Recorridos que reducen fricción y pasos innecesarios.</li>
+            </ul>
+          </aside>
         </div>
-    </nav>
-</header>
+      </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-background"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text animate-on-scroll">
-                        <h1 class="hero-title">Plataformas de Logística</h1>
-                        <p class="hero-subtitle">Importación segura y confiable desde las principales plataformas mundiales</p>
-                        <div class="hero-features">
-                            <div class="feature-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>Plataformas Oficiales</span>
-                            </div>
-                            <div class="feature-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                                <span>Envío Seguro</span>
-                            </div>
-                            <div class="feature-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                                <span>Entrega Rápida</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Tipos de ruta</span>
+              <h2 class="section-title">No todas las plataformas tienen el mismo recorrido.</h2>
             </div>
-        </section>
+            <p class="section-copy">
+              Algunas deben captar usuarios. Otras guiar una compra. Otras ordenar procesos internos.
+              La arquitectura correcta depende del tipo de movimiento que el usuario o el equipo deben hacer.
+            </p>
+          </div>
 
-        <!-- Platforms Section -->
-        <section class="platforms-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Plataformas Disponibles</h2>
-                    <p class="section-subtitle">Trabajamos con las principales plataformas de comercio electrónico del mundo</p>
+          <div class="route-grid">
+            <article class="route-card highlight" data-reveal>
+              <span class="route-tag">Ruta comercial</span>
+              <h3 class="card-title">Captación y conversión</h3>
+              <p class="route-copy">
+                Pensada para campañas, servicios y productos donde cada paso debe acercar a una consulta o venta.
+              </p>
+              <ul class="route-list">
+                <li>Landing y formulario</li>
+                <li>Secuencia de confianza</li>
+                <li>Conexión a WhatsApp o CRM</li>
+              </ul>
+            </article>
+
+            <article class="route-card" data-reveal>
+              <span class="route-tag">Ruta de producto</span>
+              <h3 class="card-title">Onboarding y navegación funcional</h3>
+              <p class="route-copy">
+                Para plataformas donde el usuario debe registrarse, entender módulos y completar procesos sin perderse.
+              </p>
+              <ul class="route-list">
+                <li>Estados y progresión</li>
+                <li>Jerarquía de pantallas</li>
+                <li>Mensajes y ayudas contextuales</li>
+              </ul>
+            </article>
+
+            <article class="route-card" data-reveal>
+              <span class="route-tag">Ruta operativa</span>
+              <h3 class="card-title">Backoffice y flujos internos</h3>
+              <p class="route-copy">
+                Para equipos que trabajan con datos, tareas, aprobaciones, seguimiento o gestión de casos.
+              </p>
+              <ul class="route-list">
+                <li>Roles y permisos</li>
+                <li>Tableros y estados</li>
+                <li>Automatización de tareas repetitivas</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-grid">
+          <article class="section-panel" data-reveal>
+            <span class="kicker alt">Qué solemos ordenar</span>
+            <h2 class="section-title">La plataforma empieza a funcionar mejor cuando las rutas dejan de ser improvisadas.</h2>
+            <ul class="clean-list">
+              <li>Mapa de navegación general del producto.</li>
+              <li>Embudo desde la primera visita hasta el contacto o registro.</li>
+              <li>Secuencia de formularios, mensajes y confirmaciones.</li>
+              <li>Paneles, estados, tareas y acciones de usuarios internos.</li>
+              <li>Conexión con correo, CRM, pagos o herramientas externas.</li>
+            </ul>
+          </article>
+
+          <aside class="section-panel" data-reveal>
+            <span class="kicker">Cómo lo aterrizamos</span>
+            <h2 class="section-title">De la idea de flujo a una estructura ejecutable.</h2>
+            <div class="number-stack">
+              <div class="number-item">
+                <span class="number-badge">1</span>
+                <div class="number-copy">
+                  <strong>Definimos entradas y salidas</strong>
+                  <p class="copy">Qué activa el proceso, qué necesita el usuario y qué resultado debe obtener.</p>
                 </div>
-
-                <div class="platforms-grid">
-                    <!-- Amazon -->
-                    <article class="platform-card feature-card">
-                        <div class="platform-image">
-                            <img src="img/amazon.png" alt="Amazon" class="platform-logo">
-                        </div>
-                        <div class="platform-content">
-                            <h3 class="platform-name">Amazon</h3>
-                            <p class="platform-description">La plataforma de e-commerce más grande del mundo</p>
-                        </div>
-                    </article>
-
-                    <!-- AliExpress -->
-                    <article class="platform-card feature-card">
-                        <div class="platform-image">
-                            <img src="img/aliexpress.png" alt="AliExpress" class="platform-logo">
-                        </div>
-                        <div class="platform-content">
-                            <h3 class="platform-name">AliExpress</h3>
-                            <p class="platform-description">Marketplace global con productos directos de fábrica</p>
-                        </div>
-                    </article>
-
-                    <!-- eBay -->
-                    <article class="platform-card feature-card">
-                        <div class="platform-image">
-                            <img src="img/ebay.png" alt="eBay" class="platform-logo">
-                        </div>
-                        <div class="platform-content">
-                            <h3 class="platform-name">eBay</h3>
-                            <p class="platform-description">Subastas y productos únicos de todo el mundo</p>
-                        </div>
-                    </article>
-
-                    <!-- Wish -->
-                    <article class="platform-card feature-card">
-                        <div class="platform-image">
-                            <img src="img/wish.png" alt="Wish" class="platform-logo">
-                        </div>
-                        <div class="platform-content">
-                            <h3 class="platform-name">Wish</h3>
-                            <p class="platform-description">Productos asequibles y únicos</p>
-                        </div>
-                    </article>
-
-                    <!-- Shein -->
-                    <article class="platform-card feature-card">
-                        <div class="platform-image">
-                            <img src="img/shein.png" alt="Shein" class="platform-logo">
-                        </div>
-                        <div class="platform-content">
-                            <h3 class="platform-name">Shein</h3>
-                            <p class="platform-description">Moda rápida y tendencias actuales</p>
-                        </div>
-                    </article>
-
-                    <!-- Target -->
-                    <article class="platform-card feature-card">
-                        <div class="platform-image">
-                            <img src="img/Target_logo.svg.png" alt="Target" class="platform-logo">
-                        </div>
-                        <div class="platform-content">
-                            <h3 class="platform-name">Target</h3>
-                            <p class="platform-description">Productos de calidad para el hogar y familia</p>
-                        </div>
-                    </article>
-
-                    <!-- Temu -->
-                    <article class="platform-card feature-card">
-                        <div class="platform-image">
-                            <img src="img/temu.png" alt="Temu" class="platform-logo">
-                        </div>
-                        <div class="platform-content">
-                            <h3 class="platform-name">Temu</h3>
-                            <p class="platform-description">Marketplace con gran variedad de productos</p>
-                        </div>
-                    </article>
+              </div>
+              <div class="number-item">
+                <span class="number-badge">2</span>
+                <div class="number-copy">
+                  <strong>Ordenamos pasos y decisiones</strong>
+                  <p class="copy">Reducimos fricción, duplicidad de pantallas y recorridos que no aportan valor.</p>
                 </div>
+              </div>
+              <div class="number-item">
+                <span class="number-badge">3</span>
+                <div class="number-copy">
+                  <strong>Conectamos la lógica con diseño y desarrollo</strong>
+                  <p class="copy">La arquitectura se traduce en pantallas, módulos, reglas y automatizaciones reales.</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </aside>
+        </div>
+      </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content animate-on-scroll">
-                    <h2 class="cta-title">¿Listo para importar tu producto?</h2>
-                    <p class="cta-description">Selecciona la plataforma donde encontraste tu producto y te ayudamos con todo el proceso</p>
-                    <button class="cta-button primary colors" data-bs-toggle="modal" data-bs-target="#platformModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                        </svg>
-                        Cotizar Producto
-                    </button>
-                </div>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <span class="kicker">Aplicaciones</span>
+              <h2 class="section-title">Dónde esta capa genera más impacto.</h2>
             </div>
-        </section>
+          </div>
 
-        <!-- Process Information Section -->
-        <section class="process-section">
-            <div class="container">
-                <div class="process-grid">
-                    <!-- Pedidos -->
-                    <div class="process-card">
-                        <div class="process-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v6a2 2 0 002 2h2m5 0h2a2 2 0 002-2V7a2 2 0 00-2-2h-2m-5 4h5" />
-                            </svg>
-                        </div>
-                        <div class="process-content">
-                            <h3 class="process-title">Cómo se hacen los pedidos</h3>
-                            <p class="process-description">
-                                <strong>Proceso de pedido:</strong> El cliente selecciona la plataforma de compra y proporciona el enlace al producto deseado, adjuntando una imagen de referencia si lo considera necesario. Una vez realizada la compra, el plazo estimado de entrega es de 22 a 30 días hábiles, sujeto a posibles retrasos aduaneros que serán comunicados al cliente de manera oportuna.
-                            </p>
-                        </div>
-                    </div>
+          <div class="cards-grid">
+            <article class="card" data-reveal>
+              <span class="card-label">Funnels</span>
+              <h3 class="card-title">Captación, venta y seguimiento</h3>
+              <p class="card-copy">Ideal cuando la web debe convertir visitas en consultas o reuniones calificadas.</p>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card-label">Onboarding</span>
+              <h3 class="card-title">Registro y activación de usuarios</h3>
+              <p class="card-copy">Para plataformas donde el primer uso necesita orden, explicación y guía progresiva.</p>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card-label">Operación</span>
+              <h3 class="card-title">Procesos internos y tableros</h3>
+              <p class="card-copy">Para empresas que necesitan dar forma digital a tareas, aprobaciones y seguimiento.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-                    <!-- Cotizaciones -->
-                    <div class="process-card">
-                        <div class="process-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div class="process-content">
-                            <h3 class="process-title">Cómo se hacen las cotizaciones</h3>
-                            <p class="process-description">
-                                <strong>Proceso de cotización:</strong> El cliente debe proporcionar el enlace correspondiente al producto que desea cotizar. Nosotros verificaremos los precios, tras lo cual le comunicaremos al cliente el precio final.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <section class="section">
+        <div class="container">
+          <article class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Resultado</span>
+            <h2 class="page-title">Una buena ruta ahorra pasos, reduce dudas y mejora la calidad del sistema completo.</h2>
+            <p class="page-lead">
+              Si tu proyecto ya tiene demasiadas pantallas o procesos poco claros, ordenar la arquitectura puede ser el cambio más rentable antes de seguir construyendo.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="soporte-garantia.html">Definir mi arquitectura</a>
+              <a class="button secondary" href="catalogo-de-camaras.html">Revisar integraciones</a>
             </div>
-        </section>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <!-- Platform Modal -->
-    <div class="modal fade" id="platformModal" tabindex="-1" aria-labelledby="platformModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content custom-modal">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="platformModalLabel">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h4a1 1 0 011 1v5m-6 0h6" />
-                        </svg>
-                        Selecciona una Plataforma
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="modal-description">Selecciona la plataforma donde encontraste tu producto:</p>
-                    <div class="platform-buttons-grid">
-                        <button class="btn platform-btn" data-platform="Amazon" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Amazon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                            </svg>
-                            Amazon
-                        </button>
-                        <button class="btn platform-btn" data-platform="AliExpress" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20AliExpress">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                            </svg>
-                            AliExpress
-                        </button>
-                        <button class="btn platform-btn" data-platform="eBay" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20eBay">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m0 0h8a2 2 0 002-2v-3a2 2 0 00-2-2H9.5" />
-                            </svg>
-                            eBay
-                        </button>
-                        <button class="btn platform-btn" data-platform="Wish" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Wish">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                            </svg>
-                            Wish
-                        </button>
-                        <button class="btn platform-btn" data-platform="Shein" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Shein">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
-                            </svg>
-                            Shein
-                        </button>
-                        <button class="btn platform-btn" data-platform="Target" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Target">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h4a1 1 0 011 1v5m-6 0h6" />
-                            </svg>
-                            Target
-                        </button>
-                        <button class="btn platform-btn" data-platform="Temu" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20utilizar%20el%20servicio%20de%20logística%20con%20Temu">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            Temu
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <footer class="footer">
+      <div class="container footer-layout">
+        <section class="footer-panel dark">
+          <span class="kicker alt">SPIKEDTECH</span>
+          <h2 class="footer-title">Rutas claras para productos que necesitan orden, conversión y continuidad.</h2>
+          <p class="copy">
+            Arquitectura digital aplicada a sitios complejos, funnels, paneles y plataformas operativas.
+          </p>
+          <div class="footer-meta">
+            <span>Atenas, Alajuela, Costa Rica</span>
+            <span>Proyectos locales y remotos</span>
+          </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="modern-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Colaboradores</h4>
-                    <div class="collaborator-logo">
-                        <img src="img/LogoCSW.png" alt="CSW Logo">
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Servicios</h4>
-                    <div class="footer-links">
-                        <a href="tecnologia.html">Tecnología</a>
-                        <a href="diseño-grafico.html">Diseño Gráfico</a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Soporte</h4>
-                    <div class="footer-links">
-                        <a href="soporte-garantia.html">Garantía & Soporte</a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contáctanos</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="social-link facebook" target="_blank" title="Facebook">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp" class="social-link instagram" target="_blank" title="Instagram">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="mailto:spikedtech19@gmail.com" class="social-link email" title="Email">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.082L12 10.874l9.282-7.053h1.082A1.636 1.636 0 0 1 24 5.457z"/>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/+50687394231" class="social-link whatsapp" target="_blank" title="WhatsApp">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"/>
-                            </svg>
-                        </a>
-                        <a href="tel:+50687394231" class="social-link phone" title="Llamar">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+        <section class="footer-grid">
+          <article class="footer-panel">
+            <h2 class="footer-title">Servicios</h2>
+            <div class="footer-links">
+              <a href="servicios.html">Panorama general</a>
+              <a href="tecnologia.html">Desarrollo web</a>
+              <a href="diseño-grafico.html">Diseño UX/UI</a>
             </div>
-            
-            <div class="footer-location">
-                <h4>Ubicación</h4>
-                <p><strong>Atenas, Alajuela, Costa Rica</strong></p>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28407.47553848057!2d-84.43981413842558!3d9.986062719641719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa05119604dc297%3A0xaf69ee57a14c8979!2sAlajuela%20Province%2C%20Atenas!5e1!3m2!1sen!2scr!4v1733013555594!5m2!1sen!2scr"
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Explorar</h2>
+            <div class="footer-links">
+              <a href="logistica.html">Rutas y plataformas</a>
+              <a href="articulos-disponibles.html">Portafolio</a>
+              <a href="catalogo-de-camaras.html">Stack e integraciones</a>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 SPIKEDTECH Costa Rica. Todos los derechos reservados.</p>
-                <div class="costa-rica-flag">
-                    <img src="img/file.png" alt="Costa Rica">
-                </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Contacto</h2>
+            <div class="footer-links">
+              <a href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
+              <a href="soporte-garantia.html">Brief comercial</a>
             </div>
-        </div>
+          </article>
+        </section>
+      </div>
+
+      <div class="container footer-meta">
+        <span>© <span data-year></span> SPIKEDTECH</span>
+        <span>Arquitectura de rutas y plataformas</span>
+      </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/loading.js"></script>
-    <script src="js/modal-logistica.js"></script>
-    <script src="js/index-animations.js"></script>
-    <script src="js/modern-navbar.js"></script>
-
-        <script src="js/cursor-fixed.js"></script>
-</body>
+    <script src="js/studio.js"></script>
+  </body>
 </html>

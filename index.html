@@ -5,519 +5,427 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="SPIKEDTECH - Soluciones integrales en tecnología, soporte técnico, cámaras de seguridad y diseño gráfico"
+      content="SPIKEDTECH desarrolla sitios web, plataformas digitales, diseño UX/UI y rutas de producto para negocios que necesitan vender, operar y escalar mejor."
     />
-
-    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      as="style"
-    />
-    <link rel="preload" href="img/logoSpikedtechredondo.png" as="image" />
-    <link rel="preload" href="img/wallpaper.jpg" as="image" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/index.css" />
-    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-
-    <!-- Favicon -->
+    <link rel="stylesheet" href="css/studio.css" />
     <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg" />
-    <title>SPIKEDTECH - Tecnología e Innovación</title>
+    <title>SPIKEDTECH | Desarrollo Web y Plataformas Digitales</title>
   </head>
   <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-      <div class="loading-content">
-        <div class="loading-logo-container">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Ir al inicio de SPIKEDTECH">
           <img
+            class="brand-mark"
             src="img/logoSpikedtechredondo.png"
-            alt="SPIKEDTECH"
-            class="loading-logo"
+            alt="Logo SPIKEDTECH"
           />
-          <div class="loading-glow"></div>
+          <span class="brand-copy">
+            <span class="brand-name">SPIKEDTECH</span>
+            <span class="brand-tag">Estudio de productos web</span>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="tecnologia.html">Desarrollo</a>
+          <a class="nav-link" href="diseño-grafico.html">Diseño</a>
+          <a class="nav-link" href="logistica.html">Plataformas</a>
+          <a class="nav-link" href="articulos-disponibles.html">Portafolio</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="button primary" href="soporte-garantia.html">
+            Solicitar diagnóstico
+            <span class="button-arrow">→</span>
+          </a>
         </div>
-        <div class="loading-text">
-          <h2>SPIKEDTECH</h2>
-          <p class="loading-message">Cargando experiencia...</p>
-        </div>
-        <div class="loading-progress-container">
-          <div class="loading-progress-bar"></div>
-          <div class="loading-progress-text">0%</div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu>
+        <nav class="mobile-links" aria-label="Navegación móvil">
+          <a class="mobile-link" href="index.html">Inicio</a>
+          <a class="mobile-link" href="servicios.html">Servicios</a>
+          <a class="mobile-link" href="tecnologia.html">Desarrollo web</a>
+          <a class="mobile-link" href="diseño-grafico.html">Diseño UX/UI</a>
+          <a class="mobile-link" href="logistica.html">Rutas y plataformas</a>
+          <a class="mobile-link" href="articulos-disponibles.html">Portafolio</a>
+          <a class="mobile-link" href="catalogo-de-camaras.html">Stack e integraciones</a>
+          <a class="mobile-link" href="soporte-garantia.html">Contacto</a>
+        </nav>
+        <div class="mobile-cta">
+          <a class="button primary" href="soporte-garantia.html">Hablemos de tu proyecto</a>
         </div>
       </div>
-      <div class="loading-particles"></div>
-    </div>
-
-    <!-- Header Corregido con Mejor Espaciado -->
-    <header class="modern-header">
-      <nav class="navbar">
-        <div class="nav-container">
-          <!-- LOGO - LADO IZQUIERDO -->
-          <a href="index.html" class="logo">
-            <img
-              src="img/logoSpikedtechredondo.png"
-              alt="SPIKEDTECH"
-              class="logo-img"
-            />
-            <span class="logo-text">SPIKEDTECH</span>
-          </a>
-
-          <!-- NAVEGACIÓN - LADO DERECHO -->
-          <div class="nav-right">
-            <!-- Links de Navegación -->
-            <ul class="nav-links">
-              <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-              <li>
-                <a href="soporte-garantia.html" class="nav-link">Soporte</a>
-              </li>
-            </ul>
-
-            <!-- Botón CTA -->
-            <div class="nav-cta">
-              <a href="soporte-garantia.html" class="btn-nav-cta">
-                <span>Contactar</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M7 17L17 7M17 7H7M17 7V17"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Botón Mobile Menu -->
-          <button class="mobile-menu-btn" aria-label="Abrir menú">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
-        </div>
-
-        <!-- MENÚ MÓVIL -->
-        <div class="mobile-menu-overlay">
-          <div class="mobile-menu">
-            <!-- Header del Menú Móvil -->
-            <div class="mobile-menu-header">
-              <div class="mobile-logo">
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH" />
-                <span>SPIKEDTECH</span>
-              </div>
-              <button class="mobile-menu-close" aria-label="Cerrar menú">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M18 6L6 18M6 6L18 18"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            <!-- Contenido del Menú Móvil -->
-            <div class="mobile-menu-content">
-              <!-- Links de Navegación Móvil -->
-              <ul class="mobile-nav-links">
-                <li>
-                  <a href="servicios.html" class="mobile-nav-link">
-                    <span class="mobile-link-icon">⚙️</span>
-                    <span>Servicios</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="soporte-garantia.html" class="mobile-nav-link">
-                    <span class="mobile-link-icon">🛠️</span>
-                    <span>Soporte</span>
-                  </a>
-                </li>
-              </ul>
-
-              <!-- Botón CTA Móvil -->
-              <div class="mobile-menu-cta">
-                <a href="soporte-garantia.html" class="btn-mobile-cta">
-                  Obtener Soporte
-                </a>
-              </div>
-
-              <!-- Redes Sociales Móvil -->
-              <div class="mobile-social">
-                <a
-                  href="https://www.facebook.com/share/14UfJH6s7Y/"
-                  class="mobile-social-link"
-                  title="Facebook"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.instagram.com/spikedtech19"
-                  class="mobile-social-link"
-                  title="Instagram"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://wa.me/+50687394231"
-                  class="mobile-social-link"
-                  title="WhatsApp"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-modern">
-      <div class="hero-background">
-        <img src="img/wallpaper.jpg" alt="Tecnología" class="hero-bg" />
-        <div class="hero-overlay"></div>
-      </div>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <article class="hero-panel" data-reveal>
+            <span class="kicker">Programación, diseño y ejecución web</span>
+            <h1 class="display">
+              Construimos sitios y plataformas web que convierten procesos en crecimiento.
+            </h1>
+            <p class="lead">
+              SPIKEDTECH crea experiencias digitales completas: estrategia,
+              diseño UX/UI, desarrollo web, rutas de navegación, automatización
+              y lanzamiento técnico para negocios que necesitan una presencia
+              seria y escalable.
+            </p>
 
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            <span class="gradient-text">Rendimiento</span>,
-            <span class="highlight-text">Calidad</span>,
-            <span class="gradient-text">Seguridad</span>
-          </h1>
-          <p class="hero-description">
-            Transformamos la tecnología en soluciones inteligentes. Soporte
-            técnico especializado, instalación de sistemas de seguridad, IoT y
-            diseño gráfico profesional.
-          </p>
-          <div class="hero-buttons">
-            <a href="servicios.html" class="btn-primary">
-              <span>Explorar Servicios</span>
-              <i class="btn-arrow">→</i>
-            </a>
-            <a href="soporte-garantia.html" class="btn-secondary">
-              <span>Contactar</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="scroll-indicator">
-        <div class="scroll-dot"></div>
-      </div>
-    </section>
-
-    <!-- Features Cards -->
-    <section class="features-section">
-      <div class="container">
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="card-icon">
-              <div class="icon-bg support"></div>
-              <span class="icon">🛠️</span>
+            <div class="hero-actions">
+              <a class="button primary" href="servicios.html">
+                Ver líneas de servicio
+                <span class="button-arrow">→</span>
+              </a>
+              <a class="button secondary" href="soporte-garantia.html">
+                Solicitar propuesta
+              </a>
             </div>
-            <div class="card-content">
-              <h3>Soporte & Garantía</h3>
-              <p>
-                Atención especializada y garantías completas para tu
-                tranquilidad.
+
+            <div class="tag-row" aria-label="Especialidades principales">
+              <span class="tag">Landing pages</span>
+              <span class="tag">Sitios corporativos</span>
+              <span class="tag">Plataformas internas</span>
+              <span class="tag">Automatización digital</span>
+            </div>
+          </article>
+
+          <div class="hero-visual" data-reveal>
+            <section class="mockup-card" aria-label="Resumen de capacidad">
+              <div class="mockup-toolbar">
+                <div class="window-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="window-label">Arquitectura digital de punta a punta</span>
+              </div>
+
+              <div class="mockup-shell">
+                <div class="mockup-panel">
+                  <strong>Ruta de producto</strong>
+                  <p class="lead">
+                    Estructuramos la navegación, los flujos y la lógica del sitio
+                    para que cada pantalla tenga un objetivo claro.
+                  </p>
+                </div>
+
+                <div class="mockup-stats">
+                  <div class="mockup-stat">
+                    <span>Diseño</span>
+                    <strong>UX/UI</strong>
+                  </div>
+                  <div class="mockup-stat">
+                    <span>Desarrollo</span>
+                    <strong>Web full flow</strong>
+                  </div>
+                  <div class="mockup-stat">
+                    <span>Escalamiento</span>
+                    <strong>Integraciones</strong>
+                  </div>
+                  <div class="mockup-stat">
+                    <span>Entrega</span>
+                    <strong>Deploy y soporte</strong>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <aside class="floating-note">
+              <strong>Lo que cambia con una base sólida</strong>
+              <p class="copy">
+                Menos fricción, mejor presentación comercial, mejor rendimiento
+                y una plataforma preparada para evolucionar contigo.
               </p>
-              <div class="card-features">
-                <a href="soporte-garantia.html" class="feature-link"
-                  >¿Desea ser contactado?</a
-                >
-                <a
-                  href="soporte-garantia.html#politicas-garantias"
-                  class="feature-link"
-                  >Políticas de garantía</a
-                >
-              </div>
-              <a href="soporte-garantia.html" class="card-cta"
-                >Más información</a
-              >
-            </div>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">
-              <div class="icon-bg tech"></div>
-              <span class="icon">💻</span>
-            </div>
-            <div class="card-content">
-              <h3>Servicios Tecnológicos</h3>
-              <p>Soluciones completas en tecnología para empresas y hogares.</p>
-              <div class="tech-grid">
-                <div class="tech-category">
-                  <ul>
-                    <li>Cómputo</li>
-                    <li>Mantenimiento</li>
-                  </ul>
-                </div>
-                <div class="tech-category">
-                  <ul>
-                    <li>Redes</li>
-                    <li>Cámaras</li>
-                  </ul>
-                </div>
-                <div class="tech-category">
-                  <ul>
-                    <li>IoT</li>
-                    <li>Impresoras</li>
-                  </ul>
-                </div>
-              </div>
-              <a href="servicios.html" class="card-cta">Ver servicios</a>
-            </div>
+            </aside>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Services Overview -->
-    <section class="services-modern">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Nuestros Servicios</h2>
-          <p class="section-subtitle">
-            Soluciones integrales para impulsar tu negocio
-          </p>
+      <section class="section">
+        <div class="container metrics-grid">
+          <article class="metric-card" data-reveal>
+            <span class="metric-eyebrow">01</span>
+            <div class="metric-number">Descubrimiento</div>
+            <p class="metric-label">Aterrizamos alcance, prioridades y objetivo comercial.</p>
+          </article>
+          <article class="metric-card" data-reveal>
+            <span class="metric-eyebrow">02</span>
+            <div class="metric-number">Diseño</div>
+            <p class="metric-label">Definimos una interfaz clara, coherente y con intención.</p>
+          </article>
+          <article class="metric-card" data-reveal>
+            <span class="metric-eyebrow">03</span>
+            <div class="metric-number">Código</div>
+            <p class="metric-label">Construimos una base mantenible, rápida y preparada para crecer.</p>
+          </article>
+          <article class="metric-card" data-reveal>
+            <span class="metric-eyebrow">04</span>
+            <div class="metric-number">Optimización</div>
+            <p class="metric-label">Medimos, iteramos y añadimos automatización donde haga falta.</p>
+          </article>
         </div>
+      </section>
 
-        <div class="services-card">
-          <div class="services-grid">
-            <div class="service-item">
-              <div class="service-icon">🔧</div>
-              <h3>Tecnología</h3>
-              <p>Soporte técnico especializado y mantenimiento preventivo</p>
+      <section class="section">
+        <div class="container content-grid">
+          <article class="section-panel" data-reveal>
+            <span class="kicker alt">Qué construimos</span>
+            <h2 class="section-title">Soluciones web alineadas al negocio, no solo páginas bonitas.</h2>
+            <p class="section-copy">
+              Diseñamos y desarrollamos desde la primera landing de ventas hasta
+              plataformas web con roles, paneles, integraciones y automatización.
+              El enfoque cambia según el objetivo: vender, captar leads,
+              operar mejor o escalar un producto digital.
+            </p>
+            <ul class="check-list">
+              <li>Sitios corporativos con narrativa clara y estructura SEO técnica.</li>
+              <li>Landing pages enfocadas en conversión y campañas.</li>
+              <li>Plataformas administrativas, paneles y áreas privadas.</li>
+              <li>Arquitectura de rutas y flujos para productos complejos.</li>
+            </ul>
+          </article>
+
+          <aside class="quote-panel dark" data-reveal>
+            <span class="kicker alt">En qué nos enfocamos</span>
+            <h2 class="quote-title">Diseño con dirección. Código con criterio. Entrega con visión de producto.</h2>
+            <p class="lead">
+              No trabajamos el sitio como una pieza aislada. Lo tratamos como un
+              sistema digital que debe comunicar, captar, funcionar y poder crecer.
+            </p>
+            <div class="button-row">
+              <a class="button secondary" href="tecnologia.html">Explorar desarrollo</a>
+              <a class="button ghost" href="diseño-grafico.html">Explorar diseño</a>
             </div>
-            <div class="service-item">
-              <div class="service-icon">🎨</div>
-              <h3>Diseño Gráfico</h3>
-              <p>Identidad visual y marketing digital profesional</p>
-            </div>
-            <div class="service-item">
-              <div class="service-icon">📦</div>
-              <h3>Logística</h3>
-              <p>Gestión eficiente de entrega y distribución</p>
-            </div>
-            <div class="service-item">
-              <div class="service-icon">🛍️</div>
-              <h3>Productos</h3>
-              <p>Amplio catálogo de productos tecnológicos</p>
-            </div>
-          </div>
-          <div class="services-action">
-            <a href="servicios.html" class="btn-services">
-              Ver todos los servicios
-              <span class="btn-glow"></span>
-            </a>
-          </div>
+          </aside>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section class="about-modern">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text">
-            <h2 class="about-title">Sobre Nosotros</h2>
-            <p class="about-description">
-              Somos un equipo comprometido con la innovación tecnológica, con
-              más de 2 años transformando ideas en soluciones digitales
-              efectivas. Nuestra pasión por la tecnología nos impulsa a ofrecer
-              servicios de calidad superior.
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Líneas de servicio</span>
+              <h2 class="section-title">La nueva oferta de SPIKEDTECH</h2>
+            </div>
+            <p class="section-copy">
+              Cada línea responde a una necesidad específica, pero todas se pueden
+              combinar en un proyecto integral.
             </p>
           </div>
 
-          <div class="mission-card">
-            <h3>Nuestra Misión</h3>
-            <p>
-              Democratizar la tecnología brindando soluciones accesibles,
-              seguras e innovadoras que impulsen el crecimiento de nuestros
-              clientes.
+          <div class="cards-grid">
+            <article class="card service-card highlight" data-reveal>
+              <span class="card-label">Desarrollo web</span>
+              <h3 class="card-title">Sitios, aplicaciones y paneles a medida</h3>
+              <p class="card-copy">
+                Desde una presencia corporativa sólida hasta plataformas internas,
+                dashboards y portales con procesos propios.
+              </p>
+              <ul class="check-list">
+                <li>Frontend y experiencia responsive</li>
+                <li>Backend, integraciones y despliegue</li>
+                <li>Escalabilidad y estructura técnica clara</li>
+              </ul>
+              <a class="inline-button" href="tecnologia.html">Ver desarrollo</a>
+            </article>
+
+            <article class="card service-card" data-reveal>
+              <span class="card-label">Diseño digital</span>
+              <h3 class="card-title">UX/UI, identidad visual y sistemas de interfaz</h3>
+              <p class="card-copy">
+                Diseñamos pantallas, recorridos y piezas visuales que ayudan a
+                posicionar mejor el producto y reducir fricción.
+              </p>
+              <ul class="check-list">
+                <li>Wireframes y prototipos</li>
+                <li>Diseño visual con criterio comercial</li>
+                <li>Componentes reutilizables y consistencia</li>
+              </ul>
+              <a class="inline-button" href="diseño-grafico.html">Ver diseño</a>
+            </article>
+
+            <article class="card service-card" data-reveal>
+              <span class="card-label">Rutas y plataformas</span>
+              <h3 class="card-title">Arquitectura de navegación, flujos y automatización</h3>
+              <p class="card-copy">
+                Definimos cómo se mueve el usuario dentro del producto y cómo se
+                conectan procesos, formularios, CRM, correo y operaciones.
+              </p>
+              <ul class="check-list">
+                <li>User journeys y funnels</li>
+                <li>Roles, permisos y recorridos internos</li>
+                <li>Automatización de tareas repetitivas</li>
+              </ul>
+              <a class="inline-button" href="logistica.html">Ver plataformas</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-grid">
+          <article class="section-panel" data-reveal>
+            <span class="kicker alt">Cómo trabajamos</span>
+            <h2 class="section-title">Proceso claro para ejecutar sin improvisación.</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-phase">Fase 01</span>
+                <div class="timeline-copy">
+                  <strong>Diagnóstico y alcance</strong>
+                  <p class="copy">
+                    Revisamos objetivos, tipo de negocio, público, prioridades y nivel
+                    de complejidad técnica.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-phase">Fase 02</span>
+                <div class="timeline-copy">
+                  <strong>Arquitectura y diseño</strong>
+                  <p class="copy">
+                    Ordenamos la información, definimos rutas y diseñamos una interfaz
+                    que soporte la experiencia real del usuario.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-phase">Fase 03</span>
+                <div class="timeline-copy">
+                  <strong>Desarrollo y QA</strong>
+                  <p class="copy">
+                    Implementamos la solución, probamos los flujos críticos y ajustamos
+                    rendimiento, consistencia y accesibilidad.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-phase">Fase 04</span>
+                <div class="timeline-copy">
+                  <strong>Lanzamiento y evolución</strong>
+                  <p class="copy">
+                    Publicamos, medimos, refinamos y abrimos espacio para soporte,
+                    nuevas funcionalidades o automatización adicional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="section-panel" data-reveal>
+            <span class="kicker">Entregables frecuentes</span>
+            <h2 class="section-title">No entregamos humo: entregamos estructura.</h2>
+            <div class="number-stack">
+              <div class="number-item">
+                <span class="number-badge">A</span>
+                <div class="number-copy">
+                  <strong>Mapa del sitio y rutas críticas</strong>
+                  <p class="copy">Para que la experiencia no dependa de intuición improvisada.</p>
+                </div>
+              </div>
+              <div class="number-item">
+                <span class="number-badge">B</span>
+                <div class="number-copy">
+                  <strong>Diseño de interfaz y componentes</strong>
+                  <p class="copy">Con una identidad visual coherente y preparada para crecer.</p>
+                </div>
+              </div>
+              <div class="number-item">
+                <span class="number-badge">C</span>
+                <div class="number-copy">
+                  <strong>Implementación técnica y despliegue</strong>
+                  <p class="copy">Código ordenado, deploy y soporte posterior al lanzamiento.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Siguiente paso</span>
+            <h2 class="page-title">Si tu presencia digital ya se quedó corta, es momento de reconstruirla bien.</h2>
+            <p class="page-lead">
+              Podemos empezar por una landing, un rediseño estratégico o una plataforma
+              completa. Lo importante es que la solución responda al momento real de tu negocio.
             </p>
-          </div>
-
-          <div class="values-grid">
-            <div class="value-item">
-              <div class="value-icon">⭐</div>
-              <h4>Calidad</h4>
-              <p>Excelencia en cada proyecto y servicio</p>
+            <div class="hero-actions">
+              <a class="button primary" href="soporte-garantia.html">Solicitar propuesta</a>
+              <a class="button secondary" href="articulos-disponibles.html">Ver referencias de proyectos</a>
             </div>
-            <div class="value-item">
-              <div class="value-icon">🤝</div>
-              <h4>Confianza</h4>
-              <p>Relaciones duraderas basadas en transparencia</p>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">🚀</div>
-              <h4>Innovación</h4>
-              <p>Vanguardia tecnológica constante</p>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">🛡️</div>
-              <h4>Seguridad</h4>
-              <p>Protección garantizada en todos nuestros servicios</p>
-            </div>
-          </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="modern-footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4>Colaboradores</h4>
-            <div class="collaborator-logo">
-              <img src="img/LogoCSW.png" alt="CSW Logo" />
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h4>Servicios</h4>
-            <div class="footer-links">
-              <a href="servicios.html">Servicios Disponibles</a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h4>Soporte</h4>
-            <div class="footer-links">
-              <a href="soporte-garantia.html">Garantía & Soporte</a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h4>Contáctanos</h4>
-            <div class="social-links">
-              <a
-                href="https://www.facebook.com/share/14UfJH6s7Y/"
-                class="social-link facebook"
-                title="Facebook"
-              >
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp"
-                class="social-link instagram"
-                title="Instagram"
-              >
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="mailto:spikedtech19@gmail.com"
-                class="social-link email"
-                title="Email"
-              >
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.082L12 10.874l9.282-7.053h1.082A1.636 1.636 0 0 1 24 5.457z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://wa.me/+50687394231"
-                class="social-link whatsapp"
-                title="WhatsApp"
-              >
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="tel:+50687394231"
-                class="social-link phone"
-                title="Llamar"
-              >
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-location">
-          <h4>Ubicación</h4>
-          <p><strong>Atenas, Alajuela, Costa Rica</strong></p>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28407.47553848057!2d-84.43981413842558!3d9.986062719641719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa05119604dc297%3A0xaf69ee57a14c8979!2sAlajuela%20Province%2C%20Atenas!5e1!3m2!1sen!2scr!4v1733013555594!5m2!1sen!2scr"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>
-            &copy; 2025 SPIKEDTECH Costa Rica. Todos los derechos reservados.
+    <footer class="footer">
+      <div class="container footer-layout">
+        <section class="footer-panel dark">
+          <span class="kicker alt">SPIKEDTECH</span>
+          <h2 class="footer-title">Desarrollo web, diseño digital y plataformas con intención comercial.</h2>
+          <p class="copy">
+            Acompañamos proyectos desde la idea hasta la puesta en producción,
+            combinando criterio visual, arquitectura digital y ejecución técnica.
           </p>
-          <div class="costa-rica-flag">
-            <img src="img/file.png" alt="Costa Rica" />
+          <div class="footer-meta">
+            <span>Atenas, Alajuela, Costa Rica</span>
+            <span>Disponible para proyectos remotos</span>
           </div>
-        </div>
+        </section>
+
+        <section class="footer-grid">
+          <article class="footer-panel">
+            <h2 class="footer-title">Servicios</h2>
+            <div class="footer-links">
+              <a href="servicios.html">Servicios integrales</a>
+              <a href="tecnologia.html">Desarrollo web</a>
+              <a href="diseño-grafico.html">Diseño UX/UI</a>
+            </div>
+          </article>
+
+          <article class="footer-panel">
+            <h2 class="footer-title">Explorar</h2>
+            <div class="footer-links">
+              <a href="logistica.html">Rutas y plataformas</a>
+              <a href="articulos-disponibles.html">Portafolio</a>
+              <a href="catalogo-de-camaras.html">Stack e integraciones</a>
+            </div>
+          </article>
+
+          <article class="footer-panel">
+            <h2 class="footer-title">Contacto</h2>
+            <div class="footer-links">
+              <a href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
+              <a href="soporte-garantia.html">Brief comercial</a>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <div class="container footer-meta">
+        <span>© <span data-year></span> SPIKEDTECH</span>
+        <span>Desarrollo, diseño y plataformas web</span>
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/loading-index.js"></script>
-    <script src="js/index-animations.js"></script>
-    <script src="js/modern-navbar.js"></script>
-    <script src="js/cursor-fixed.js"></script>
+    <script src="js/studio.js"></script>
   </body>
 </html>

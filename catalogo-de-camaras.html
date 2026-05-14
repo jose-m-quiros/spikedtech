@@ -1,337 +1,273 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo de cámaras de seguridad SPIKEDTECH - Tecnología avanzada para tu hogar y negocio">
-    <meta name="keywords" content="cámaras seguridad, SPIKEDTECH, videovigilancia, Costa Rica">
-    <link rel="stylesheet" href="css/catalogo-de-camaras.css">
-    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg">
-    <title>Catálogo de Cámaras - SPIKEDTECH</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stack e integraciones de SPIKEDTECH: frontend, backend, automatización, pagos, analítica, CRM, despliegue y herramientas para productos web."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/studio.css" />
+    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg" />
+    <title>Stack e Integraciones | SPIKEDTECH</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Ir al inicio de SPIKEDTECH">
+          <img class="brand-mark" src="img/logoSpikedtechredondo.png" alt="Logo SPIKEDTECH" />
+          <span class="brand-copy">
+            <span class="brand-name">SPIKEDTECH</span>
+            <span class="brand-tag">Estudio de productos web</span>
+          </span>
+        </a>
 
-<body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-content">
-            <div class="loading-logo-container">
-                <div class="loading-glow"></div>
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH" class="loading-logo">
-            </div>
-            <div class="loading-text">
-                <h2>SPIKEDTECH</h2>
-                <p class="loading-message">Cargando catálogo de cámaras...</p>
-            </div>
-            <div class="loading-progress-container">
-                <div class="loading-progress-bar" id="progressBar"></div>
-                <div class="loading-progress-text" id="progressText">0%</div>
-            </div>
-        </div>
-        <div class="loading-particles"></div>
-    </div>
-
-    <!-- Modern Header -->
-    <header class="modern-header" id="modernHeader">
-        <nav class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH Logo" class="logo-img" />
-                <span class="logo-text">SPIKEDTECH</span>
-            </a>
-            
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="soporte-garantia.html" class="nav-link">Soporte</a></li>
-                    <li><a href="servicio-de-diseño-grafico.html" class="nav-link">Servicios</a></li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="soporte-garantia.html" class="btn-nav-cta">
-                        Soporte Técnico
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="tecnologia.html">Desarrollo</a>
+          <a class="nav-link" href="diseño-grafico.html">Diseño</a>
+          <a class="nav-link" href="logistica.html">Plataformas</a>
+          <a class="nav-link" href="articulos-disponibles.html">Portafolio</a>
         </nav>
+
+        <div class="nav-actions">
+          <a class="button primary" href="soporte-garantia.html">
+            Validar mi stack
+            <span class="button-arrow">→</span>
+          </a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu>
+        <nav class="mobile-links" aria-label="Navegación móvil">
+          <a class="mobile-link" href="index.html">Inicio</a>
+          <a class="mobile-link" href="servicios.html">Servicios</a>
+          <a class="mobile-link" href="tecnologia.html">Desarrollo web</a>
+          <a class="mobile-link" href="diseño-grafico.html">Diseño UX/UI</a>
+          <a class="mobile-link" href="logistica.html">Rutas y plataformas</a>
+          <a class="mobile-link" href="articulos-disponibles.html">Portafolio</a>
+          <a class="mobile-link" href="catalogo-de-camaras.html">Stack e integraciones</a>
+          <a class="mobile-link" href="soporte-garantia.html">Contacto</a>
+        </nav>
+        <div class="mobile-cta">
+          <a class="button primary" href="soporte-garantia.html">Solicitar propuesta</a>
+        </div>
+      </div>
     </header>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-        <div class="mobile-menu">
-            <div class="mobile-menu-header">
-                <div class="mobile-logo">
-                    <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH">
-                    <span>SPIKEDTECH</span>
-                </div>
-                <button class="mobile-menu-close" id="mobileMenuClose">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                    </svg>
-                </button>
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <article class="hero-panel" data-reveal>
+            <span class="kicker">Stack e integraciones</span>
+            <h1 class="page-title">La tecnología debe ajustarse al proyecto, no al revés.</h1>
+            <p class="page-lead">
+              Seleccionamos arquitectura, integraciones y herramientas según el tipo de producto,
+              el ritmo de crecimiento y la complejidad real del negocio. El objetivo no es sumar piezas;
+              es elegir las necesarias para construir una base confiable.
+            </p>
+            <div class="button-row">
+              <a class="button primary" href="soporte-garantia.html">Revisar mi arquitectura</a>
+              <a class="button secondary" href="tecnologia.html">Volver a desarrollo</a>
             </div>
-            <div class="mobile-menu-content">
-                <ul class="mobile-nav-links">
-                    <li><a href="index.html" class="mobile-nav-link">
-                        <span class="mobile-link-icon">🏠</span>
-                        Inicio
-                    </a></li>
-                    <li><a href="soporte-garantia.html" class="mobile-nav-link">
-                        <span class="mobile-link-icon">🛠️</span>
-                        Soporte
-                    </a></li>
-                    <li><a href="servicio-de-diseño-grafico.html" class="mobile-nav-link">
-                        <span class="mobile-link-icon">⚙️</span>
-                        Servicios
-                    </a></li>
-                </ul>
-                <div class="mobile-menu-cta">
-                    <a href="soporte-garantia.html" class="btn-mobile-cta">Soporte Técnico</a>
-                </div>
-                <div class="mobile-social">
-                    <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="mobile-social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp" class="mobile-social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    <a href="https://wa.me/+50687394231" class="mobile-social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:spikedtech19@gmail.com" class="mobile-social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h3.819v.273L12 10.1l6.545-6.007v-.273h3.819c.904 0 1.636.732 1.636 1.636z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+          </article>
+
+          <aside class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Capacidades</span>
+            <ul class="check-list">
+              <li>Interfaces web responsive y sistemas de componentes.</li>
+              <li>Lógica de negocio, rutas, módulos e integraciones.</li>
+              <li>Conexión con analítica, correo, pagos, CRM y automatización.</li>
+              <li>Despliegue, medición y continuidad técnica.</li>
+            </ul>
+          </aside>
         </div>
-    </div>
+      </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <div class="cameras-container">
-            <h1 class="page-title">Cámaras de Seguridad</h1>
-            
-            <div class="cameras-grid">
-                <!-- Camera Card 1 -->
-                <article class="camera-card">
-                    <div class="camera-image-container">
-                        <img src="img/Xiaomi20Outdoor20Camera20AW200207122-1.webp" class="camera-image" alt="Xiaomi Outdoor Camera" loading="lazy">
-                    </div>
-                    <div class="camera-content">
-                        <h2 class="camera-title">Xiaomi Outdoor (Exterior) Camera AW200</h2>
-                        
-                        <div class="camera-tabs">
-                            <button class="tab-btn active" data-tab="detalles-1">Detalles</button>
-                        </div>
-                        
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="detalles-1">
-                                <p class="tab-description">
-                                    Resolución: 1080p Full HD para una calidad de imagen excepcional. Visión Nocturna: Tecnología de visión nocturna a color para ver claramente en la oscuridad. Resistencia a la Intemperie: Certificación IP65 para resistir lluvia, polvo y otros elementos.
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="info-1">
-                                <table class="specs-table">
-                                    <tr><td>Aplicación</td><td>Exterior</td></tr>
-                                    <tr><td>Color</td><td>Blanco</td></tr>
-                                    <tr><td>Dimensión del empaque (cm)</td><td>23 x 20 x 16.5</td></tr>
-                                    <tr><td>Marca</td><td>Xiaomi</td></tr>
-                                    <tr><td>Material</td><td>Plástico</td></tr>
-                                    <tr><td>Tipo de uso</td><td>Doméstico</td></tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Camera Card 2 -->
-                <article class="camera-card">
-                    <div class="camera-image-container">
-                        <img src="img/inteleccamaraunnocam8wifiinteligente-interior.jpg" class="camera-image" alt="Unno Cam8" loading="lazy">
-                    </div>
-                    <div class="camera-content">
-                        <h2 class="camera-title">Camara UNNO CAM8 WIFI Inteligente – Interior</h2>
-                        
-                        <div class="camera-tabs">
-                            <button class="tab-btn active" data-tab="detalles-2">Detalles</button>
-                        </div>
-                        
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="detalles-2">
-                                <p class="tab-description">
-                                    Cámara inteligente WiFi para interiores con visión nocturna, detección de movimiento y audio bidireccional. Compatible con asistentes de voz y aplicación móvil.
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="info-2">
-                                <table class="specs-table">
-                                    <tr><td>Aplicación</td><td>Interior</td></tr>
-                                    <tr><td>Color</td><td>Blanco</td></tr>
-                                    <tr><td>Dimensión del empaque (cm)</td><td>2.38 x 2.85 x 3.08</td></tr>
-                                    <tr><td>Marca</td><td>Unno</td></tr>
-                                    <tr><td>Material</td><td>Plástico</td></tr>
-                                    <tr><td>Tipo de uso</td><td>Doméstico</td></tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Camera Card 3 -->
-                <article class="camera-card">
-                    <div class="camera-image-container">
-                        <img src="img/Cámarabalaconsensordemovimientoycalor.webp" class="camera-image" alt="Cámara bala" loading="lazy">
-                    </div>
-                    <div class="camera-content">
-                        <h2 class="camera-title">Cámara bala con sensor de movimiento y calor</h2>
-                        
-                        <div class="camera-tabs">
-                            <button class="tab-btn active" data-tab="detalles-3">Detalles</button>
-                        </div>
-                        
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="detalles-3">
-                                <p class="tab-description">
-                                    Cámara de seguridad tipo bala con sensor térmico y de movimiento. Ideal para exterior con visión nocturna y detección inteligente.
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="info-3">
-                                <table class="specs-table">
-                                    <tr><td>Aplicación</td><td>Exterior</td></tr>
-                                    <tr><td>Color</td><td>Blanco</td></tr>
-                                    <tr><td>Dimensión del empaque (cm)</td><td>23 x 20 x 16.5</td></tr>
-                                    <tr><td>Marca</td><td>Swann</td></tr>
-                                    <tr><td>Material</td><td>Plástico</td></tr>
-                                    <tr><td>Tipo de uso</td><td>Doméstico</td></tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Camera Card 4 -->
-                <article class="camera-card">
-                    <div class="camera-image-container">
-                        <img src="img/Cámaradeseguridadtipobala1080p.webp" class="camera-image" alt="Cámara de seguridad tipo bala" loading="lazy">
-                    </div>
-                    <div class="camera-content">
-                        <h2 class="camera-title">Cámara de seguridad tipo bala 1080p con sensor de movimiento</h2>
-                        
-                        <div class="camera-tabs">
-                            <button class="tab-btn active" data-tab="detalles-4">Detalles</button>
-                        </div>
-                        
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="detalles-4">
-                                <p class="tab-description">
-                                    Cámara de seguridad profesional con resolución Full HD 1080p, sensor de movimiento avanzado y compatibilidad con sistemas DVR.
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="info-4">
-                                <table class="specs-table">
-                                    <tr><td>Aplicación</td><td>Exterior</td></tr>
-                                    <tr><td>Color</td><td>Blanco</td></tr>
-                                    <tr><td>Dimensión del empaque (cm)</td><td>21.3 x 20.5 x 11</td></tr>
-                                    <tr><td>Marca</td><td>Swann</td></tr>
-                                    <tr><td>Material</td><td>Plástico</td></tr>
-                                    <tr><td>Tipo de uso</td><td>Doméstico</td></tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Capas técnicas</span>
+              <h2 class="section-title">Trabajamos la solución como un sistema conectado.</h2>
             </div>
+            <p class="section-copy">
+              La experiencia visual, la lógica de negocio y la capa de entrega deben responder entre sí.
+              Si una falla, la plataforma completa se resiente.
+            </p>
+          </div>
+
+          <div class="stack-grid">
+            <article class="stack-column highlight" data-reveal>
+              <span class="card-label">Interfaz</span>
+              <h3 class="card-title">Frontend y experiencia</h3>
+              <ul class="check-list">
+                <li>HTML, CSS y JavaScript moderno</li>
+                <li>Patrones de interfaz y diseño responsive</li>
+                <li>Jerarquía visual y navegación consistente</li>
+              </ul>
+            </article>
+
+            <article class="stack-column" data-reveal>
+              <span class="card-label">Lógica</span>
+              <h3 class="card-title">Rutas, módulos e integraciones</h3>
+              <ul class="check-list">
+                <li>APIs, formularios y flujos de datos</li>
+                <li>Usuarios, roles y permisos</li>
+                <li>Automatización y conexión con servicios externos</li>
+              </ul>
+            </article>
+
+            <article class="stack-column" data-reveal>
+              <span class="card-label">Entrega</span>
+              <h3 class="card-title">Analítica, despliegue y continuidad</h3>
+              <ul class="check-list">
+                <li>Publicación y control de calidad</li>
+                <li>Seguimiento técnico y medición</li>
+                <li>Base para futuras iteraciones</li>
+              </ul>
+            </article>
+          </div>
         </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-grid">
+          <article class="section-panel" data-reveal>
+            <span class="kicker alt">Integraciones frecuentes</span>
+            <h2 class="section-title">Herramientas que suelen conectarse a los proyectos.</h2>
+            <div class="mini-grid">
+              <article class="mini-card">
+                <span class="mini-tag">Comercial</span>
+                <h3 class="card-title">WhatsApp, correo y CRM</h3>
+                <p class="card-copy">Para contacto, seguimiento de leads y activación de procesos comerciales.</p>
+              </article>
+              <article class="mini-card">
+                <span class="mini-tag">Venta</span>
+                <h3 class="card-title">Pagos y confirmaciones</h3>
+                <p class="card-copy">Para proyectos que necesitan cobrar, registrar transacciones o automatizar respuesta.</p>
+              </article>
+              <article class="mini-card">
+                <span class="mini-tag">Medición</span>
+                <h3 class="card-title">Analítica y eventos</h3>
+                <p class="card-copy">Para saber qué está pasando en el sitio y tomar decisiones con mejor criterio.</p>
+              </article>
+              <article class="mini-card">
+                <span class="mini-tag">Operación</span>
+                <h3 class="card-title">Automatización y servicios externos</h3>
+                <p class="card-copy">Para conectar formularios, paneles, notificaciones y tareas internas.</p>
+              </article>
+            </div>
+          </article>
+
+          <aside class="section-panel" data-reveal>
+            <span class="kicker">Cómo elegimos</span>
+            <h2 class="section-title">La decisión técnica siempre baja desde el objetivo del proyecto.</h2>
+            <div class="number-stack">
+              <div class="number-item">
+                <span class="number-badge">1</span>
+                <div class="number-copy">
+                  <strong>Identificamos complejidad real</strong>
+                  <p class="copy">Cuántas rutas, módulos, usuarios, integraciones y decisiones técnicas exige el proyecto.</p>
+                </div>
+              </div>
+              <div class="number-item">
+                <span class="number-badge">2</span>
+                <div class="number-copy">
+                  <strong>Elegimos una base sostenible</strong>
+                  <p class="copy">Buscamos que el proyecto pueda crecer sin convertirse en un problema técnico a corto plazo.</p>
+                </div>
+              </div>
+              <div class="number-item">
+                <span class="number-badge">3</span>
+                <div class="number-copy">
+                  <strong>Conectamos solo lo necesario</strong>
+                  <p class="copy">Las integraciones deben sumar capacidad, no complejidad gratuita.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Tecnología al servicio del producto</span>
+            <h2 class="page-title">Una arquitectura bien elegida acelera la entrega y evita rehacer la solución más adelante.</h2>
+            <p class="page-lead">
+              Si todavía no sabes qué stack necesita tu proyecto, no pasa nada. El trabajo correcto es analizarlo antes de prometer tecnología por prometerla.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="soporte-garantia.html">Solicitar revisión técnica</a>
+              <a class="button secondary" href="articulos-disponibles.html">Ver portafolio</a>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="modern-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Colaboradores</h4>
-                    <div class="collaborator-logo">
-                        <img src="img/LogoCSW.png" alt="CSW Logo">
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Servicios</h4>
-                    <div class="footer-links">
-                        <a href="servicios.html">Servicios Disponibles</a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Soporte</h4>
-                    <div class="footer-links">
-                        <a href="soporte-garantia.html">Garantía & Soporte</a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contáctanos</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="social-link facebook" title="Facebook">
-                            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp" class="social-link instagram" title="Instagram">
-                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                        </a>
-                        <a href="mailto:spikedtech19@gmail.com" class="social-link email" title="Email">
-                            <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.082L12 10.874l9.282-7.053h1.082A1.636 1.636 0 0 1 24 5.457z"/></svg>
-                        </a>
-                        <a href="https://wa.me/+50687394231" class="social-link whatsapp" title="WhatsApp">
-                            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"/></svg>
-                        </a>
-                        <a href="tel:+50687394231" class="social-link phone" title="Llamar">
-                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                        </a>
-                    </div>
-                </div>
+    <footer class="footer">
+      <div class="container footer-layout">
+        <section class="footer-panel dark">
+          <span class="kicker alt">SPIKEDTECH</span>
+          <h2 class="footer-title">Stack, integraciones y despliegue con criterio práctico.</h2>
+          <p class="copy">
+            Elegimos herramientas según lo que el proyecto necesita hoy y lo que tendrá que sostener mañana.
+          </p>
+          <div class="footer-meta">
+            <span>Atenas, Alajuela, Costa Rica</span>
+            <span>Proyectos locales y remotos</span>
+          </div>
+        </section>
+
+        <section class="footer-grid">
+          <article class="footer-panel">
+            <h2 class="footer-title">Servicios</h2>
+            <div class="footer-links">
+              <a href="servicios.html">Panorama general</a>
+              <a href="tecnologia.html">Desarrollo web</a>
+              <a href="diseño-grafico.html">Diseño UX/UI</a>
             </div>
-            
-            <div class="footer-location">
-                <h4>Ubicación</h4>
-                <p><strong>Atenas, Alajuela, Costa Rica</strong></p>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28407.47553848057!2d-84.43981413842558!3d9.986062719641719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa05119604dc297%3A0xaf69ee57a14c8979!2sAlajuela%20Province%2C%20Atenas!5e1!3m2!1sen!2scr!4v1733013555594!5m2!1sen!2scr"
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Explorar</h2>
+            <div class="footer-links">
+              <a href="logistica.html">Rutas y plataformas</a>
+              <a href="articulos-disponibles.html">Portafolio</a>
+              <a href="catalogo-de-camaras.html">Stack e integraciones</a>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 SPIKEDTECH Costa Rica. Todos los derechos reservados.</p>
-                <div class="costa-rica-flag">
-                    <img src="img/file.png" alt="Costa Rica">
-                </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Contacto</h2>
+            <div class="footer-links">
+              <a href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
+              <a href="soporte-garantia.html">Brief comercial</a>
             </div>
-        </div>
+          </article>
+        </section>
+      </div>
+
+      <div class="container footer-meta">
+        <span>© <span data-year></span> SPIKEDTECH</span>
+        <span>Stack e integraciones para productos web</span>
+      </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/loading.js"></script>
-    <script src="js/index-animations.js"></script>
-    <script src="js/modal-diseño.js"></script>
-    <script src="js/modern-navbar.js"></script>
-        <script src="js/cursor-fixed.js"></script>
-    
-</body>
+    <script src="js/studio.js"></script>
+  </body>
 </html>

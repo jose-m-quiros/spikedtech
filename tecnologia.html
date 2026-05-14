@@ -1,481 +1,323 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servicios técnicos especializados - SPIKEDTECH: Soporte en computadoras, mantenimiento, redes, cámaras de seguridad, impresoras y dispositivos IoT">
-    <meta name="keywords" content="soporte técnico, computadoras, mantenimiento, redes, cámaras seguridad, impresoras, IoT, SPIKEDTECH, Costa Rica">
-    <link rel="stylesheet" href="css/tecnologia.css">
-    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg">
-    <title>Servicios de Tecnología - SPIKEDTECH</title>
-</head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-container">
-            <div class="loading-logo">
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH">
-            </div>
-            <div class="loading-content">
-                <div class="loading-spinner"></div>
-                <div class="loading-progress">
-                    <div class="loading-progress-bar"></div>
-                </div>
-                <div class="loading-progress-text">0%</div>
-                <div class="loading-message">Cargando servicios técnicos...</div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SPIKEDTECH desarrolla sitios web, sistemas y plataformas con arquitectura clara, integraciones, despliegue y soporte evolutivo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/studio.css" />
+    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg" />
+    <title>Desarrollo Web | SPIKEDTECH</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Ir al inicio de SPIKEDTECH">
+          <img class="brand-mark" src="img/logoSpikedtechredondo.png" alt="Logo SPIKEDTECH" />
+          <span class="brand-copy">
+            <span class="brand-name">SPIKEDTECH</span>
+            <span class="brand-tag">Estudio de productos web</span>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="tecnologia.html">Desarrollo</a>
+          <a class="nav-link" href="diseño-grafico.html">Diseño</a>
+          <a class="nav-link" href="logistica.html">Plataformas</a>
+          <a class="nav-link" href="articulos-disponibles.html">Portafolio</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="button primary" href="soporte-garantia.html">
+            Hablemos del proyecto
+            <span class="button-arrow">→</span>
+          </a>
         </div>
-    </div>
 
-        <!-- Header Corregido con Mejor Espaciado -->
-<header class="modern-header">
-    <nav class="navbar">
-        <div class="nav-container">
-            <!-- LOGO - LADO IZQUIERDO -->
-            <a href="index.html" class="logo">
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH" class="logo-img">
-                <span class="logo-text">SPIKEDTECH</span>
-            </a>
-            
-            <!-- NAVEGACIÓN - LADO DERECHO -->
-            <div class="nav-right">
-                <!-- Links de Navegación -->
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
-                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                    <li><a href="soporte-garantia.html" class="nav-link">Soporte</a></li>
-                </ul>
-                
-                <!-- Botón CTA -->
-                <div class="nav-cta">
-                    <a href="soporte-garantia.html" class="btn-nav-cta">
-                        <span>Contactar</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Botón Mobile Menu -->
-            <button class="mobile-menu-btn" aria-label="Abrir menú">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu>
+        <nav class="mobile-links" aria-label="Navegación móvil">
+          <a class="mobile-link" href="index.html">Inicio</a>
+          <a class="mobile-link" href="servicios.html">Servicios</a>
+          <a class="mobile-link" href="tecnologia.html">Desarrollo web</a>
+          <a class="mobile-link" href="diseño-grafico.html">Diseño UX/UI</a>
+          <a class="mobile-link" href="logistica.html">Rutas y plataformas</a>
+          <a class="mobile-link" href="articulos-disponibles.html">Portafolio</a>
+          <a class="mobile-link" href="catalogo-de-camaras.html">Stack e integraciones</a>
+          <a class="mobile-link" href="soporte-garantia.html">Contacto</a>
+        </nav>
+        <div class="mobile-cta">
+          <a class="button primary" href="soporte-garantia.html">Solicitar propuesta</a>
         </div>
-        
-        <!-- MENÚ MÓVIL -->
-        <div class="mobile-menu-overlay">
-            <div class="mobile-menu">
-                <!-- Header del Menú Móvil -->
-                <div class="mobile-menu-header">
-                    <div class="mobile-logo">
-                        <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH">
-                        <span>SPIKEDTECH</span>
-                    </div>
-                    <button class="mobile-menu-close" aria-label="Cerrar menú">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </div>
-                
-                <!-- Contenido del Menú Móvil -->
-                <div class="mobile-menu-content">
-                    <!-- Links de Navegación Móvil -->
-                    <ul class="mobile-nav-links">
-                        <li>
-                            <a href="index.html" class="mobile-nav-link">
-                                <span class="mobile-link-icon">🏠</span>
-                                <span>Inicio</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="servicios.html" class="mobile-nav-link">
-                                <span class="mobile-link-icon">⚙️</span>
-                                <span>Servicios</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="soporte-garantia.html" class="mobile-nav-link">
-                                <span class="mobile-link-icon">🛠️</span>
-                                <span>Soporte</span>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <!-- Botón CTA Móvil -->
-                    <div class="mobile-menu-cta">
-                        <a href="soporte-garantia.html" class="btn-mobile-cta">
-                            Obtener Soporte
-                        </a>
-                    </div>
-                    
-                    <!-- Redes Sociales Móvil -->
-                    <div class="mobile-social">
-                        <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="mobile-social-link" title="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/spikedtech19" class="mobile-social-link" title="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/+50687394231" class="mobile-social-link" title="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <article class="hero-panel" data-reveal>
+            <span class="kicker">Desarrollo web</span>
+            <h1 class="page-title">Código pensado para negocio, no solo para publicar una web.</h1>
+            <p class="page-lead">
+              Desarrollamos soluciones web completas con una lógica técnica clara:
+              front-end responsive, arquitectura escalable, integraciones externas,
+              despliegue y soporte para seguir creciendo sin rehacer todo cada pocos meses.
+            </p>
+            <div class="button-row">
+              <a class="button primary" href="soporte-garantia.html">Solicitar alcance técnico</a>
+              <a class="button secondary" href="catalogo-de-camaras.html">Ver stack</a>
             </div>
+          </article>
+
+          <aside class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Lo que desarrollamos</span>
+            <ul class="check-list">
+              <li>Landing pages y sitios corporativos de alto desempeño.</li>
+              <li>Portales privados, paneles administrativos y dashboards.</li>
+              <li>Catálogos, comercio electrónico y módulos a medida.</li>
+              <li>Integraciones con pagos, formularios, CRM, mapas y analítica.</li>
+            </ul>
+          </aside>
         </div>
-    </nav>
-</header>
+      </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-background"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text animate-on-scroll">
-                        <h1 class="hero-title">Soporte Técnico Especializado</h1>
-                        <p class="hero-subtitle">Soluciones tecnológicas integrales para empresas y particulares</p>
-                        <div class="hero-features">
-                            <div class="feature-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>Soporte Especializado</span>
-                            </div>
-                            <div class="feature-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                                </svg>
-                                <span>Servicio a Domicilio</span>
-                            </div>
-                            <div class="feature-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                                </svg>
-                                <span>Soporte Remoto</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Soluciones</span>
+              <h2 class="section-title">Desarrollo ajustado al tipo de problema que quieres resolver.</h2>
             </div>
-        </section>
+            <p class="section-copy">
+              No todas las empresas necesitan la misma estructura. Algunas necesitan vender mejor;
+              otras, ordenar operación interna o conectar varios procesos en una sola plataforma.
+            </p>
+          </div>
 
-        <!-- Services Section -->
-        <section class="services-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Nuestros Servicios Técnicos</h2>
-                    <p class="section-subtitle">Ofrecemos soporte integral en todas las áreas de tecnología</p>
-                </div>
+          <div class="cards-grid">
+            <article class="card service-card highlight" data-reveal>
+              <span class="card-label">Presencia comercial</span>
+              <h3 class="card-title">Sitios corporativos y landings de conversión</h3>
+              <p class="card-copy">
+                Ideal para presentar servicios, captar leads y profesionalizar la marca con una experiencia clara y rápida.
+              </p>
+              <ul class="check-list">
+                <li>Estructura orientada a conversión</li>
+                <li>Responsive y SEO técnico base</li>
+                <li>Integración con formularios y contacto</li>
+              </ul>
+            </article>
 
-                <div class="services-grid">
-                    <!-- Computadoras -->
-                    <article class="service-card feature-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div class="service-image">
-                            <img src="img/equipos.jpg" alt="Computadoras" class="service-img">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Computadoras</h3>
-                            <p class="service-description">Soporte integral para equipos de escritorio y laptops</p>
-                            <ul class="service-features">
-                                <li>Asesoría personalizada</li>
-                                <li>Soporte técnico a domicilio y remoto</li>
-                                <li>Instalación de dispositivos y software</li>
-                                <li>Cotizaciones para equipos nuevos</li>
-                            </ul>
-                        </div>
-                    </article>
+            <article class="card" data-reveal>
+              <span class="card-label">Operación interna</span>
+              <h3 class="card-title">Paneles, módulos y áreas privadas</h3>
+              <p class="card-copy">
+                Para equipos que necesitan visualizar datos, registrar procesos o trabajar con permisos y estados.
+              </p>
+              <ul class="check-list">
+                <li>Roles y permisos</li>
+                <li>Formularios y validaciones</li>
+                <li>Rutas internas y flujos operativos</li>
+              </ul>
+            </article>
 
-                    <!-- Mantenimiento -->
-                    <article class="service-card feature-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
-                        <div class="service-image">
-                            <img src="img/mantenimiento.jpg" alt="Mantenimiento" class="service-img">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Mantenimiento</h3>
-                            <p class="service-description">Mantenimiento preventivo y correctivo para todos tus dispositivos</p>
-                            <ul class="service-features">
-                                <li>Mantenimiento correctivo y preventivo</li>
-                                <li>Limpiezas lógicas, físicas y optimización</li>
-                                <li>Mantenimientos para hogar</li>
-                                <li class="coming-soon">Próximamente más sub-servicios...</li>
-                            </ul>
-                        </div>
-                    </article>
+            <article class="card" data-reveal>
+              <span class="card-label">Integración y crecimiento</span>
+              <h3 class="card-title">Conexión con servicios externos y automatización</h3>
+              <p class="card-copy">
+                Extendemos la solución para que se conecte con pagos, analítica, correo, CRM o herramientas de operación.
+              </p>
+              <ul class="check-list">
+                <li>APIs y webhooks</li>
+                <li>Pasarelas y servicios externos</li>
+                <li>Automatización de pasos repetitivos</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
-                    <!-- Redes -->
-                    <article class="service-card feature-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-                            </svg>
-                        </div>
-                        <div class="service-image">
-                            <img src="img/redes.png" alt="Redes" class="service-img">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Redes</h3>
-                            <p class="service-description">Implementación y mantenimiento de infraestructura de red</p>
-                            <ul class="service-features">
-                                <li>Implementación de cableado de red</li>
-                                <li>Mantenimiento de cableado</li>
-                                <li>Detección de errores en cableado</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <!-- Cámaras de Seguridad -->
-                    <article class="service-card feature-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div class="service-image">
-                            <img src="img/Camaras.png" alt="Cámaras de Seguridad" class="service-img">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Cámaras de Seguridad</h3>
-                            <p class="service-description">Instalación y configuración de sistemas de videovigilancia</p>
-                            <ul class="service-features">
-                                <li>Instalación de cámaras inalámbricas</li>
-                                <li class="coming-soon">Próximamente más sub-servicios...</li>
-                                <li class="catalog-link"><a href="catalogo-de-camaras.html">Catálogo de Cámaras</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <!-- Impresoras -->
-                    <article class="service-card feature-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-                            </svg>
-                        </div>
-                        <div class="service-image">
-                            <img src="img/Impressoras.jpg" alt="Soporte en Impresoras" class="service-img">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Soporte en Impresoras</h3>
-                            <p class="service-description">Soluciones completas para todos tus equipos de impresión</p>
-                            <ul class="service-features">
-                                <li>Instalación y Configuración</li>
-                                <li>Mantenimiento y Optimización</li>
-                                <li>Diagnóstico de errores y Reparación</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <!-- IoT -->
-                    <article class="service-card feature-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
-                            </svg>
-                        </div>
-                        <div class="service-image">
-                            <img src="img/iot.png" alt="Dispositivos IoT" class="service-img">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Dispositivos IoT</h3>
-                            <p class="service-description">Configuración y mantenimiento del Internet de las Cosas</p>
-                            <ul class="service-features">
-                                <li>Configuración de equipos de IoT</li>
-                                <li>Mantenimiento de equipos</li>
-                                <li class="coming-soon">Próximamente más de IoT...</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
+      <section class="section">
+        <div class="container split-grid">
+          <article class="section-panel" data-reveal>
+            <span class="kicker alt">Principios de trabajo</span>
+            <h2 class="section-title">Preferimos una base pequeña pero sólida a una solución inflada.</h2>
+            <ul class="clean-list">
+              <li>Arquitectura clara antes de agregar complejidad.</li>
+              <li>Componentes reutilizables y consistentes.</li>
+              <li>Jerarquía visual que acompañe la lógica técnica.</li>
+              <li>Rendimiento, accesibilidad y mantenimiento como parte del trabajo.</li>
+              <li>Espacio real para iterar sin romper todo lo ya construido.</li>
+            </ul>
+            <div class="callout">
+              <strong>Enfoque pragmático:</strong> cada decisión técnica debe sostener una meta de negocio, una operación o una experiencia concreta.
             </div>
-        </section>
+          </article>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content animate-on-scroll">
-                    <h2 class="cta-title">¿Necesitas soporte técnico?</h2>
-                    <p class="cta-description">Selecciona el servicio que necesitas y te ayudamos a resolver tu problema</p>
-                    <button class="cta-button primary" data-bs-toggle="modal" data-bs-target="#serviceModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                        </svg>
-                        Solicitar Servicio
-                    </button>
+          <aside class="section-panel" data-reveal>
+            <span class="kicker">Proceso técnico</span>
+            <h2 class="section-title">Del alcance a producción con una ruta definida.</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-phase">Brief</span>
+                <div class="timeline-copy">
+                  <strong>Definición de alcance</strong>
+                  <p class="copy">Recogemos objetivos, restricciones, integraciones necesarias y prioridades del proyecto.</p>
                 </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-phase">Base</span>
+                <div class="timeline-copy">
+                  <strong>Arquitectura y componentes</strong>
+                  <p class="copy">Se diseña la estructura de rutas, bloques, estados y módulos esenciales.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-phase">Build</span>
+                <div class="timeline-copy">
+                  <strong>Implementación e integración</strong>
+                  <p class="copy">Construimos pantallas, lógica y conexión con servicios externos o módulos internos.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-phase">QA</span>
+                <div class="timeline-copy">
+                  <strong>Pruebas y despliegue</strong>
+                  <p class="copy">Validamos escenarios críticos y dejamos la plataforma lista para publicar y mantener.</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <span class="kicker">Capas técnicas</span>
+              <h2 class="section-title">La solución se construye sobre varias capas, no sobre una sola página.</h2>
+            </div>
+          </div>
+
+          <div class="stack-grid">
+            <article class="stack-column highlight" data-reveal>
+              <span class="card-label">Interfaz</span>
+              <h3 class="card-title">Frontend responsive y experiencia visual</h3>
+              <ul class="check-list">
+                <li>Jerarquía visual y navegación clara</li>
+                <li>Componentes reutilizables</li>
+                <li>Adaptación a móvil, tablet y escritorio</li>
+              </ul>
+            </article>
+
+            <article class="stack-column" data-reveal>
+              <span class="card-label">Lógica</span>
+              <h3 class="card-title">Rutas, estados, permisos e integraciones</h3>
+              <ul class="check-list">
+                <li>Flujos de formularios y acciones</li>
+                <li>Conexión con servicios externos</li>
+                <li>Automatización de pasos críticos</li>
+              </ul>
+            </article>
+
+            <article class="stack-column" data-reveal>
+              <span class="card-label">Entrega</span>
+              <h3 class="card-title">Performance, despliegue y evolución</h3>
+              <ul class="check-list">
+                <li>Optimización base y revisión técnica</li>
+                <li>Salida a producción y ajustes finales</li>
+                <li>Soporte para nuevas iteraciones</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Siguiente paso</span>
+            <h2 class="page-title">Si necesitas una solución web seria, empecemos por definir la estructura correcta.</h2>
+            <p class="page-lead">
+              Un buen proyecto no empieza con la tecnología de moda. Empieza con una arquitectura clara,
+              una experiencia entendible y una implementación que no comprometa el futuro.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="soporte-garantia.html">Solicitar diagnóstico técnico</a>
+              <a class="button secondary" href="logistica.html">Ver rutas y plataformas</a>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <!-- Service Modal -->
-    <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content custom-modal">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="serviceModalLabel">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        Selecciona un Servicio
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="modal-description">Selecciona el servicio técnico que necesitas:</p>
-                    <div class="service-buttons-grid">
-                        <button class="btn service-btn" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20el%20servicio%20de%20Computadoras">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            Computadoras
-                        </button>
-                        <button class="btn service-btn" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20el%20servicio%20de%20Mantenimiento">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                            Mantenimiento
-                        </button>
-                        <button class="btn service-btn" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20el%20servicio%20de%20Redes">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-                            </svg>
-                            Redes
-                        </button>
-                        <button class="btn service-btn" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20el%20servicio%20de%20Cámaras%20de%20Seguridad">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                            Cámaras de Seguridad
-                        </button>
-                        <button class="btn service-btn" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20el%20servicio%20de%20Soporte%20en%20Impresoras">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-                            </svg>
-                            Soporte en Impresoras
-                        </button>
-                        <button class="btn service-btn" data-link="https://wa.me/50687394231?text=Estoy%20interesado%20en%20el%20servicio%20de%20Dispositivos%20IoT">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
-                            </svg>
-                            Dispositivos IoT
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <footer class="footer">
+      <div class="container footer-layout">
+        <section class="footer-panel dark">
+          <span class="kicker alt">SPIKEDTECH</span>
+          <h2 class="footer-title">Desarrollo con criterio técnico y visión de producto.</h2>
+          <p class="copy">
+            Construimos una base web que pueda comunicar, operar y seguir creciendo con tu negocio.
+          </p>
+          <div class="footer-meta">
+            <span>Atenas, Alajuela, Costa Rica</span>
+            <span>Proyectos locales y remotos</span>
+          </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="modern-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Colaboradores</h4>
-                    <div class="collaborator-logo">
-                        <img src="img/LogoCSW.png" alt="CSW Logo">
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Servicios</h4>
-                    <div class="footer-links">
-                        <a href="diseño-grafico.html">Diseño Gráfico</a>
-                        <a href="logistica.html">Servicio de logística</a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Soporte</h4>
-                    <div class="footer-links">
-                        <a href="soporte-garantia.html">Garantía & Soporte</a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contáctanos</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="social-link facebook" target="_blank" title="Facebook">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp" class="social-link instagram" target="_blank" title="Instagram">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="mailto:spikedtech19@gmail.com" class="social-link email" title="Email">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.082L12 10.874l9.282-7.053h1.082A1.636 1.636 0 0 1 24 5.457z"/>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/+50687394231" class="social-link whatsapp" target="_blank" title="WhatsApp">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"/>
-                            </svg>
-                        </a>
-                        <a href="tel:+50687394231" class="social-link phone" title="Llamar">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+        <section class="footer-grid">
+          <article class="footer-panel">
+            <h2 class="footer-title">Servicios</h2>
+            <div class="footer-links">
+              <a href="servicios.html">Panorama general</a>
+              <a href="tecnologia.html">Desarrollo web</a>
+              <a href="diseño-grafico.html">Diseño UX/UI</a>
             </div>
-            
-            <div class="footer-location">
-                <h4>Ubicación</h4>
-                <p><strong>Atenas, Alajuela, Costa Rica</strong></p>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28407.47553848057!2d-84.43981413842558!3d9.986062719641719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa05119604dc297%3A0xaf69ee57a14c8979!2sAlajuela%20Province%2C%20Atenas!5e1!3m2!1sen!2scr!4v1733013555594!5m2!1sen!2scr"
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+          </article>
+
+          <article class="footer-panel">
+            <h2 class="footer-title">Explorar</h2>
+            <div class="footer-links">
+              <a href="logistica.html">Rutas y plataformas</a>
+              <a href="articulos-disponibles.html">Portafolio</a>
+              <a href="catalogo-de-camaras.html">Stack e integraciones</a>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 SPIKEDTECH Costa Rica. Todos los derechos reservados.</p>
-                <div class="costa-rica-flag">
-                    <img src="img/file.png" alt="Costa Rica">
-                </div>
+          </article>
+
+          <article class="footer-panel">
+            <h2 class="footer-title">Contacto</h2>
+            <div class="footer-links">
+              <a href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
+              <a href="soporte-garantia.html">Brief comercial</a>
             </div>
-        </div>
+          </article>
+        </section>
+      </div>
+
+      <div class="container footer-meta">
+        <span>© <span data-year></span> SPIKEDTECH</span>
+        <span>Desarrollo, integraciones y despliegue</span>
+      </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/loading.js"></script>
-    <script src="js/modal-tecnologia.js"></script>
-
-    <script src="js/index-animations.js"></script>
-<script src="js/modern-navbar.js"></script>
-
-        <script src="js/cursor-fixed.js"></script>
-</body>
+    <script src="js/studio.js"></script>
+  </body>
 </html>

@@ -1,659 +1,358 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Soporte técnico y garantías SPIKEDTECH - Contáctanos para resolver todas tus dudas tecnológicas">
-    <meta name="keywords" content="soporte técnico, garantías, SPIKEDTECH, Costa Rica, contacto">
-    <link rel="stylesheet" href="css/soporte-garantia-style.css">
-    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg">
-    <title>Soporte & Garantía - SPIKEDTECH</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contacto comercial SPIKEDTECH: formulario de proyecto, WhatsApp, correo, modalidades de trabajo y preguntas frecuentes para contratar servicios web."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/studio.css" />
+    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg" />
+    <title>Contacto Comercial | SPIKEDTECH</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Ir al inicio de SPIKEDTECH">
+          <img class="brand-mark" src="img/logoSpikedtechredondo.png" alt="Logo SPIKEDTECH" />
+          <span class="brand-copy">
+            <span class="brand-name">SPIKEDTECH</span>
+            <span class="brand-tag">Estudio de productos web</span>
+          </span>
+        </a>
 
-<body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-content">
-            <div class="loading-logo-container">
-                <div class="loading-glow"></div>
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH" class="loading-logo">
-            </div>
-            <div class="loading-text">
-                <h2>SPIKEDTECH</h2>
-                <p class="loading-message">Cargando soporte técnico...</p>
-            </div>
-            <div class="loading-progress-container">
-                <div class="loading-progress-bar" id="progressBar"></div>
-                <div class="loading-progress-text" id="progressText">0%</div>
-            </div>
-        </div>
-        <div class="loading-particles"></div>
-    </div>
-
-    <!-- Modern Header -->
-    <header class="modern-header" id="modernHeader">
-        <nav class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH Logo" class="logo-img" />
-                <span class="logo-text">SPIKEDTECH</span>
-            </a>
-            
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="#form-section" class="btn-nav-cta">
-                        Contactar
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="tecnologia.html">Desarrollo</a>
+          <a class="nav-link" href="diseño-grafico.html">Diseño</a>
+          <a class="nav-link" href="logistica.html">Plataformas</a>
+          <a class="nav-link" href="articulos-disponibles.html">Portafolio</a>
         </nav>
+
+        <div class="nav-actions">
+          <a class="button primary" href="#brief">
+            Enviar brief
+            <span class="button-arrow">→</span>
+          </a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu>
+        <nav class="mobile-links" aria-label="Navegación móvil">
+          <a class="mobile-link" href="index.html">Inicio</a>
+          <a class="mobile-link" href="servicios.html">Servicios</a>
+          <a class="mobile-link" href="tecnologia.html">Desarrollo web</a>
+          <a class="mobile-link" href="diseño-grafico.html">Diseño UX/UI</a>
+          <a class="mobile-link" href="logistica.html">Rutas y plataformas</a>
+          <a class="mobile-link" href="articulos-disponibles.html">Portafolio</a>
+          <a class="mobile-link" href="catalogo-de-camaras.html">Stack e integraciones</a>
+          <a class="mobile-link" href="soporte-garantia.html">Contacto</a>
+        </nav>
+        <div class="mobile-cta">
+          <a class="button primary" href="#brief">Completar brief</a>
+        </div>
+      </div>
     </header>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-        <div class="mobile-menu">
-            <div class="mobile-menu-header">
-                <div class="mobile-logo">
-                    <img src="img/logoSpikedtechredondo.png" alt="SPIKEDTECH">
-                    <span>SPIKEDTECH</span>
-                </div>
-                <button class="mobile-menu-close" id="mobileMenuClose">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                    </svg>
-                </button>
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <article class="hero-panel" data-reveal>
+            <span class="kicker">Contacto comercial</span>
+            <h1 class="page-title">Hablemos de tu proyecto web con datos claros desde el inicio.</h1>
+            <p class="page-lead">
+              Si ya sabes lo que necesitas, usa el brief y te responderemos con una ruta más concreta.
+              Si aún estás ordenando la idea, también sirve: el formulario está pensado para aterrizar el alcance.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#brief">Completar brief</a>
+              <a class="button secondary" href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp directo</a>
             </div>
-            <div class="mobile-menu-content">
-                <ul class="mobile-nav-links">
-                    <li><a href="index.html" class="mobile-nav-link">
-                        <span class="mobile-link-icon">🏠</span>
-                        Inicio
-                    </a></li>
-                    <li><a href="pagina-de-servicios.html" class="mobile-nav-link">
-                        <span class="mobile-link-icon">⚙️</span>
-                        Servicios
-                    </a></li>
-                </ul>
-                <div class="mobile-menu-cta">
-                    <a href="#form-section" class="btn-mobile-cta">Contactar</a>
-                </div>
-                <div class="mobile-social">
-                    <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="mobile-social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp" class="mobile-social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    <a href="https://wa.me/+50687394231" class="mobile-social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:spikedtech19@gmail.com" class="mobile-social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h3.819v.273L12 10.1l6.545-6.007v-.273h3.819c.904 0 1.636.732 1.636 1.636z"/>
-                        </svg>
-                    </a>
-                </div>
+          </article>
+
+          <aside class="contact-card" data-reveal>
+            <span class="kicker alt">Canales</span>
+            <div class="contact-list">
+              <div class="contact-line">
+                <strong>WhatsApp</strong>
+                <span class="copy">Canal rápido para consultas, propuestas y seguimiento inicial.</span>
+              </div>
+              <div class="contact-line">
+                <strong>Correo</strong>
+                <span class="copy">Útil para alcances extensos, documentación y detalles de proyecto.</span>
+              </div>
+              <div class="contact-line">
+                <strong>Brief comercial</strong>
+                <span class="copy">Ideal para que el proyecto llegue mejor definido desde el primer contacto.</span>
+              </div>
             </div>
+            <div class="inline-stat">
+              <span>Modalidad</span>
+              <strong>Remoto o local</strong>
+            </div>
+            <div class="inline-stat">
+              <span>Tipo de proyecto</span>
+              <strong>Servicios, plataformas y rediseños</strong>
+            </div>
+            <div class="inline-stat">
+              <span>Canal recomendado</span>
+              <strong>Brief + WhatsApp</strong>
+            </div>
+          </aside>
         </div>
-    </div>
+      </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Soporte & <span class="gradient-text">Garantía</span></h1>
-                    <p class="hero-description">
-                        Estamos aquí para ayudarte. Contacta nuestro equipo de soporte técnico especializado o consulta nuestras políticas de garantía.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#form-section" class="btn-primary">
-                            Contactar Soporte
-                            <span class="btn-arrow">→</span>
-                        </a>
-                        <a href="#policies-section" class="btn-secondary">Ver Garantías</a>
-                    </div>
-                </div>
+      <section id="brief" class="section">
+        <div class="container contact-grid">
+          <form id="project-form" class="form-panel" data-reveal>
+            <span class="kicker">Brief comercial</span>
+            <h2 class="form-title">Cuéntanos qué necesitas construir.</h2>
+            <p class="helper-text">
+              Puedes enviarlo por WhatsApp o preparar un correo con la misma información.
+            </p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="project-name">Nombre</label>
+                <input type="text" id="project-name" name="name" required />
+              </div>
+              <div class="field">
+                <label for="project-email">Correo</label>
+                <input type="email" id="project-email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="project-phone">Teléfono</label>
+                <input type="tel" id="project-phone" name="phone" placeholder="Opcional" />
+              </div>
+              <div class="field">
+                <label for="project-service">Servicio principal</label>
+                <select id="project-service" name="service" required>
+                  <option value="">Selecciona una línea principal</option>
+                  <option value="Desarrollo web">Desarrollo web</option>
+                  <option value="Diseño UX/UI">Diseño UX/UI</option>
+                  <option value="Rutas y plataformas">Rutas y plataformas</option>
+                  <option value="Rediseño completo del sitio">Rediseño completo del sitio</option>
+                  <option value="Soporte evolutivo">Soporte evolutivo</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="project-stage">Etapa del proyecto</label>
+                <select id="project-stage" name="stage">
+                  <option value="Idea inicial">Idea inicial</option>
+                  <option value="Ya tengo una web pero quiero mejorarla">Ya tengo una web pero quiero mejorarla</option>
+                  <option value="Necesito reemplazar una solución actual">Necesito reemplazar una solución actual</option>
+                  <option value="Quiero escalar una plataforma existente">Quiero escalar una plataforma existente</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="project-budget">Rango estimado</label>
+                <select id="project-budget" name="budget">
+                  <option value="Por definir">Por definir</option>
+                  <option value="Proyecto acotado">Proyecto acotado</option>
+                  <option value="Proyecto medio">Proyecto medio</option>
+                  <option value="Proyecto de mayor alcance">Proyecto de mayor alcance</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="project-timeline">Ventana de entrega</label>
+                <select id="project-timeline" name="timeline">
+                  <option value="Lo antes posible">Lo antes posible</option>
+                  <option value="Dentro de 2 a 4 semanas">Dentro de 2 a 4 semanas</option>
+                  <option value="Dentro de 1 a 2 meses">Dentro de 1 a 2 meses</option>
+                  <option value="Sin fecha fija aún">Sin fecha fija aún</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="project-brief">Resumen del proyecto</label>
+                <textarea
+                  id="project-brief"
+                  name="brief"
+                  required
+                  placeholder="Describe el objetivo, lo que necesitas construir o mejorar y cualquier detalle relevante."
+                ></textarea>
+              </div>
             </div>
-        </section>
 
-        <!-- Contact Form Section -->
-        <section id="form-section" class="form-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Contáctenos</h2>
-                    <p class="section-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
-                </div>
-
-                <div class="contact-card">
-                    <form id="form-spikedtech" class="contact-form" onsubmit="mostrarModal(event)">
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="nombre-spikedtech" class="form-label">Nombre</label>
-                                <input type="text" id="nombre-spikedtech" name="nombre" class="form-input" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="apellido-spikedtech" class="form-label">Apellido</label>
-                                <input type="text" id="apellido-spikedtech" name="apellido" class="form-input" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="correo-spikedtech" class="form-label">Correo Electrónico</label>
-                                <input type="email" id="correo-spikedtech" name="correo" class="form-input" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="telefono-spikedtech" class="form-label">Número de Teléfono</label>
-                                <input type="tel" id="telefono-spikedtech" name="telefono" class="form-input" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="servicio-spikedtech" class="form-label">Servicio</label>
-                            <select id="servicio-spikedtech" name="servicio" class="form-select" required onchange="actualizarMensajesSegunServicio()">
-                                <option value="">Seleccione un servicio...</option>
-                                <option value="Tecnología">Tecnología</option>
-                                <option value="Servicios de Logística">Servicios de Logística</option>
-                                <option value="Diseño Gráfico">Diseño Gráfico</option>
-                                <option value="Productos Disponibles">Productos Disponibles</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="mensajes-spikedtech" class="form-label">Mensaje preescrito (opcional)</label>
-                            <select id="mensajes-spikedtech" class="form-select" onchange="actualizarDescripcion()">
-                                <option value="">Seleccione un mensaje preescrito...</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="descripcion-spikedtech" class="form-label">Descripción</label>
-                            <textarea id="descripcion-spikedtech" name="descripcion" class="form-textarea" rows="5" placeholder="Describe tu consulta o problema..."></textarea>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="submit" class="btn-submit">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                                </svg>
-                                Enviar Formulario
-                            </button>
-                            <button type="button" class="btn-reset" onclick="limpiarFormulario()">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                Limpiar
-                            </button>
-                        </div>
-                    </form>
-                </div>
+            <div class="field full">
+              <label>Intenciones rápidas</label>
+              <div class="quick-intents">
+                <button class="intent-chip" type="button" data-message="Necesito una landing profesional para captar clientes y ordenar mejor mi propuesta de valor.">
+                  Landing de captación
+                </button>
+                <button class="intent-chip" type="button" data-message="Quiero rediseñar mi sitio actual para que se vea más profesional, claro y alineado a mis servicios.">
+                  Rediseño completo
+                </button>
+                <button class="intent-chip" type="button" data-message="Necesito una plataforma o panel con flujos, usuarios, formularios y procesos internos.">
+                  Plataforma a medida
+                </button>
+                <button class="intent-chip" type="button" data-message="Quiero ordenar las rutas de usuario, mejorar la navegación y conectar automatizaciones.">
+                  Rutas y automatización
+                </button>
+              </div>
             </div>
-        </section>
 
-        <!-- Policies and Warranties Section -->
-        <section id="policies-section" class="policies-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Políticas y Garantías</h2>
-                    <p class="section-subtitle">Conoce nuestras políticas de garantía para cada servicio</p>
-                </div>
-
-                <div class="policies-card">
-                    <div class="accordion-container">
-                        <!-- Technology Policy -->
-                        <div class="policy-item">
-                            <button class="policy-header" data-toggle="technology">
-                                <div class="policy-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M20,18c1.1,0,2-0.9,2-2V6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v10c0,1.1,0.9,2,2,2H0v2h24v-2H20z M4,6h16v10H4V6z"/>
-                                    </svg>
-                                </div>
-                                <span class="policy-title">Tecnología</span>
-                                <div class="policy-arrow">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="policy-content" id="technology">
-                                <div class="policy-body">
-                                    <p class="policy-intro">Nuestra garantía cubre tanto productos como servicios de soporte técnico.</p>
-                                    <div class="policy-list">
-                                        <div class="policy-point">
-                                            <h4>Productos</h4>
-                                            <p>Cada producto cuenta con un período de garantía específico, el cual cubre defectos de fabricación. Para hacer válida la garantía, es necesario conservar la factura de compra. Esta garantía no cubre daños por uso indebido, desgaste natural o manipulación incorrecta.</p>
-                                        </div>
-                                        <div class="policy-point">
-                                            <h4>Servicios de Soporte Técnico</h4>
-                                            <p>La garantía de nuestros servicios de soporte TI incluye una cobertura de hasta 30 días tras la realización del servicio. Esto asegura que cualquier inconveniente relacionado con el servicio inicial será atendido sin costo adicional dentro de este período. Sin embargo, esta garantía no cubre daños causados por virus, malware o alteraciones en la configuración realizada por el usuario después del servicio.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Graphic Design Policy -->
-                        <div class="policy-item">
-                            <button class="policy-header" data-toggle="design">
-                                <div class="policy-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
-                                    </svg>
-                                </div>
-                                <span class="policy-title">Diseño Gráfico</span>
-                                <div class="policy-arrow">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="policy-content" id="design">
-                                <div class="policy-body">
-                                    <div class="policy-section">
-                                        <h3>Políticas</h3>
-                                        <div class="policy-list">
-                                            <div class="policy-point">
-                                                <h4>Revisiones</h4>
-                                                <p>Una revisión gratuita. Revisiones adicionales tendrán un costo extra.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Entrega de Archivos</h4>
-                                                <p>Archivos finales en formatos acordados (.AI, .PSD, .PDF, etc.).</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Plazos de Entrega</h4>
-                                                <p>Entregas según el acuerdo. Retrasos por cambios del cliente pueden modificar la fecha.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Pagos</h4>
-                                                <p>50% adelantado, saldo al finalizar.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Confidencialidad</h4>
-                                                <p>Compromiso de mantener la privacidad de los proyectos.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Cancelaciones</h4>
-                                                <p>Se cobrará por el trabajo realizado si el cliente cancela antes de la entrega.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="policy-section">
-                                        <h3>Garantías</h3>
-                                        <div class="policy-list">
-                                            <div class="policy-point">
-                                                <h4>Satisfacción</h4>
-                                                <p>Una revisión gratuita si el cliente no está satisfecho.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Cumplimiento</h4>
-                                                <p>El diseño cumplirá con las especificaciones acordadas.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Archivos</h4>
-                                                <p>Si hay problemas con los archivos, se reemplazarán sin costo.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Soporte Post-Entrega</h4>
-                                                <p>Soporte durante 15 días tras la entrega.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Logistics Policy -->
-                        <div class="policy-item">
-                            <button class="policy-header" data-toggle="logistics">
-                                <div class="policy-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M18,8H20V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14L20,8M18,10V20H6V4H13V9H18Z"/>
-                                    </svg>
-                                </div>
-                                <span class="policy-title">Servicios de Logística</span>
-                                <div class="policy-arrow">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="policy-content" id="logistics">
-                                <div class="policy-body">
-                                    <div class="policy-section">
-                                        <h3>Políticas</h3>
-                                        <div class="policy-list">
-                                            <div class="policy-point">
-                                                <h4>Responsabilidad</h4>
-                                                <p>Manejo cuidadoso de envíos.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Prohibiciones</h4>
-                                                <p>No se transportan artículos ilegales o peligrosos.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Pagos</h4>
-                                                <p>Se requiere el 50% del pago por adelantado para procesar el pedido.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Rastreo</h4>
-                                                <p>Todos los envíos incluyen seguimiento.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="policy-section">
-                                        <h3>Garantías</h3>
-                                        <div class="policy-list">
-                                            <div class="policy-point">
-                                                <h4>Entrega Puntual</h4>
-                                                <p>Si el paquete se retrasa, informaremos al cliente sobre la causa del retraso.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Devoluciones</h4>
-                                                <p>Paquetes no entregados se devuelven bajo acuerdo previo.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Información Transparente</h4>
-                                                <p>Ofrecemos actualizaciones constantes sobre el estado del envío y la ubicación del paquete en tiempo real.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Atención al Cliente</h4>
-                                                <p>Disponibilidad de soporte para resolver cualquier incidencia durante el proceso de envío y entrega.</p>
-                                            </div>
-                                            <div class="policy-point">
-                                                <h4>Cumplimiento de Normativas</h4>
-                                                <p>Nos aseguramos de que todos nuestros servicios cumplan con las normativas locales e internacionales de transporte.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="form-actions">
+              <button class="button primary" type="button" id="send-whatsapp">Enviar por WhatsApp</button>
+              <button class="button secondary" type="button" id="send-email">Preparar correo</button>
+              <button class="button ghost" type="button" id="reset-form">Limpiar</button>
             </div>
-        </section>
+          </form>
 
-        <!-- Payment Methods Section -->
-        <section class="payment-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Métodos de Pago</h2>
-                    <p class="section-subtitle">Elige el método de pago que mejor se adapte a tus necesidades</p>
-                </div>
-
-                <div class="payment-grid">
-                    <div class="payment-card">
-                        <div class="payment-icon">
-                            <img src="img/sinpe_logo.png" alt="SINPE" class="payment-img">
-                        </div>
-                        <h3 class="payment-title">SINPE</h3>
-                        <p class="payment-description">Transferencias instantáneas seguras</p>
-                    </div>
-
-                    <div class="payment-card">
-                        <div class="payment-icon">
-                            <img src="img/dinero.jpg" alt="Efectivo" class="payment-img">
-                        </div>
-                        <h3 class="payment-title">Efectivo</h3>
-                        <p class="payment-description">Pago en efectivo al momento de la entrega</p>
-                    </div>
-
-                    <div class="payment-card featured">
-                        <div class="payment-icon">
-                            <img src="img/transferencia.avif" alt="Transferencias" class="payment-img">
-                        </div>
-                        <h3 class="payment-title">Transferencias</h3>
-                        <p class="payment-description">Transferencias bancarias tradicionales</p>
-                    </div>
-                </div>
-
-                <p class="payment-note">
-                    Todos nuestros métodos de pago son seguros y verificados. Selecciona la opción más conveniente para ti.
-                </p>
+          <aside class="section-panel" data-reveal>
+            <span class="kicker alt">Qué ayuda a estimar mejor</span>
+            <h2 class="section-title">Mientras más claro llegue el contexto, más útil será la primera respuesta.</h2>
+            <ul class="clean-list">
+              <li>Qué problema estás tratando de resolver.</li>
+              <li>Si ya tienes sitio, marca o contenido existente.</li>
+              <li>Cuántas secciones, módulos o tipos de usuario imaginas.</li>
+              <li>Si el proyecto necesita pagos, CRM, automatización o paneles internos.</li>
+              <li>Si buscas algo rápido para salir al mercado o una base más robusta para crecer.</li>
+            </ul>
+            <div class="callout">
+              <strong>Recomendación:</strong> si tu proyecto es amplio, usa primero el brief y luego continúa la conversación por WhatsApp.
             </div>
-        </section>
+          </aside>
+        </div>
+      </section>
 
-        <!-- Team Section -->
-        <section class="team-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Nuestro Equipo</h2>
-                    <p class="section-subtitle">Conoce a los profesionales detrás de SPIKEDTECH</p>
-                </div>
-
-                <div class="team-grid">
-                    <!-- Team Member 1 -->
-                    <div class="team-card">
-                        <div class="team-image">
-                            <img src="img/encargado-spikedtech.jpeg" alt="Jose Quiros" loading="lazy">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="team-name">Jose Quiros</h3>
-                            <p class="team-role">Desarrollador Web & Estudiante De Ingeniería en Seguridad Informatica</p>
-                            <p class="team-bio">
-                                Con un título técnico en Desarrollo Web y actualmente cursando la carrera de Ingeniería en Seguridad Informática en la Universidad Fidélitas, mi objetivo es seguir expandiendo mis conocimientos y habilidades en el ámbito tecnológico.
-                            </p>
-                            <div class="team-social">
-                                <a href="https://www.facebook.com/share/1AhjVyR8gb/" class="social-btn facebook" title="Facebook">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                    </svg>
-                                </a>
-                                <a href="https://www.instagram.com/jm_quiros19?igsh=MXBoYzdjMDBrYXdubg==" class="social-btn instagram" title="Instagram">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Team Member 2 -->
-                    <div class="team-card">
-                        <div class="team-image">
-                            <img src="img/sinfoto.webp" alt="Steven Salas" loading="lazy">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="team-name">Steven Salas</h3>
-                            <p class="team-role">Estudiante De Ingeniería en Sistemas & Redes</p>
-                            <p class="team-bio">
-                                Con un técnico medio en Desarrollo Web, con experiencia en el manejo de HTML5, CSS3 y JavaScript para diseñar páginas web básicas con diseño responsivo y funcional. También cuenta con conocimientos en soporte TI, incluyendo habilidades para resolver problemas técnicos.
-                            </p>
-                            <div class="team-social">
-                                <a href="https://www.facebook.com/steven.salas.73932?mibextid=ZbWKwL" class="social-btn facebook" title="Facebook">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                    </svg>
-                                </a>
-                                <a href="https://www.instagram.com/steven.30_cr?igsh=MTk4NGc4azMwM3k3aw==" class="social-btn instagram" title="Instagram">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.40z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Team Member 3 -->
-                    <div class="team-card">
-                        <div class="team-image">
-                            <img src="img/sinfoto.webp" alt="Jesus Franco" loading="lazy">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="team-name">Jesus Franco</h3>
-                            <p class="team-role">Diseñador Gráfico & Project Manager</p>
-                            <p class="team-bio">
-                                Con un técnico medio en Desarrollo Web, posee experiencia en inglés técnico y diseño gráfico utilizando herramientas como Adobe Illustrator, Premiere, Firefly y otras similares. También cuenta con habilidades en gestión de proyectos y marketing.
-                            </p>
-                            <div class="team-social">
-                                <a href="https://www.instagram.com/jesus_fb_?igsh=MmgwcHVtNmE4ZHpm" class="social-btn instagram" title="Instagram">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.40z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <span class="kicker">Modalidades</span>
+              <h2 class="section-title">Formas comunes de colaboración.</h2>
             </div>
-        </section>
+          </div>
 
-        <!-- About Section -->
-        <section class="about-section">
-            <div class="section-container">
-                <div class="about-card">
-                    <div class="about-header">
-                        <h2 class="about-title">Sobre SPIKEDTECH</h2>
-                    </div>
-                    <div class="about-content">
-                        <p>
-                            SPIKEDTECH nació como un emprendimiento destinado a ofrecer servicios tecnológicos a amigos y familiares, lo que nos permitió ganar una excelente aceptación. Con el tiempo, comenzamos a moldear nuestra empresa para adaptarnos mejor a las necesidades y exigencias del mercado. Ahora, con la creación de nuestra página web oficial, buscamos expandir nuestras fronteras y ofrecer una variedad de servicios, incluyendo soluciones tecnológicas, logística, diseño web y, en el futuro, mucho más.
-                        </p>
-                        <p>
-                            Detrás de SPIKEDTECH, no solo hay tres encargados, sino también un equipo comprometido que apoya en diversas áreas. Contamos con técnicos especializados, cada uno con habilidades únicas, para asegurar que nuestros clientes reciban un servicio de calidad. Nuestro objetivo es que cada usuario se sienta cómodo y confiado al recibir nuestras soluciones, apoyo y seguimiento en diferentes procesos tecnológicos y servicios.
-                        </p>
-                        <p class="about-thanks">
-                            Agradecemos profundamente a todos aquellos que nos han apoyado desde nuestros primeros pasos, confiando en nuestro trabajo y ayudándonos a crecer. Sin su respaldo, SPIKEDTECH no sería lo que es hoy.
-                        </p>
-                    </div>
-                </div>
+          <div class="cards-grid">
+            <article class="card service-card highlight" data-reveal>
+              <span class="card-label">Proyecto desde cero</span>
+              <h3 class="card-title">Construcción completa</h3>
+              <p class="card-copy">Ideal para negocios que todavía no tienen una base web profesional o necesitan reemplazar la actual.</p>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card-label">Reestructura</span>
+              <h3 class="card-title">Rediseño con nueva narrativa</h3>
+              <p class="card-copy">Pensado para webs que ya existen pero no están ayudando a vender, comunicar o operar mejor.</p>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card-label">Continuidad</span>
+              <h3 class="card-title">Soporte evolutivo mensual</h3>
+              <p class="card-copy">Para mejoras continuas, nuevas secciones, integraciones y optimización posterior al lanzamiento.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <span class="kicker">Preguntas frecuentes</span>
+              <h2 class="section-title">Dudas habituales antes de arrancar.</h2>
             </div>
-        </section>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item" data-reveal>
+              <summary>¿Necesito tener todo definido para pedir una propuesta?</summary>
+              <p>No. Basta con entender qué problema quieres resolver y qué tan avanzado está el proyecto. El resto se aterriza contigo.</p>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary>¿Pueden trabajar sobre una web existente?</summary>
+              <p>Sí. Podemos reestructurar, rediseñar o usar la base actual como punto de partida si técnicamente conviene.</p>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary>¿También hacen mantenimiento y mejoras después del lanzamiento?</summary>
+              <p>Sí. Podemos continuar con soporte evolutivo para nuevas funcionalidades, ajustes visuales, integraciones y mejoras técnicas.</p>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary>¿Trabajan proyectos remotos?</summary>
+              <p>Sí. El proceso está pensado para funcionar tanto con clientes locales como remotos, con seguimiento digital y comunicación directa.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Empecemos bien</span>
+            <h2 class="page-title">Si el proyecto importa, vale la pena definirlo con claridad desde el principio.</h2>
+            <p class="page-lead">
+              Un brief bien planteado reduce ruido, mejora la estimación y acelera el arranque del trabajo correcto.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#brief">Completar brief</a>
+              <a class="button secondary" href="https://wa.me/50687394231" target="_blank" rel="noreferrer">Escribir por WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <!-- Modal -->
-    <div id="modal-spikedtech" class="modal-overlay">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h3 class="modal-title">¿Cómo deseas enviar el formulario?</h3>
-                <button class="modal-close" onclick="cerrarModal()">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                    </svg>
-                </button>
+    <footer class="footer">
+      <div class="container footer-layout">
+        <section class="footer-panel dark">
+          <span class="kicker alt">SPIKEDTECH</span>
+          <h2 class="footer-title">Contacto comercial para proyectos web, rediseños y plataformas a medida.</h2>
+          <p class="copy">
+            Usa el brief si quieres una conversación más productiva desde el primer intercambio.
+          </p>
+          <div class="footer-meta">
+            <span>Atenas, Alajuela, Costa Rica</span>
+            <span>Proyectos locales y remotos</span>
+          </div>
+        </section>
+
+        <section class="footer-grid">
+          <article class="footer-panel">
+            <h2 class="footer-title">Servicios</h2>
+            <div class="footer-links">
+              <a href="servicios.html">Panorama general</a>
+              <a href="tecnologia.html">Desarrollo web</a>
+              <a href="diseño-grafico.html">Diseño UX/UI</a>
             </div>
-            <div class="modal-body">
-                <div class="modal-options">
-                    <button id="whatsapp-button" class="modal-btn whatsapp" onclick="enviarPorWhatsApp()">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                        </svg>
-                        WhatsApp
-                    </button>
-                    <button id="correo-button" class="modal-btn email" onclick="enviarPorCorreo()">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h3.819v.273L12 10.1l6.545-6.007v-.273h3.819c.904 0 1.636.732 1.636 1.636z"/>
-                        </svg>
-                        Correo Electrónico
-                    </button>
-                </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Explorar</h2>
+            <div class="footer-links">
+              <a href="logistica.html">Rutas y plataformas</a>
+              <a href="articulos-disponibles.html">Portafolio</a>
+              <a href="catalogo-de-camaras.html">Stack e integraciones</a>
             </div>
-        </div>
-    </div>
-
-    <!-- Modern Footer -->
-    <footer class="modern-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <!-- Colaboradores -->
-                <div class="footer-section">
-                    <h4>Colaboradores</h4>
-                    <div class="collaborator-logo">
-                        <img src="img/LogoCSW.png" alt="CSW Logo" />
-                    </div>
-                </div>
-
-                <!-- Servicios -->
-                <div class="footer-section">
-                    <h4>Servicios</h4>
-                    <div class="footer-links">
-                        <a href="servicios.html">Servicios Disponibles</a>
-                        <a href="catalogo-de-camaras.html">Cámaras de Seguridad</a>
-                        <a href="diseño-grafico.html">Diseño Gráfico</a>
-                    </div>
-                </div>
-
-                <!-- Garantía -->
-                <div class="footer-section">
-                    <h4>Garantía</h4>
-                    <div class="footer-links">
-                        <a href="soporte-garantia.html">Garantía & Soporte</a>
-                    </div>
-                </div>
-
-                <!-- Contacto -->
-                <div class="footer-section">
-                    <h4>Contáctenos</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/14UfJH6s7Y/" class="social-link facebook" title="Facebook">
-                            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="https://www.instagram.com/spikedtech19?igsh=Y2c1eHV0aWU3dmRp" class="social-link instagram" title="Instagram">
-                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.40z"/></svg>
-                        </a>
-                        <a href="mailto:spikedtech19@gmail.com" class="social-link email" title="Email">
-                            <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.082L12 10.874l9.282-7.053h1.082A1.636 1.636 0 0 1 24 5.457z"/></svg>
-                        </a>
-                        <a href="https://wa.me/+50687394231" class="social-link whatsapp" title="WhatsApp">
-                            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488z"/></svg>
-                        </a>
-                        <a href="tel:+50687394231" class="social-link phone" title="Llamar">
-                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                        </a>
-                    </div>
-                </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Contacto</h2>
+            <div class="footer-links">
+              <a href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
+              <a href="#brief">Brief comercial</a>
             </div>
+          </article>
+        </section>
+      </div>
 
-            <!-- Location Section -->
-            <div class="footer-location">
-                <h4>Ubicación</h4>
-                <p><strong>Atenas, Alajuela, Costa Rica</strong></p>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28407.47553848057!2d-84.43981413842558!3d9.986062719641719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa05119604dc297%3A0xaf69ee57a14c8979!2sAlajuela%20Province%2C%20Atenas!5e1!3m2!1sen!2scr!4v1733013555594!5m2!1sen!2scr"
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Ubicación SPIKEDTECH en Atenas, Costa Rica">
-                    </iframe>
-                </div>
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <p class="copyright">© SPIKEDTECH Costa Rica - 2025. Todos los Derechos Reservados.</p>
-                <img src="img/file.png" alt="Bandera de Costa Rica" class="flag-img">
-            </div>
-        </div>
+      <div class="container footer-meta">
+        <span>© <span data-year></span> SPIKEDTECH</span>
+        <span>Contacto comercial y brief de proyecto</span>
+      </div>
     </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/email.js"></script>
-    <script src="js/loading.js"></script>
-    <script src="js/index-animations.js"></script>
-    <script src="js/modern-navbar.js"></script>
-    
-        <script src="js/cursor-fixed.js"></script>
-</body>
+    <script src="js/studio.js"></script>
+  </body>
 </html>
