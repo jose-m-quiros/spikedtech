@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contacto comercial SPIKEDTECH: formulario de proyecto, WhatsApp, correo, modalidades de trabajo y preguntas frecuentes para contratar servicios web."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/studio.css" />
+    <link rel="icon" type="image/png" href="img/Logospikedtech.jpeg" />
+    <title>Contacto Comercial | SPIKEDTECH</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Ir al inicio de SPIKEDTECH">
+          <img class="brand-mark" src="img/logoSpikedtechredondo.png" alt="Logo SPIKEDTECH" />
+          <span class="brand-copy">
+            <span class="brand-name">SPIKEDTECH</span>
+            <span class="brand-tag">Programación y desarrollo web</span>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="proyectos.html">Proyectos</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="button primary" href="#brief">
+            Enviar brief
+            <span class="button-arrow">→</span>
+          </a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu>
+        <nav class="mobile-links" aria-label="Navegación móvil">
+          <a class="mobile-link" href="index.html">Inicio</a>
+          <a class="mobile-link" href="servicios.html">Servicios</a>
+          <a class="mobile-link" href="desarrollo-web.html">Desarrollo a medida</a>
+          <a class="mobile-link" href="proyectos.html">Proyectos</a>
+          <a class="mobile-link" href="contacto.html">Contacto</a>
+        </nav>
+        <div class="mobile-cta">
+          <a class="button primary" href="#brief">Completar brief</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <article class="hero-panel" data-reveal>
+            <span class="kicker">Contacto comercial</span>
+            <h1 class="page-title">Hablemos de tu proyecto web con datos claros desde el inicio.</h1>
+            <p class="page-lead">
+              Si ya sabes lo que necesitas, usa el brief y te responderemos con una ruta más concreta.
+              Si aún estás ordenando la idea, también sirve: el formulario está pensado para aterrizar el alcance.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#brief">Completar brief</a>
+              <a class="button secondary" href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp directo</a>
+            </div>
+          </article>
+
+          <aside class="contact-card" data-reveal>
+            <span class="kicker alt">Canales</span>
+            <div class="contact-list">
+              <div class="contact-line">
+                <strong>WhatsApp</strong>
+                <span class="copy">Canal rápido para consultas, propuestas y seguimiento inicial.</span>
+              </div>
+              <div class="contact-line">
+                <strong>Correo</strong>
+                <span class="copy">Útil para alcances extensos, documentación y detalles de proyecto.</span>
+              </div>
+              <div class="contact-line">
+                <strong>Brief comercial</strong>
+                <span class="copy">Ideal para que el proyecto llegue mejor definido desde el primer contacto.</span>
+              </div>
+            </div>
+            <div class="inline-stat">
+              <span>Modalidad</span>
+              <strong>Remoto o local</strong>
+            </div>
+            <div class="inline-stat">
+              <span>Tipo de proyecto</span>
+              <strong>Servicios, plataformas y rediseños</strong>
+            </div>
+            <div class="inline-stat">
+              <span>Canal recomendado</span>
+              <strong>Brief + WhatsApp</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="brief" class="section">
+        <div class="container contact-grid">
+          <form id="project-form" class="form-panel" data-reveal>
+            <span class="kicker">Brief comercial</span>
+            <h2 class="form-title">Cuéntanos qué necesitas construir.</h2>
+            <p class="helper-text">
+              Puedes enviarlo por WhatsApp o preparar un correo con la misma información.
+            </p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="project-name">Nombre</label>
+                <input type="text" id="project-name" name="name" required />
+              </div>
+              <div class="field">
+                <label for="project-email">Correo</label>
+                <input type="email" id="project-email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="project-phone">Teléfono</label>
+                <input type="tel" id="project-phone" name="phone" placeholder="Opcional" />
+              </div>
+              <div class="field">
+                <label for="project-service">Servicio principal</label>
+                <select id="project-service" name="service" required>
+                  <option value="">Selecciona una línea principal</option>
+                  <option value="Desarrollo web">Desarrollo web</option>
+                  <option value="Sistema a medida">Sistema a medida</option>
+                  <option value="APIs e integraciones">APIs e integraciones</option>
+                  <option value="Rediseño técnico del sitio">Rediseño técnico del sitio</option>
+                  <option value="Mantenimiento evolutivo">Mantenimiento evolutivo</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="project-stage">Etapa del proyecto</label>
+                <select id="project-stage" name="stage">
+                  <option value="Idea inicial">Idea inicial</option>
+                  <option value="Ya tengo una web pero quiero mejorarla">Ya tengo una web pero quiero mejorarla</option>
+                  <option value="Necesito reemplazar una solución actual">Necesito reemplazar una solución actual</option>
+                  <option value="Quiero escalar una plataforma existente">Quiero escalar una plataforma existente</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="project-budget">Rango estimado</label>
+                <select id="project-budget" name="budget">
+                  <option value="Por definir">Por definir</option>
+                  <option value="Proyecto acotado">Proyecto acotado</option>
+                  <option value="Proyecto medio">Proyecto medio</option>
+                  <option value="Proyecto de mayor alcance">Proyecto de mayor alcance</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="project-timeline">Ventana de entrega</label>
+                <select id="project-timeline" name="timeline">
+                  <option value="Lo antes posible">Lo antes posible</option>
+                  <option value="Dentro de 2 a 4 semanas">Dentro de 2 a 4 semanas</option>
+                  <option value="Dentro de 1 a 2 meses">Dentro de 1 a 2 meses</option>
+                  <option value="Sin fecha fija aún">Sin fecha fija aún</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="project-brief">Resumen del proyecto</label>
+                <textarea
+                  id="project-brief"
+                  name="brief"
+                  required
+                  placeholder="Describe el objetivo, lo que necesitas construir o mejorar y cualquier detalle relevante."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="field full">
+              <label>Intenciones rápidas</label>
+              <div class="quick-intents">
+                <button class="intent-chip" type="button" data-message="Necesito una landing o sitio profesional para captar clientes y presentar mejor mis servicios.">
+                  Landing de captación
+                </button>
+                <button class="intent-chip" type="button" data-message="Quiero rehacer o mejorar mi sitio actual para que tenga una base técnica más seria y mantenible.">
+                  Rediseño técnico
+                </button>
+                <button class="intent-chip" type="button" data-message="Necesito una plataforma o panel con flujos, usuarios, formularios y procesos internos.">
+                  Sistema a medida
+                </button>
+                <button class="intent-chip" type="button" data-message="Necesito integrar APIs, automatizar tareas o conectar mi sitio con otras herramientas del negocio.">
+                  APIs y automatización
+                </button>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="button primary" type="button" id="send-whatsapp">Enviar por WhatsApp</button>
+              <button class="button secondary" type="button" id="send-email">Preparar correo</button>
+              <button class="button ghost" type="button" id="reset-form">Limpiar</button>
+            </div>
+          </form>
+
+          <aside class="section-panel" data-reveal>
+            <span class="kicker alt">Qué ayuda a estimar mejor</span>
+            <h2 class="section-title">Mientras más claro llegue el contexto, más útil será la primera respuesta.</h2>
+            <ul class="clean-list">
+              <li>Qué problema estás tratando de resolver.</li>
+              <li>Si ya tienes sitio, marca o contenido existente.</li>
+              <li>Cuántas secciones, módulos o tipos de usuario imaginas.</li>
+              <li>Si el proyecto necesita pagos, CRM, automatización o paneles internos.</li>
+              <li>Si buscas algo rápido para salir al mercado o una base más robusta para crecer.</li>
+            </ul>
+            <div class="callout">
+              <strong>Recomendación:</strong> si tu proyecto es amplio, usa primero el brief y luego continúa la conversación por WhatsApp.
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <span class="kicker">Modalidades</span>
+              <h2 class="section-title">Formas comunes de colaboración.</h2>
+            </div>
+          </div>
+
+          <div class="cards-grid">
+            <article class="card service-card highlight" data-reveal>
+              <span class="card-label">Proyecto desde cero</span>
+              <h3 class="card-title">Construcción completa</h3>
+              <p class="card-copy">Ideal para negocios que todavía no tienen una base web profesional o necesitan reemplazar la actual.</p>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card-label">Reestructura</span>
+              <h3 class="card-title">Rediseño con nueva narrativa</h3>
+              <p class="card-copy">Pensado para webs que ya existen pero no están ayudando a vender, comunicar o operar mejor.</p>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card-label">Continuidad</span>
+              <h3 class="card-title">Soporte evolutivo mensual</h3>
+              <p class="card-copy">Para mejoras continuas, nuevas secciones, integraciones y optimización posterior al lanzamiento.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <span class="kicker">Preguntas frecuentes</span>
+              <h2 class="section-title">Dudas habituales antes de arrancar.</h2>
+            </div>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item" data-reveal>
+              <summary>¿Necesito tener todo definido para pedir una propuesta?</summary>
+              <p>No. Basta con entender qué problema quieres resolver y qué tan avanzado está el proyecto. El resto se aterriza contigo.</p>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary>¿Pueden trabajar sobre una web existente?</summary>
+              <p>Sí. Podemos reestructurar, rediseñar o usar la base actual como punto de partida si técnicamente conviene.</p>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary>¿También hacen mantenimiento y mejoras después del lanzamiento?</summary>
+              <p>Sí. Podemos continuar con soporte evolutivo para nuevas funcionalidades, ajustes visuales, integraciones y mejoras técnicas.</p>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary>¿Trabajan proyectos remotos?</summary>
+              <p>Sí. El proceso está pensado para funcionar tanto con clientes locales como remotos, con seguimiento digital y comunicación directa.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="quote-panel dark" data-reveal>
+            <span class="kicker alt">Empecemos bien</span>
+            <h2 class="page-title">Si el proyecto importa, vale la pena definirlo con claridad desde el principio.</h2>
+            <p class="page-lead">
+              Un brief bien planteado reduce ruido, mejora la estimación y acelera el arranque del trabajo correcto.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#brief">Completar brief</a>
+              <a class="button secondary" href="https://wa.me/50687394231" target="_blank" rel="noreferrer">Escribir por WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-layout">
+        <section class="footer-panel dark">
+          <span class="kicker alt">SPIKEDTECH</span>
+          <h2 class="footer-title">Contacto comercial para servicios de programación, desarrollo web y sistemas a medida.</h2>
+          <p class="copy">
+            Usa el brief si quieres una conversación más productiva desde el primer intercambio.
+          </p>
+          <div class="footer-meta">
+            <span>Atenas, Alajuela, Costa Rica</span>
+            <span>Proyectos locales y remotos</span>
+          </div>
+        </section>
+
+        <section class="footer-grid">
+          <article class="footer-panel">
+            <h2 class="footer-title">Servicios</h2>
+            <div class="footer-links">
+              <a href="servicios.html">Panorama general</a>
+              <a href="desarrollo-web.html">Desarrollo a medida</a>
+              <a href="#brief">Completar brief</a>
+            </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Explorar</h2>
+            <div class="footer-links">
+              <a href="proyectos.html">Proyectos</a>
+              <a href="desarrollo-web.html">Detalle técnico</a>
+              <a href="servicios.html">Servicios</a>
+            </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Contacto</h2>
+            <div class="footer-links">
+              <a href="https://wa.me/50687394231" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
+              <a href="#brief">Brief comercial</a>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <div class="container footer-meta">
+        <span>© <span data-year></span> SPIKEDTECH</span>
+        <span>Contacto comercial y brief de proyecto</span>
+      </div>
+    </footer>
+
+    <script src="js/studio.js"></script>
+  </body>
+</html>
