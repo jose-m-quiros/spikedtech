@@ -14,8 +14,7 @@ SPIKEDTECH es un sitio estático orientado a presentar servicios de desarrollo w
 
 - css/studio.css
 - js/studio.js
-- img/Logospikedtech.jpeg
-- img/logoSpikedtechredondo.png
+- img/spikedtech.png
 
 ## Desarrollo local
 
@@ -24,4 +23,4 @@ Puedes abrir index.html directamente en el navegador o servir la carpeta con cua
 
 ## Estado del repositorio
 
-El repositorio conserva únicamente las páginas activas del sitio, sus dos imágenes en uso, la hoja de estilos principal, el script del frontend y los archivos de configuración básicos.
+El repositorio conserva únicamente las páginas activas del sitio, su imagen en uso, la hoja de estilos principal, el script del frontend y los archivos de configuración básicos.
