@@ -13,3 +13,8 @@ Thumbs.db
 
 *.html
 !index.html
+
+
+css/
+img/
+js/
