@@ -12,4 +12,4 @@ Thumbs.db
 .vscode/
 
 *.html
-!maintenance.html
+!index.html
