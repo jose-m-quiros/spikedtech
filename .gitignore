@@ -11,4 +11,5 @@ Thumbs.db
 
 .vscode/
 
-*.html !maintenance.html
+*.html
+!maintenance.html
