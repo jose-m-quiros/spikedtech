@@ -1,9 +1,12 @@
 "use client";
 
+import { Check } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 
 interface ProcessStep {
+  deliverable?: string;
   description: string;
+  duration?: string;
   title: string;
 }
 
@@ -31,6 +34,12 @@ export function ProcessTimeline({ steps }: ProcessTimelineProps) {
           <div className="rounded-lg border border-white/[0.09] bg-white/[0.025] px-5 py-4 backdrop-blur-md sm:px-6 sm:py-5">
             <h3 className="text-lg font-semibold text-white">{step.title}</h3>
             <p className="mt-1.5 text-sm leading-6 text-slate-400">{step.description}</p>
+            {step.deliverable ? (
+              <p className="mt-3 flex items-center gap-1.5 text-xs text-cyan-300/80">
+                <Check aria-hidden="true" size={12} strokeWidth={2.5} />
+                {step.deliverable}
+              </p>
+            ) : null}
           </div>
         </motion.li>
       ))}

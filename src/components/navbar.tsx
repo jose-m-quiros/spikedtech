@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 
 const navigation = [
   { href: "#servicios", label: "Servicios" },
-  { href: "#tecnologias", label: "Tecnologías" },
   { href: "#proceso", label: "Proceso" },
   { href: "#equipo", label: "Equipo" },
   { href: "#faq", label: "FAQ" },
@@ -56,7 +55,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <Button className="hidden sm:inline-flex" href="#contacto">
-            Cotizar Proyecto
+            Agendar Reunión
           </Button>
           <details className="relative lg:hidden">
             <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-md border border-white/15 bg-white/[0.045] text-slate-200 transition hover:bg-white/[0.09] [&::-webkit-details-marker]:hidden">
@@ -77,7 +76,7 @@ export function Navbar() {
                 className="mt-1 block rounded-md bg-cyan-300 px-3 py-2.5 text-sm font-semibold text-slate-950"
                 href="#contacto"
               >
-                Cotizar Proyecto
+                Agendar Reunión
               </a>
             </div>
           </details>
