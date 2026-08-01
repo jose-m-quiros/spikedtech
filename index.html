@@ -5,419 +5,417 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="SPIKEDTECH desarrolla sitios web, plataformas, sistemas a medida, integraciones y evolución técnica para negocios que necesitan una base digital seria."
+      content="SPIKEDTECH transforma ideas en soluciones digitales modernas, eficientes y escalables: sitios web, aplicaciones web, automatizaciones y software a medida."
     />
+    <title>SPIKEDTECH | Soluciones Digitales Escalables</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/studio.css" />
-    <link rel="icon" type="image/png" href="img/spikedtech.png" />
-    <title>SPIKEDTECH | Programación y Desarrollo Web</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container nav-shell">
-        <a
-          class="brand"
-          href="index.html"
-          aria-label="Ir al inicio de SPIKEDTECH"
-        >
-          <img
-            class="brand-mark"
-            src="img/spikedtech.png"
-            alt="Logo SPIKEDTECH"
-          />
-          <span class="brand-copy">
-            <span class="brand-name">SPIKEDTECH</span>
-            <span class="brand-tag">Programación y desarrollo web</span>
-          </span>
+      <div class="container header-row">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio de SPIKEDTECH">
+          <img src="img/spikedtech.png" alt="Logotipo de SPIKEDTECH" />
+          <span class="brand-name">SPIKEDTECH</span>
         </a>
 
-        <nav class="desktop-nav" aria-label="Navegación principal">
-          <a class="nav-link" href="index.html">Inicio</a>
-          <a class="nav-link" href="servicios.html">Servicios</a>
-          <a class="nav-link" href="desarrollo-web.html">Desarrollo</a>
-          <a class="nav-link" href="proyectos.html">Proyectos</a>
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </nav>
-
-        <div class="nav-actions">
-          <a class="button primary" href="contacto.html">
-            Solicitar propuesta
-            <span class="button-arrow">→</span>
-          </a>
-        </div>
-
         <button
-          class="menu-toggle"
+          class="nav-toggle"
           type="button"
-          aria-label="Abrir menú"
-          data-menu-toggle
+          aria-label="Abrir menu de navegacion"
+          aria-expanded="false"
+          aria-controls="site-nav"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M4 7h16M4 12h16M4 17h16"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
         </button>
 
-        <div class="mobile-menu" data-mobile-menu>
-          <nav class="mobile-links" aria-label="Navegación móvil">
-            <a class="mobile-link" href="index.html">Inicio</a>
-            <a class="mobile-link" href="servicios.html">Servicios</a>
-            <a class="mobile-link" href="desarrollo-web.html">Desarrollo</a>
-            <a class="mobile-link" href="proyectos.html">Proyectos</a>
-            <a class="mobile-link" href="contacto.html">Contacto</a>
-          </nav>
-          <div class="mobile-cta">
-            <a class="button primary" href="contacto.html"
-              >Solicitar propuesta</a
-            >
-          </div>
-        </div>
+        <nav id="site-nav" class="site-nav" aria-label="Navegacion principal">
+          <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-layout">
-          <article class="panel hero-main">
-            <span class="eyebrow">Programación y desarrollo web</span>
-            <h1 class="display">
-              Construimos sitios, plataformas y sistemas web listos para vender,
-              operar y crecer.
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
+          <div class="reveal">
+            <span class="kicker">Agencia Tecnologica de Alto Impacto</span>
+            <h1>
+              Transformamos tus ideas en soluciones digitales que impulsan
+              resultados.
             </h1>
-            <p class="lead">
-              SPIKEDTECH desarrolla soluciones web completas para negocios que
-              necesitan una presencia seria, procesos más claros y una base
-              técnica que pueda soportar mejoras, integraciones y crecimiento
-              real sin rehacer el proyecto cada pocos meses.
+            <p class="hero-subtitle">
+              En SPIKEDTECH disenamos, desarrollamos y automatizamos productos
+              digitales modernos para que tu negocio opere con mas velocidad,
+              eficiencia y ventaja competitiva.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="contacto.html">
-                Contar mi proyecto
-                <span class="button-arrow">→</span>
-              </a>
-              <a class="button secondary" href="servicios.html"
-                >Ver servicios</a
+              <a class="btn btn-primary" href="#contacto"
+                >Solicitar diagnostico gratuito</a
               >
+              <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
             </div>
-            <div class="pill-row" aria-label="Líneas principales de servicio">
-              <span class="pill">Sitios comerciales</span>
-              <span class="pill">Sistemas a medida</span>
-              <span class="pill">Integraciones y automatización</span>
-              <span class="pill">Soporte evolutivo</span>
-            </div>
-          </article>
-
-          <aside class="panel panel-dark hero-aside">
-            <span class="eyebrow">Qué resolvemos</span>
-            <h2 class="quote-title">
-              Una base digital seria debe comunicar mejor, ordenar procesos y
-              sostener futuras mejoras.
-            </h2>
-            <ul class="check-list">
-              <li>
-                Sitios web para presentar servicios, captar clientes y
-                profesionalizar la marca.
-              </li>
-              <li>
-                Paneles internos, módulos privados y flujos con lógica de
-                negocio propia.
-              </li>
-              <li>
-                Integraciones con pagos, formularios, correo, herramientas
-                comerciales y analítica.
-              </li>
-              <li>
-                Evolución técnica para seguir creciendo sin acumular parches.
-              </li>
-            </ul>
-            <div class="quick-stats">
-              <div class="quick-stat">
-                <span class="quick-label">Inicio</span>
-                <strong class="quick-value">Diagnóstico claro</strong>
-              </div>
-              <div class="quick-stat">
-                <span class="quick-label">Base</span>
-                <strong class="quick-value">Arquitectura útil</strong>
-              </div>
-              <div class="quick-stat">
-                <span class="quick-label">Entrega</span>
-                <strong class="quick-value">Publicación seria</strong>
-              </div>
-              <div class="quick-stat">
-                <span class="quick-label">Continuidad</span>
-                <strong class="quick-value">Mejora constante</strong>
-              </div>
-            </div>
-          </aside>
-        </div>
-
-        <div class="container">
-          <article class="note-card">
-            <strong>Qué recibes desde el inicio</strong>
-            <p class="card-copy">
-              Orden de alcance, recomendación de estructura, prioridades del
-              proyecto y una ruta de trabajo pensada para que la inversión tenga
-              sentido técnico, comercial y operativo.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-head section-head-stack">
-            <div>
-              <span class="eyebrow">Panorama completo</span>
-              <h2 class="section-title">
-                Toda la oferta se concentra en programación aplicada a
-                resultados reales.
-              </h2>
-            </div>
-            <p class="section-text">
-              No separamos servicios que al final deberían trabajar juntos. La
-              solución abarca estructura, interfaz, lógica, integración y
-              continuidad para que el sitio o la plataforma cumpla una función
-              concreta dentro del negocio.
+            <p class="hero-meta">
+              Soluciones enfocadas en rendimiento, escalabilidad y experiencia
+              de usuario.
             </p>
           </div>
 
-          <div class="four-grid">
-            <article class="metric-card">
-              <span class="metric-number">01</span>
-              <h3 class="card-title">Sitios comerciales</h3>
-              <p class="card-copy">
-                Webs pensadas para presentar mejor servicios, captar
-                oportunidades y dar confianza.
-              </p>
-            </article>
-            <article class="metric-card">
-              <span class="metric-number">02</span>
-              <h3 class="card-title">Sistemas a medida</h3>
-              <p class="card-copy">
-                Módulos, paneles y flujos internos para operaciones que ya
-                necesitan más estructura.
-              </p>
-            </article>
-            <article class="metric-card">
-              <span class="metric-number">03</span>
-              <h3 class="card-title">Integraciones</h3>
-              <p class="card-copy">
-                Conexión con herramientas externas para reducir trabajo manual y
-                ganar continuidad.
-              </p>
-            </article>
-            <article class="metric-card">
-              <span class="metric-number">04</span>
-              <h3 class="card-title">Evolución técnica</h3>
-              <p class="card-copy">
-                Mejoras, nuevas funciones y soporte para que la base siga
-                sirviendo con el tiempo.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container split-layout split-layout-equal">
-          <article class="panel">
-            <span class="eyebrow">Qué incluye una base</span>
-            <h2 class="section-title">
-              Antes de programar, aterrizamos alcance, estructura y prioridad.
-            </h2>
-            <ul class="clean-list">
+          <aside
+            class="hero-card reveal"
+            aria-label="Propuesta de valor de SPIKEDTECH"
+          >
+            <h3>Listos para construir tu proximo sistema digital</h3>
+            <ul>
               <li>
-                Diagnóstico del momento actual del negocio y del problema que
-                realmente se quiere resolver.
+                Arquitectura solida para proyectos que deben crecer sin
+                friccion.
               </li>
               <li>
-                Definición de secciones, módulos, flujos, usuarios y puntos de
-                contacto necesarios.
+                Procesos de desarrollo claros, medibles y orientados a
+                objetivos.
               </li>
               <li>
-                Orden de implementación para empezar por lo que más impacta y no
-                por lo accesorio.
-              </li>
-              <li>
-                Ruta de publicación y continuidad para que el proyecto no muera
-                al salir al aire.
+                Ejecucion tecnica de nivel profesional desde la primera version.
               </li>
             </ul>
-          </article>
-
-          <aside class="panel panel-dark">
-            <span class="eyebrow">Cuándo conviene reestructurar</span>
-            <h2 class="quote-title">
-              Si tu base actual no comunica bien, no convierte o no soporta
-              procesos, ya no es un tema visual solamente.
-            </h2>
-            <ul class="check-list">
-              <li>
-                El mensaje del negocio está disperso y el usuario no entiende
-                rápido qué ofreces.
-              </li>
-              <li>
-                La estructura actual no permite crecer, integrar herramientas o
-                agregar nuevas funciones.
-              </li>
-              <li>
-                La navegación, el formulario o el contenido no acompañan bien el
-                recorrido comercial.
-              </li>
-              <li>
-                Ya existe una web, pero no está ayudando a vender mejor ni a
-                operar con claridad.
-              </li>
-            </ul>
-            <div class="button-row">
-              <a class="button secondary" href="servicios.html"
-                >Ver servicios</a
-              >
-              <a class="button ghost" href="contacto.html">Hablar del caso</a>
-            </div>
           </aside>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-head section-head-stack">
-            <div>
-              <span class="eyebrow">Cómo trabajamos</span>
-              <h2 class="section-title">
-                Una ruta clara evita improvisación y hace más útil cada decisión
-                del proyecto.
-              </h2>
-            </div>
-            <p class="section-text">
-              El objetivo no es avanzar por avanzar. El objetivo es construir
-              una solución que se pueda publicar, mantener y escalar sin perder
-              claridad técnica ni comercial.
+      <section id="nosotros" class="section">
+        <div class="container about-grid">
+          <div class="section-header reveal">
+            <span class="kicker">Acerca de Nosotros</span>
+            <h2>
+              Impulsamos negocios con tecnologia aplicada estrategicamente.
+            </h2>
+            <p>
+              SPIKEDTECH es una agencia tecnologica especializada en construir
+              soluciones digitales modernas, eficientes y escalables.
+              Convertimos ideas en productos funcionales, medibles y listos para
+              crecer.
             </p>
           </div>
 
-          <div class="process-grid">
-            <article class="card process-card">
-              <span class="process-number">01</span>
-              <h3 class="card-title">Diagnóstico</h3>
-              <p class="card-copy">
-                Revisamos el contexto, el objetivo, las restricciones y el punto
-                actual del negocio.
-              </p>
-            </article>
-            <article class="card process-card">
-              <span class="process-number">02</span>
-              <h3 class="card-title">Mapa funcional</h3>
-              <p class="card-copy">
-                Ordenamos pantallas, módulos, prioridades, usuarios, formularios
-                y flujos importantes.
-              </p>
-            </article>
-            <article class="card process-card">
-              <span class="process-number">03</span>
-              <h3 class="card-title">Desarrollo y pruebas</h3>
-              <p class="card-copy">
-                Construimos la base, validamos recorridos clave y ajustamos
-                rendimiento y consistencia.
-              </p>
-            </article>
-            <article class="card process-card">
-              <span class="process-number">04</span>
-              <h3 class="card-title">Publicación y mejora</h3>
-              <p class="card-copy">
-                Lanzamos, corregimos lo necesario y dejamos espacio real para
-                nuevas iteraciones.
-              </p>
-            </article>
+          <div class="panel reveal">
+            <p>
+              Combinamos vision de negocio con ingenieria de software para que
+              cada decision tecnica responda a un objetivo real de operacion,
+              eficiencia y crecimiento.
+            </p>
+            <ul class="value-list">
+              <li>
+                Enfoque consultivo: entendemos tu operacion antes de construir.
+              </li>
+              <li>
+                Desarrollo orientado a resultados: prioridad en impacto
+                tangible.
+              </li>
+              <li>
+                Escalabilidad desde el inicio: base robusta para evolucion
+                continua.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section id="servicios" class="section">
         <div class="container">
-          <article class="panel panel-dark">
-            <span class="eyebrow">Siguiente paso</span>
-            <h2 class="page-title">
-              Si tu presencia digital ya se quedó corta, conviene reconstruirla
-              bien desde la base.
-            </h2>
-            <p class="lead">
-              Podemos empezar por una web comercial, un sistema a medida o una
-              reestructura técnica completa. Lo importante es definir primero la
-              solución correcta y luego implementarla con orden.
+          <div class="section-header reveal">
+            <span class="kicker">Servicios Principales</span>
+            <h2>Servicios que aceleran tu transformacion digital.</h2>
+            <p>
+              Desde presencia digital profesional hasta sistemas personalizados,
+              construimos tecnologia alineada con tus metas de negocio.
             </p>
-            <div class="hero-actions">
-              <a class="button primary" href="contacto.html"
-                >Solicitar propuesta</a
-              >
-              <a class="button secondary" href="proyectos.html"
-                >Ver tipos de proyecto</a
-              >
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-title">
+                <span class="service-index">01</span>
+                <h3>Desarrollo de Paginas Web</h3>
+              </div>
+              <p>
+                Creamos sitios web corporativos y comerciales con diseno
+                moderno, carga rapida y estructura enfocada en conversion.
+              </p>
+              <ul class="service-points">
+                <li>Diseno responsivo en todos los dispositivos</li>
+                <li>Arquitectura limpia y alto rendimiento</li>
+                <li>Enfoque en conversion y posicionamiento de marca</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-title">
+                <span class="service-index">02</span>
+                <h3>Creacion de Aplicaciones Web</h3>
+              </div>
+              <p>
+                Desarrollamos aplicaciones web robustas para resolver procesos
+                criticos: paneles, portales de clientes y plataformas de
+                gestion.
+              </p>
+              <ul class="service-points">
+                <li>Experiencias intuitivas y flujos optimizados</li>
+                <li>Integracion con APIs y servicios externos</li>
+                <li>Escalabilidad para crecimiento continuo</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-title">
+                <span class="service-index">03</span>
+                <h3>Automatizacion de Procesos</h3>
+              </div>
+              <p>
+                Eliminamos tareas repetitivas mediante automatizaciones
+                inteligentes para reducir errores y mejorar la productividad
+                operativa.
+              </p>
+              <ul class="service-points">
+                <li>Automatizacion de tareas administrativas internas</li>
+                <li>Conexion entre herramientas y sistemas existentes</li>
+                <li>Trazabilidad y control de procesos clave</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-title">
+                <span class="service-index">04</span>
+                <h3>Programas y Software a Medida</h3>
+              </div>
+              <p>
+                Construimos software personalizado con logica de negocio
+                especifica y una base tecnica preparada para evolucionar.
+              </p>
+              <ul class="service-points">
+                <li>Soluciones alineadas a tus procesos reales</li>
+                <li>Arquitectura mantenible y segura</li>
+                <li>Evolucion por etapas segun prioridades</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="services-cta reveal">
+            <a class="btn btn-primary" href="#contacto"
+              >Quiero una solucion para mi empresa</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="kicker">Por Que Elegirnos</span>
+            <h2>Ventajas de trabajar con SPIKEDTECH.</h2>
+            <p>
+              Integramos estrategia, diseno e ingenieria para construir
+              soluciones que entregan valor hoy y escalan contigo manana.
+            </p>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card reveal">
+              <h3>Vision tecnica y de negocio</h3>
+              <p>
+                No solo programamos: diseniamos soluciones orientadas a impacto
+                real.
+              </p>
+            </article>
+            <article class="benefit-card reveal">
+              <h3>Estandares profesionales modernos</h3>
+              <p>
+                Aplicamos buenas practicas en seguridad, rendimiento y
+                mantenibilidad.
+              </p>
+            </article>
+            <article class="benefit-card reveal">
+              <h3>Escalabilidad desde la base</h3>
+              <p>
+                Desarrollamos estructuras que evitan rehacer sistemas al crecer.
+              </p>
+            </article>
+            <article class="benefit-card reveal">
+              <h3>Comunicacion clara y seguimiento</h3>
+              <p>
+                Tienes visibilidad continua del avance y de cada decision
+                tecnica.
+              </p>
+            </article>
+            <article class="benefit-card reveal">
+              <h3>Soluciones a medida</h3>
+              <p>
+                Cada propuesta se adapta a tu operacion, no a plantillas
+                genericas.
+              </p>
+            </article>
+            <article class="benefit-card reveal">
+              <h3>Enfoque en eficiencia y retorno</h3>
+              <p>
+                Implementamos tecnologia para optimizar costos, tiempos y
+                decisiones.
+              </p>
+            </article>
+          </div>
+
+          <p class="quote-box reveal">
+            Las empresas que digitalizan con estrategia crecen mas rapido y
+            operan mejor. En SPIKEDTECH convertimos esa estrategia en ejecucion
+            real.
+          </p>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <div class="container contact-grid">
+          <div class="section-header reveal">
+            <span class="kicker">Contacto</span>
+            <h2>Hablemos de tu proximo proyecto digital.</h2>
+            <p>
+              Comparte tu objetivo y te propondremos una ruta tecnologica clara,
+              realista y orientada a resultados.
+            </p>
+            <div class="contact-meta">
+              <div>
+                <strong>Correo</strong>
+                <p>contacto@spikedtech.com</p>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>+00 0000 0000</p>
+              </div>
+              <div>
+                <strong>Ubicacion</strong>
+                <p>
+                  Atencion remota para clientes nacionales e internacionales.
+                </p>
+              </div>
             </div>
-          </article>
+          </div>
+
+          <div class="panel reveal">
+            <form id="contact-form" class="form" novalidate>
+              <div class="form-row">
+                <label for="name">Nombre completo</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+                <span
+                  class="field-error"
+                  data-error-for="name"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Correo electronico</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+                <span
+                  class="field-error"
+                  data-error-for="email"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <div class="form-row">
+                <label for="company">Empresa (opcional)</label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  autocomplete="organization"
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="service">Servicio de interes</label>
+                <select id="service" name="service">
+                  <option value="">Selecciona un servicio</option>
+                  <option value="web">Desarrollo de Paginas Web</option>
+                  <option value="app">Creacion de Aplicaciones Web</option>
+                  <option value="automation">Automatizacion de Procesos</option>
+                  <option value="custom-software">
+                    Programas y Software a Medida
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+                <span
+                  class="field-error"
+                  data-error-for="message"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <button class="btn btn-primary" type="submit">
+                Enviar solicitud
+              </button>
+              <p class="form-status" aria-live="polite"></p>
+              <p class="hero-meta">Respondemos en menos de 24 horas habiles.</p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-layout">
-        <section class="footer-primary">
-          <span class="eyebrow">SPIKEDTECH</span>
-          <h2 class="footer-title">
-            Programación web, plataformas y sistemas a medida para negocios que
-            necesitan una base seria.
-          </h2>
-          <p class="footer-copy">
-            Trabajamos desde el alcance hasta la publicación con foco en
-            estructura, integración y evolución técnica, para que el proyecto
-            siga sirviendo cuando el negocio crece.
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <strong>SPIKEDTECH</strong>
+          <p>
+            Tecnologia moderna para negocios que buscan crecer con estructura e
+            innovacion.
           </p>
-          <div class="footer-meta">
-            <span>Alajuela, Costa Rica</span>
-            <span>Proyectos locales y remotos</span>
-          </div>
-        </section>
-
-        <section class="footer-links-grid">
-          <article class="footer-panel">
-            <h2 class="footer-title">Servicios</h2>
-            <div class="footer-links">
-              <a href="servicios.html">Panorama general</a>
-              <a href="desarrollo-web.html">Desarrollo a medida</a>
-              <a href="contacto.html">Solicitar propuesta</a>
-            </div>
-          </article>
-          <article class="footer-panel">
-            <h2 class="footer-title">Explorar</h2>
-            <div class="footer-links">
-              <a href="index.html">Inicio</a>
-              <a href="proyectos.html">Tipos de proyecto</a>
-              <a href="contacto.html">Contacto</a>
-            </div>
-          </article>
-          <article class="footer-panel">
-            <h2 class="footer-title">Contacto</h2>
-            <div class="footer-links">
-              <a href="https://wa.me/50687394231">WhatsApp</a>
-              <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
-              <a href="contacto.html">Formulario del proyecto</a>
-            </div>
-          </article>
-        </section>
-      </div>
-
-      <div class="container footer-meta">
-        <span>© <span data-year></span> SPIKEDTECH</span>
-        <span
-          >Programación, sistemas web, integraciones y evolución técnica</span
-        >
+          <p>
+            &copy; <span id="year"></span> SPIKEDTECH. Todos los derechos
+            reservados.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Enlaces del pie de pagina">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
       </div>
     </footer>
 
-    <script src="js/studio.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
