@@ -93,7 +93,8 @@ const services: ServiceCardProps[] = [
     description:
       "Diseñamos la capa de integración que conecta tu ecosistema tecnológico: ERP, CRM, bases de datos y plataformas SaaS. El resultado es un flujo de datos unificado con visibilidad ejecutiva en tiempo real.",
     icon: "integration",
-    result: "Ecosistema tecnológico interoperable con un único panel de control",
+    result:
+      "Ecosistema tecnológico interoperable con un único panel de control",
     title: "Integraciones API & Dashboards",
   },
   {
@@ -101,7 +102,8 @@ const services: ServiceCardProps[] = [
     description:
       "Desplegamos infraestructura de IA privada (RAG sobre LLMs) que permite a tu equipo consultar bases de conocimiento corporativas con precisión. Decisiones estratégicas basadas en información consolidada, en segundos.",
     icon: "intelligence",
-    result: "Recuperación de conocimiento institucional en segundos, con privacidad total",
+    result:
+      "Recuperación de conocimiento institucional en segundos, con privacidad total",
     title: "Asistentes de IA Internos",
   },
   {
@@ -144,7 +146,8 @@ const processSteps = [
     title: "Auditoría Técnica Inicial (Gratis)",
   },
   {
-    deliverable: "Documento de alcance, arquitectura propuesta y presupuesto fijo",
+    deliverable:
+      "Documento de alcance, arquitectura propuesta y presupuesto fijo",
     description:
       "Definimos el alcance técnico, la arquitectura de la solución, el cronograma por sprints y el presupuesto cerrado. Sin variaciones una vez acordado.",
     duration: "3–5 días",
@@ -288,8 +291,8 @@ export default function HomePage() {
             </p>
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">
               Auditamos tu arquitectura actual, identificamos los cuellos de
-              botella y entregamos la solución técnica que tu operación
-              necesita para escalar.
+              botella y entregamos la solución técnica que tu operación necesita
+              para escalar.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button className="sm:min-w-56" href="#contacto">
@@ -483,7 +486,8 @@ export default function HomePage() {
                     size={17}
                     strokeWidth={1.8}
                   />
-                  Seguridad y rendimiento como requerimientos de diseño desde el primer sprint.
+                  Seguridad y rendimiento como requerimientos de diseño desde el
+                  primer sprint.
                 </div>
                 <div className="mt-4 flex items-center gap-3 text-sm text-slate-400">
                   <CheckCircle2
@@ -619,9 +623,9 @@ export default function HomePage() {
                   Visión
                 </h3>
                 <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
-                  Convertirnos en el socio tecnológico estratégico de
-                  referencia para organizaciones en Latinoamérica que compiten
-                  con infraestructura de software de nivel enterprise.
+                  Convertirnos en el socio tecnológico estratégico de referencia
+                  para organizaciones en Latinoamérica que compiten con
+                  infraestructura de software de nivel enterprise.
                 </p>
               </Card>
             </Reveal>
@@ -716,8 +720,8 @@ export default function HomePage() {
                 className="text-balance text-3xl font-semibold text-white sm:text-5xl"
                 id="cta-title"
               >
-                Tu arquitectura actual tiene un techo. Construyamos el
-                siguiente nivel.
+                Tu arquitectura actual tiene un techo. Construyamos el siguiente
+                nivel.
               </h2>
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
                 Una sesión de 30 minutos con los arquitectos de SPIKEDTECH.
