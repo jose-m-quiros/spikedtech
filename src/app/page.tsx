@@ -2,15 +2,12 @@
   AlertTriangle,
   ArrowRight,
   ArrowUpRight,
-  BarChart3,
-  CalendarCheck,
   Check,
   CheckCircle2,
   Clock,
   FileText,
   GitBranch,
   Github,
-  GraduationCap,
   HelpCircle,
   Layers3,
   LayoutGrid,
@@ -25,7 +22,6 @@
   ShieldCheck,
   Sparkles,
   Target,
-  TrendingDown,
   Unplug,
   Users,
   UsersRound,
@@ -33,7 +29,6 @@
 } from "lucide-react";
 
 import { BrandMark } from "@/components/brand-mark";
-import { AnimatedCounter } from "@/components/motion/animated-counter";
 import {
   MagneticCard,
   type ServiceCardProps,
@@ -47,54 +42,30 @@ import { FloatContact } from "@/components/ui/float-contact";
 import { GradientBackground } from "@/components/ui/gradient-background";
 import { SectionHeader } from "@/components/ui/section-header";
 
-const statistics = [
-  { label: "proyectos entregados", prefix: "+", value: 25 },
-  {
-    label: "módulos funcionales construídos",
-    prefix: "+",
-    value: 300,
-  },
-  { label: "satisfacción del cliente", suffix: "%", value: 98 },
-  { label: "proyectos con código documentado", suffix: "%", value: 100 },
-  { label: "días de garantía post-entrega", value: 60 },
+const heroMetrics = [
+  { label: "Código de tu propiedad", value: "100%" },
+  { label: "Dependencias de terceros", note: "No vendor lock-in", value: "0" },
+  { label: "Días de garantía técnica", value: "60" },
 ];
 
 const problems = [
   {
     description:
-      "Tareas repetitivas que consumen horas del equipo cada día y generan errores costosos. Los automatizamos.",
-    icon: Clock,
-    title: "Procesos manuales que frenan el crecimiento",
-  },
-  {
-    description:
-      "Sistemas viejos que no escalan, no se integran y bloquean cualquier mejora operativa.",
-    icon: AlertTriangle,
-    title: "Software heredado o desactualizado",
-  },
-  {
-    description:
-      "Decisiones tomadas sin datos confiables porque la información está dispersa en hojas de cálculo.",
-    icon: BarChart3,
-    title: "Sin visibilidad real del negocio",
-  },
-  {
-    description:
-      "Herramientas que no se hablan entre sí. Tu equipo copia datos manualmente entre sistemas.",
-    icon: Unplug,
-    title: "Integraciones que fallan o no existen",
-  },
-  {
-    description:
-      "No tienes capacidad interna para desarrollar, mantener ni evolucionar el software que el negocio exige.",
+      "El negocio exige nueva tecnología, pero no tienes la capacidad interna para desarrollarla ni mantenerla.",
     icon: Users,
-    title: "Sin equipo técnico propio",
+    title: "Falta de equipo técnico",
   },
   {
     description:
-      "El negocio crece pero la tecnología no acompaña. Cada cambio pequeño requiere semanas de trabajo.",
-    icon: TrendingDown,
-    title: "Crecimiento sin infraestructura técnica",
+      "Tus herramientas actuales no se hablan. Tu equipo pasa horas copiando y pegando datos de un sistema a otro.",
+    icon: Unplug,
+    title: "Sistemas aislados",
+  },
+  {
+    description:
+      "Dependes de tareas manuales repetitivas que son propensas a errores y bloquean el tiempo de tu talento.",
+    icon: Clock,
+    title: "Procesos lentos y costosos",
   },
 ];
 
@@ -112,150 +83,96 @@ const services: ServiceCardProps[] = [
   {
     accent: "cyan",
     description:
-      "Eliminamos ineficiencias operativas con plataformas que automatizan, integran y escalan con tu negocio.",
-    icon: "code",
-    result: "Hasta 70% menos tiempo en operaciones manuales",
-    title: "Desarrollo de Software Empresarial",
-  },
-  {
-    accent: "sky",
-    description:
-      "Experiencias web y móviles rápidas que convierten visitantes en clientes y retienen usuarios.",
-    icon: "mobile",
-    result: "Productos listos para producción en semanas",
-    title: "Desarrollo Web & Apps Móviles",
-  },
-  {
-    accent: "emerald",
-    description:
-      "Modelos LLM (OpenAI, Ollama) integrados en tus flujos para automatizar análisis, soporte y decisiones.",
-    icon: "intelligence",
-    result: "Hasta 5× más capacidad con el mismo equipo",
-    title: "Inteligencia Artificial & LLM",
-  },
-  {
-    accent: "cyan",
-    description:
-      "RPA y sistemas de gestión que eliminan tareas repetitivas y dan trazabilidad completa a la operación.",
+      "Eliminamos el trabajo mecánico. Desde la lectura automatizada de facturas hasta la generación de reportes que te ahorran horas diarias.",
     icon: "automation",
-    result: "+300 transacciones automáticas diarias posibles",
-    title: "Automatización de Procesos",
+    result: "Hasta 80% menos tiempo en tareas manuales repetitivas",
+    title: "Automatización de Procesos (RPA)",
   },
   {
     accent: "sky",
     description:
-      "Conectamos tus sistemas y centralizamos la información para que cada decisión se tome con datos reales.",
+      "Conectamos tus sistemas actuales (ERP, CRM, Excel) para que operen como uno solo. Visibilidad de tu negocio en tiempo real.",
     icon: "integration",
-    result: "Visibilidad total del negocio en un solo lugar",
+    result: "Datos unificados en un solo panel de control",
     title: "Integraciones API & Dashboards",
   },
   {
     accent: "emerald",
     description:
-      "Arquitectura cloud segura (Azure, AWS, GCP) con auditorías de seguridad y cumplimiento desde el inicio.",
+      "Desplegamos Modelos de Lenguaje (LLMs) privados para que tu equipo consulte bases de datos corporativas en segundos, acelerando la toma de decisiones.",
+    icon: "intelligence",
+    result: "Respuestas en segundos, no en horas de búsqueda",
+    title: "Asistentes de IA Internos",
+  },
+  {
+    accent: "sky",
+    description:
+      "Evaluamos tu infraestructura actual (AWS, Azure) para cerrar brechas de seguridad antes de que se conviertan en un problema crítico.",
     icon: "cloud",
-    result: "99.9% uptime con infraestructura auditada",
-    title: "Cloud & Ciberseguridad",
+    result: "Infraestructura auditada antes de que surja el problema",
+    title: "Auditoría y Ciberseguridad Cloud",
   },
 ];
 
-const differentiators = [
+const guarantees = [
   {
     description:
-      "Cada proyecto incluye documentación técnica y manual de usuario para que tu equipo sea autónomo.",
+      "Para nuestros proyectos piloto de automatización, si no logramos reducir el tiempo de tu proceso manual, no pagas el desarrollo final.",
+    icon: Target,
+    title: "Garantía de impacto inicial",
+  },
+  {
+    description:
+      "Te entregamos el código fuente, la documentación técnica y la libertad de usarlo sin pagar licencias eternas.",
     icon: FileText,
-    title: "Documentación completa",
+    title: "Propiedad total del código",
   },
   {
     description:
-      "Diseñamos pensando en el futuro. Tu sistema puede crecer sin necesidad de reescribirse.",
-    icon: Layers3,
-    title: "Arquitectura que escala",
-  },
-  {
-    description:
-      "Seguridad integrada en cada capa: autenticación, cifrado, auditoría y control de acceso.",
-    icon: ShieldCheck,
-    title: "Seguridad desde el diseño",
-  },
-  {
-    description:
-      "Cronograma claro, presupuesto fijo y actualización semanal del avance sin sorpresas.",
-    icon: CalendarCheck,
-    title: "Entregas sin sorpresas",
-  },
-  {
-    description:
-      "Enseñamos a tu equipo a usar y mantener lo que construimos. La autonomía es parte del entregable.",
-    icon: GraduationCap,
-    title: "Capacitación incluida",
-  },
-  {
-    description:
-      "60 días de garantía de funcionamiento post-entrega más soporte continuo según el proyecto.",
+      "60 días de cobertura post-despliegue para asegurar que tu equipo opera el sistema sin contratiempos.",
     icon: LifeBuoy,
-    title: "Soporte post-entrega",
+    title: "Soporte incondicional",
   },
 ];
 
 const processSteps = [
   {
-    deliverable: "Brief técnico del proyecto",
-    description: "Entendemos tu negocio, tus procesos y tus objetivos reales.",
+    deliverable: "Mapa de procesos y cuellos de botella identificados",
+    description:
+      "Mapeamos tus procesos y encontramos los cuellos de botella. Sin costo, sin compromiso.",
     duration: "1–2 días",
-    title: "Reunión inicial",
+    title: "Diagnóstico Técnico (Gratis)",
   },
   {
-    deliverable: "Propuesta + cronograma detallado",
+    deliverable: "Propuesta técnica con cronograma y presupuesto fijo",
     description:
-      "Definimos alcance, arquitectura, tecnología y estimación de tiempos.",
+      "Diseñamos una solución ágil con cronograma y presupuesto fijo. Sin sorpresas en el camino.",
     duration: "3–5 días",
-    title: "Planificación",
+    title: "Plan Piloto / Propuesta",
   },
   {
-    deliverable: "Prototipo en Figma",
+    deliverable: "Demos funcionales cada semana",
     description:
-      "Prototipos navegables de alta fidelidad antes de escribir una sola línea de código.",
-    duration: "1–2 semanas",
-    title: "Diseño UX/UI",
-  },
-  {
-    deliverable: "Demos semanales del avance",
-    description:
-      "Iteraciones ágiles con entrega continua. Ves el progreso cada semana.",
+      "Ves avances reales y funcionales cada semana. Tú apruebas antes de continuar.",
     duration: "Según alcance",
-    title: "Desarrollo",
+    title: "Desarrollo Iterativo",
   },
   {
-    deliverable: "Reporte de QA y seguridad",
+    deliverable: "Sistema en producción + capacitación del equipo",
     description:
-      "Pruebas funcionales, de seguridad y rendimiento antes de ir a producción.",
-    duration: "3–7 días",
-    title: "Pruebas",
-  },
-  {
-    deliverable: "Sistema en producción + código fuente",
-    description:
-      "Publicación en el entorno definitivo con zero-downtime deployment.",
-    duration: "1–2 días",
-    title: "Despliegue",
-  },
-  {
-    deliverable: "Canal de soporte dedicado",
-    description:
-      "60 días de garantía de funcionamiento y acompañamiento post-entrega.",
-    duration: "60 días garantía",
-    title: "Soporte",
+      "Instalamos, aseguramos y enseñamos a tu equipo a usarlo. El sistema queda en tus manos.",
+    duration: "1–3 días",
+    title: "Despliegue y Capacitación",
   },
 ];
 
 const team = [
   {
-    bio: "Lidera la estrategia de ciberseguridad de SPIKEDTECH, impulsando el desarrollo de soluciones seguras con un enfoque en backend, arquitectura de software, pruebas de seguridad, automatización e implementación de buenas prácticas para aplicaciones empresariales.",
+    bio: "Arquitecto de software especializado en backend y ciberseguridad. Lidera el diseño de infraestructuras robustas asegurando que cada línea de código cumpla con los estándares más altos de protección de datos.",
     github: "https://github.com/",
-    initials: "JM",
+    initials: "JQ",
     linkedin: "https://linkedin.com/in/",
-    name: "Jose Quiros",
+    name: "José Quirós",
     role: "CEO & Cybersecurity Lead",
     specialties: [
       "Arquitectura",
@@ -267,16 +184,14 @@ const team = [
     ],
   },
   {
-    bio: "Responsable de la gestión de clientes, planificación de proyectos y desarrollo de interfaces modernas. Lidera la experiencia del cliente desde el levantamiento de requerimientos hasta la entrega final, integrando desarrollo frontend, automatizaciones y soluciones centradas en el usuario.",
-
+    bio: "Experto en transformar flujos operativos complejos en interfaces intuitivas. Garantiza la entrega ágil de los proyectos y una experiencia de usuario que acelera la adopción tecnológica en tu equipo.",
     github: "",
     initials: "JF",
-    linkedin: "",
+    linkedin: "https://linkedin.com/in/",
     name: "Jesús Franco",
     role: "Project Manager & Frontend Lead",
-
     specialties: [
-      "Gestión de Clientes",
+      "Gestión de Proyectos",
       "Frontend",
       "UX/UI",
       "Automatización",
@@ -355,30 +270,29 @@ export default function HomePage() {
       <main id="contenido">
         {/* HERO */}
         <section
-          className="relative mx-auto max-w-7xl px-5 pb-8 pt-14 sm:px-8 sm:pb-16 sm:pt-28 lg:px-10 lg:pb-20 lg:pt-32"
+          className="relative mx-auto max-w-7xl px-5 pb-6 pt-14 sm:px-8 sm:pb-10 sm:pt-28 lg:px-10 lg:pb-12 lg:pt-32"
           id="inicio"
         >
           <Reveal className="max-w-4xl">
             <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-200/15 bg-cyan-300/[0.07] px-3 py-1.5 text-sm font-medium text-cyan-100 backdrop-blur-md">
               <Zap aria-hidden="true" size={14} strokeWidth={2} />
-              Proyectos entregados en tiempo y dentro del presupuesto
+              Tu departamento de TI y desarrollo a demanda
             </p>
             <h1 className="text-balance max-w-4xl text-4xl font-semibold leading-[1.06] text-white sm:text-6xl lg:text-7xl">
-              Automatizamos los procesos que frenan el crecimiento de tu
-              empresa.
+              Automatizamos los procesos manuales que frenan el crecimiento de
+              tu empresa.
             </h1>
             <p className="mt-7 text-xl font-medium leading-8 text-cyan-100 sm:text-2xl">
-              Software personalizado con IA para empresas que necesitan escalar
-              sin aumentar la carga operativa.
+              Obtén los beneficios de tener tu propio equipo de ingeniería de
+              software e IA, sin los altos costos de nómina.
             </p>
-            <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">
-              Identificamos los cuellos de botella de tu negocio y construimos
-              el software que los resuelve. Sin soluciones genéricas, sin
-              dependencias, con código que es tuyo desde el primer día.
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">
+              Identificamos tus cuellos de botella y construimos las soluciones
+              para que tú te enfoques en dirigir el negocio.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button className="sm:min-w-56" href="#contacto">
-                Quiero automatizar mi empresa
+                Agendar diagnóstico técnico sin costo
                 <ArrowRight aria-hidden="true" size={17} strokeWidth={2} />
               </Button>
               <Button
@@ -386,76 +300,62 @@ export default function HomePage() {
                 href="#servicios"
                 variant="secondary"
               >
-                Ver nuestros servicios
+                Ver nuestras soluciones
                 <ArrowUpRight aria-hidden="true" size={17} strokeWidth={2} />
               </Button>
             </div>
           </Reveal>
           <Reveal
-            className="hidden border-t border-white/[0.1] pt-7 sm:mt-20 sm:block"
+            className="mt-12 border-t border-white/[0.1] pt-8"
             delay={0.12}
           >
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-slate-500">
-              Empresas que ya operan con software de SPIKEDTECH
-            </p>
-            {/* ⚠️  Reemplaza con logos reales de clientes */}
-            <div className="flex flex-wrap items-center gap-8 opacity-35">
-              {["Cliente A", "Cliente B", "Cliente C", "Cliente D"].map((c) => (
-                <span
-                  className="text-sm font-bold tracking-wide text-slate-300"
-                  key={c}
-                >
-                  {c}
-                </span>
+            <div className="flex flex-wrap gap-x-12 gap-y-6">
+              {heroMetrics.map((metric) => (
+                <div key={metric.label}>
+                  <p className="text-3xl font-semibold text-white sm:text-4xl">
+                    {metric.value}
+                  </p>
+                  <p className="mt-1 text-sm text-slate-400">
+                    {metric.label}
+                    {"note" in metric ? (
+                      <span className="ml-1.5 italic text-slate-500">
+                        ({metric.note})
+                      </span>
+                    ) : null}
+                  </p>
+                </div>
               ))}
             </div>
           </Reveal>
         </section>
 
-        {/* STATS */}
-        <section
-          aria-label="Indicadores de SPIKEDTECH"
-          className="border-y border-white/[0.09] bg-black/[0.14]"
-        >
-          <div className="mx-auto grid max-w-7xl divide-y divide-white/[0.09] px-5 sm:grid-cols-2 sm:divide-x sm:divide-y-0 sm:px-8 lg:grid-cols-5 lg:px-10">
-            {statistics.map((statistic) => (
-              <div
-                className="px-5 py-7 first:pl-0 sm:px-7 sm:first:pl-0 lg:px-6 lg:first:pl-0"
-                key={statistic.label}
-              >
-                <AnimatedCounter {...statistic} />
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* PROBLEMAS */}
         <section
-          className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-10 lg:py-20"
+          className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12"
           id="problemas"
         >
           <Reveal>
             <SectionHeader
-              description="Si alguno de estos escenarios describe tu empresa, llegaste al lugar correcto."
+              description="Si tu equipo invierte horas en tareas mecánicas o tus sistemas actuales no se comunican entre sí, estás perdiendo dinero diario."
               eyebrow="¿Te identificas con esto?"
               icon={AlertTriangle}
-              title="Los problemas que más frenan el crecimiento de las empresas."
+              title="Las empresas no escalan usando hojas de cálculo y procesos manuales."
             />
           </Reveal>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {problems.map((problem, index) => {
               const Icon = problem.icon;
               return (
-                <Reveal delay={index * 0.05} key={problem.title}>
-                  <div className="flex h-full gap-4 rounded-lg border border-white/[0.08] bg-white/[0.025] p-5 backdrop-blur-sm">
-                    <span className="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-md border border-rose-200/15 bg-rose-400/[0.08] text-rose-300">
-                      <Icon aria-hidden="true" size={18} strokeWidth={1.8} />
+                <Reveal delay={index * 0.06} key={problem.title}>
+                  <div className="flex h-full flex-col gap-4 rounded-lg border border-white/[0.08] bg-white/[0.025] p-6 backdrop-blur-sm">
+                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-md border border-rose-200/15 bg-rose-400/[0.08] text-rose-300">
+                      <Icon aria-hidden="true" size={20} strokeWidth={1.8} />
                     </span>
                     <div>
-                      <h3 className="text-base font-semibold text-white">
+                      <h3 className="text-lg font-semibold text-white">
                         {problem.title}
                       </h3>
-                      <p className="mt-1.5 text-sm leading-6 text-slate-400">
+                      <p className="mt-2 text-sm leading-6 text-slate-400">
                         {problem.description}
                       </p>
                     </div>
@@ -464,7 +364,7 @@ export default function HomePage() {
               );
             })}
           </div>
-          <Reveal delay={0.15}>
+          <Reveal delay={0.18}>
             <div className="mt-8 flex flex-col items-start gap-4 rounded-lg border border-cyan-200/15 bg-cyan-300/[0.04] px-5 py-4 sm:flex-row sm:items-center">
               <CheckCircle2
                 aria-hidden="true"
@@ -474,17 +374,17 @@ export default function HomePage() {
               />
               <p className="text-sm leading-6 text-slate-300">
                 <strong className="font-semibold text-white">
-                  SPIKEDTECH resuelve estos problemas
+                  SPIKEDTECH actúa como tu departamento de TI externo.
                 </strong>{" "}
-                con software a medida, sin dependencias de terceros y con código
-                documentado que queda en tus manos.
+                Sin costos de nómina, sin intermediarios. Hablas directamente
+                con los arquitectos de tu solución.
               </p>
               <Button
                 className="ml-auto hidden shrink-0 sm:inline-flex"
                 href="#servicios"
                 variant="ghost"
               >
-                Ver cómo{" "}
+                Ver soluciones{" "}
                 <ArrowRight aria-hidden="true" size={15} strokeWidth={2} />
               </Button>
             </div>
@@ -496,16 +396,16 @@ export default function HomePage() {
           className="border-y border-white/[0.08] bg-black/[0.13]"
           id="servicios"
         >
-          <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-10 lg:py-20">
+          <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
             <Reveal>
               <SectionHeader
-                description="No trabajamos con plantillas. Cada solución parte del análisis real de tu negocio y se construye para resolverlo."
-                eyebrow="Nuestros servicios"
+                description="No necesitas un proyecto de un año para ver resultados. Comenzamos resolviendo tus problemas más urgentes."
+                eyebrow="Soluciones de alto impacto"
                 icon={LayoutGrid}
-                title="¿Qué podemos construir para tu empresa?"
+                title="Soluciones ágiles con impacto inmediato en tu operación."
               />
             </Reveal>
-            <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-12 grid gap-4 md:grid-cols-2">
               {services.map((service, index) => (
                 <Reveal delay={index * 0.05} key={service.title}>
                   <MagneticCard {...service} />
@@ -515,7 +415,7 @@ export default function HomePage() {
             <Reveal delay={0.1}>
               <div className="mt-10 flex justify-center">
                 <Button href="#contacto" variant="secondary">
-                  Hablar sobre mi proyecto
+                  Hablar sobre mi caso
                   <ArrowRight aria-hidden="true" size={16} strokeWidth={2} />
                 </Button>
               </div>
@@ -523,33 +423,33 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* POR QUÉ SPIKEDTECH */}
+        {/* GARANTÍA */}
         <section
           className="border-y border-white/[0.08] bg-black/[0.13]"
-          id="porque"
+          id="garantia"
         >
-          <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-10 lg:py-20">
+          <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
             <Reveal>
               <SectionHeader
-                description="Lo que nos diferencia no está en el marketing. Está en cómo trabajamos, en lo que entregamos y en cómo te acompañamos."
-                eyebrow="¿Por qué SPIKEDTECH?"
-                icon={Target}
-                title="Razones concretas para elegirnos."
+                description="Sabemos que contratar tecnología es una decisión de confianza. Por eso invertimos el riesgo."
+                eyebrow="Sin riesgo para ti"
+                icon={ShieldCheck}
+                title="Garantía de Resultados y Código Propio."
               />
             </Reveal>
-            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {differentiators.map((item, index) => {
+            <div className="mt-12 grid gap-4 sm:grid-cols-3">
+              {guarantees.map((item, index) => {
                 const Icon = item.icon;
                 return (
-                  <Reveal delay={index * 0.04} key={item.title}>
-                    <Card className="h-full p-5">
-                      <span className="grid h-10 w-10 place-items-center rounded-md border border-cyan-200/20 bg-cyan-300/[0.08] text-cyan-100">
-                        <Icon aria-hidden="true" size={19} strokeWidth={1.7} />
+                  <Reveal delay={index * 0.06} key={item.title}>
+                    <Card className="h-full p-6 sm:p-7">
+                      <span className="grid h-11 w-11 place-items-center rounded-md border border-emerald-200/20 bg-emerald-300/[0.08] text-emerald-100">
+                        <Icon aria-hidden="true" size={20} strokeWidth={1.7} />
                       </span>
-                      <h3 className="mt-5 font-semibold text-white">
+                      <h3 className="mt-5 text-lg font-semibold text-white">
                         {item.title}
                       </h3>
-                      <p className="mt-2 text-sm leading-6 text-slate-400">
+                      <p className="mt-3 text-sm leading-6 text-slate-400">
                         {item.description}
                       </p>
                     </Card>
@@ -565,14 +465,14 @@ export default function HomePage() {
           className="border-y border-white/[0.08] bg-black/[0.13]"
           id="proceso"
         >
-          <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10 lg:py-20">
+          <div className="mx-auto grid max-w-7xl gap-12 px-5 py-8 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10 lg:py-12">
             <Reveal>
               <div className="lg:sticky lg:top-28">
                 <SectionHeader
                   description="Sabes exactamente en qué etapa estás, qué se está construyendo y cuándo lo recibirás."
                   eyebrow="Proceso de trabajo"
                   icon={GitBranch}
-                  title="Sin incertidumbre. Avance visible en cada etapa."
+                  title="Desde el análisis hasta la producción sin cajas negras."
                 />
                 <div className="mt-8 flex items-center gap-3 text-sm text-slate-400">
                   <LockKeyhole
@@ -600,15 +500,15 @@ export default function HomePage() {
 
         {/* EQUIPO */}
         <section
-          className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-10 lg:py-20"
+          className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12"
           id="equipo"
         >
           <Reveal>
             <SectionHeader
-              description="Un equipo interdisciplinario que convierte la estrategia en software que funciona."
+              description="Cuando trabajas con SPIKEDTECH, hablas directamente con los arquitectos de tu solución. Combinamos seguridad de grado empresarial con interfaces diseñadas para el usuario final."
               eyebrow="Nuestro equipo"
               icon={UsersRound}
-              title="Las personas detrás de cada proyecto."
+              title="Ingeniería liderada por expertos, no por intermediarios."
             />
           </Reveal>
           <div className="mt-12 grid gap-4 md:grid-cols-2">
@@ -680,7 +580,7 @@ export default function HomePage() {
 
         {/* FILOSOFÍA */}
         <section
-          className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-10 lg:py-20"
+          className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12"
           id="filosofia"
         >
           <Reveal>
@@ -756,7 +656,7 @@ export default function HomePage() {
           className="border-y border-white/[0.08] bg-black/[0.13]"
           id="faq"
         >
-          <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:px-10 lg:py-20">
+          <div className="mx-auto grid max-w-7xl gap-12 px-5 py-8 sm:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:px-10 lg:py-12">
             <Reveal>
               <SectionHeader
                 description="Preguntas reales que nos hacen antes de contratar. Respondidas con claridad."
@@ -803,29 +703,29 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(14,116,144,0.18),transparent_70%)]"
           />
-          <div className="mx-auto max-w-4xl px-5 py-14 text-center sm:px-8 sm:py-20 lg:px-10">
+          <div className="mx-auto max-w-4xl px-5 py-8 text-center sm:px-8 sm:py-12 lg:px-10">
             <Reveal>
               <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-200/15 bg-cyan-300/[0.07] px-3 py-1.5 text-sm font-medium text-cyan-100">
                 <Zap aria-hidden="true" size={14} strokeWidth={2} />
-                Diagnóstico inicial sin costo
+                30 minutos con los fundadores, gratis
               </p>
               <h2
                 className="text-balance text-3xl font-semibold text-white sm:text-5xl"
                 id="cta-title"
               >
-                ¿Tienes un proyecto en mente?
+                Deja de adaptar tu negocio a un software rígido.
               </h2>
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                Agenda una reunión gratuita de 30 minutos. Analizamos tu caso,
-                identificamos los cuellos de botella y te entregamos una
-                propuesta sin compromisos.
+                Agenda una llamada técnica de 30 minutos directamente con
+                nuestros fundadores. Revisaremos tu arquitectura actual y te
+                daremos un mapa de ruta para automatizar tu operación.
               </p>
               <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button
                   className="w-full sm:w-auto sm:min-w-56"
                   href="#contacto"
                 >
-                  Agendar reunión gratuita
+                  Agendar sesión técnica ahora
                   <ArrowRight aria-hidden="true" size={17} strokeWidth={2} />
                 </Button>
                 <Button
@@ -833,7 +733,7 @@ export default function HomePage() {
                   href="#servicios"
                   variant="secondary"
                 >
-                  Ver nuestros servicios
+                  Ver nuestras soluciones
                   <ArrowUpRight aria-hidden="true" size={17} strokeWidth={2} />
                 </Button>
               </div>
@@ -847,7 +747,7 @@ export default function HomePage() {
         className="border-t border-white/[0.1] bg-[#040609]"
         id="contacto"
       >
-        <div className="mx-auto max-w-7xl px-5 pb-8 pt-16 sm:px-8 lg:px-10 lg:pt-20">
+        <div className="mx-auto max-w-7xl px-5 pb-8 pt-10 sm:px-8 lg:px-10 lg:pt-14">
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_0.8fr_0.8fr]">
             <div>
               <BrandMark />
@@ -962,4 +862,3 @@ export default function HomePage() {
     </div>
   );
 }
-
