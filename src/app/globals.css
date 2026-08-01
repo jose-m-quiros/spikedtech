@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-display);
+}
+
+:root {
+  --canvas: #06080d;
+  --canvas-deep: #030509;
+  --foreground: #f4f7fb;
+  --muted: #a8b1c0;
+  --line: rgba(255, 255, 255, 0.1);
+  --font-display: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--canvas-deep);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background:
+    radial-gradient(
+      circle at 50% -18%,
+      rgba(43, 151, 179, 0.12),
+      transparent 34rem
+    ),
+    var(--canvas);
+  color: var(--foreground);
+  font-family: var(--font-display);
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(94, 234, 212, 0.28);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #5eead4;
+  outline-offset: 3px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.grid-surface {
+  background-image:
+    linear-gradient(rgba(160, 188, 214, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(160, 188, 214, 0.06) 1px, transparent 1px);
+  background-position: center center;
+  background-size: 52px 52px;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 16%,
+    black 73%,
+    transparent
+  );
+}
+
+.grid-drift {
+  animation: grid-drift 18s linear infinite;
+}
+
+@keyframes grid-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(52px, 52px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
