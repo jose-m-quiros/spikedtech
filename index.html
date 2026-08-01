@@ -3,341 +3,421 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SPIKEDTECH - Sitio en mantenimiento</title>
+    <meta
+      name="description"
+      content="SPIKEDTECH desarrolla sitios web, plataformas, sistemas a medida, integraciones y evolución técnica para negocios que necesitan una base digital seria."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      html,
-      body {
-        height: 100%;
-        background: #080c12;
-        color: #ffffff;
-        font-family: "Space Grotesk", sans-serif;
-        overflow: hidden;
-        user-select: none;
-      }
-
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        position: relative;
-      }
-
-      .grid-bg {
-        position: fixed;
-        inset: 0;
-        background-image:
-          linear-gradient(rgba(0, 200, 255, 0.03) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(0, 200, 255, 0.03) 1px, transparent 1px);
-        background-size: 48px 48px;
-        pointer-events: none;
-        z-index: 0;
-      }
-
-      .glow {
-        position: fixed;
-        width: 700px;
-        height: 700px;
-        border-radius: 50%;
-        background: radial-gradient(
-          circle,
-          rgba(0, 180, 255, 0.07) 0%,
-          transparent 70%
-        );
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-        z-index: 0;
-        animation: pulse-glow 5s ease-in-out infinite;
-      }
-
-      @keyframes pulse-glow {
-        0%,
-        100% {
-          opacity: 0.5;
-          transform: translate(-50%, -50%) scale(1);
-        }
-        50% {
-          opacity: 1;
-          transform: translate(-50%, -50%) scale(1.1);
-        }
-      }
-
-      .wrapper {
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        padding: 2rem;
-        max-width: 600px;
-        width: 100%;
-      }
-
-      .logo {
-        font-family: "Space Grotesk", sans-serif;
-        font-weight: 700;
-        font-size: clamp(2.8rem, 8vw, 5rem);
-        letter-spacing: -0.04em;
-        line-height: 1;
-        color: #ffffff;
-        margin-bottom: 0.3rem;
-      }
-
-      .logo span {
-        color: #00c8ff;
-      }
-
-      .tagline {
-        font-family: "Space Mono", monospace;
-        font-size: clamp(0.65rem, 2vw, 0.75rem);
-        letter-spacing: 0.22em;
-        color: #1e3a4a;
-        text-transform: uppercase;
-        margin-bottom: 4rem;
-      }
-
-      .status-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: rgba(0, 200, 255, 0.06);
-        border: 1px solid rgba(0, 200, 255, 0.15);
-        border-radius: 100px;
-        padding: 6px 16px;
-        margin-bottom: 2rem;
-      }
-
-      .status-dot {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: #00c8ff;
-        animation: blink 2s ease-in-out infinite;
-      }
-
-      @keyframes blink {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.2;
-        }
-      }
-
-      .status-text {
-        font-family: "Space Mono", monospace;
-        font-size: 0.7rem;
-        letter-spacing: 0.14em;
-        color: #00c8ff;
-        text-transform: uppercase;
-      }
-
-      .headline {
-        font-family: "Space Grotesk", sans-serif;
-        font-weight: 700;
-        font-size: clamp(2.2rem, 6vw, 3.6rem);
-        line-height: 1.05;
-        letter-spacing: -0.03em;
-        margin-bottom: 1.25rem;
-        color: #ffffff;
-      }
-
-      .headline em {
-        color: #00c8ff;
-        font-style: normal;
-      }
-
-      .subtext {
-        font-size: clamp(0.9rem, 2vw, 1rem);
-        color: #4a6070;
-        line-height: 1.75;
-        max-width: 400px;
-        margin: 0 auto 3.5rem;
-        font-weight: 400;
-      }
-
-      .progress-container {
-        width: 100%;
-        max-width: 340px;
-        margin: 0 auto 1rem;
-      }
-
-      .progress-label {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0.6rem;
-      }
-
-      .progress-label span {
-        font-family: "Space Mono", monospace;
-        font-size: 0.65rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: #1e3a4a;
-      }
-
-      .progress-label strong {
-        font-family: "Space Mono", monospace;
-        font-size: 0.7rem;
-        letter-spacing: 0.06em;
-        color: #00c8ff;
-      }
-
-      .bar-track {
-        width: 100%;
-        height: 2px;
-        background: #0e1e2a;
-        border-radius: 2px;
-        overflow: hidden;
-      }
-
-      .bar-fill {
-        height: 100%;
-        background: linear-gradient(90deg, #005f7a, #00c8ff);
-        border-radius: 2px;
-        width: 0%;
-        animation: load-bar 4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      }
-
-      @keyframes load-bar {
-        0% {
-          width: 0%;
-        }
-        100% {
-          width: 15%;
-        }
-      }
-
-      .dots {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 4rem;
-      }
-
-      .dots span {
-        width: 3px;
-        height: 3px;
-        border-radius: 50%;
-        background: #0e1e2a;
-        animation: dot-pulse 1.8s ease-in-out infinite;
-      }
-
-      .dots span:nth-child(2) {
-        animation-delay: 0.25s;
-      }
-      .dots span:nth-child(3) {
-        animation-delay: 0.5s;
-      }
-
-      @keyframes dot-pulse {
-        0%,
-        100% {
-          background: #0e1e2a;
-          transform: scale(1);
-        }
-        50% {
-          background: #00c8ff;
-          transform: scale(1.6);
-        }
-      }
-
-      .footer {
-        position: fixed;
-        bottom: 2rem;
-        left: 0;
-        right: 0;
-        text-align: center;
-        font-family: "Space Mono", monospace;
-        font-size: 0.65rem;
-        color: #1a2a35;
-        letter-spacing: 0.1em;
-        z-index: 1;
-      }
-
-      .footer a {
-        color: #1e3a4a;
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-
-      .footer a:hover {
-        color: #00c8ff;
-      }
-
-      @media (max-width: 480px) {
-        .tagline {
-          margin-bottom: 3rem;
-        }
-        .subtext {
-          margin-bottom: 2.5rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/studio.css" />
+    <link rel="icon" type="image/png" href="img/spikedtech.png" />
+    <title>SPIKEDTECH | Programación y Desarrollo Web</title>
   </head>
   <body>
-    <div class="grid-bg" aria-hidden="true"></div>
-    <div class="glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Ir al inicio de SPIKEDTECH"
+        >
+          <img
+            class="brand-mark"
+            src="img/spikedtech.png"
+            alt="Logo SPIKEDTECH"
+          />
+          <span class="brand-copy">
+            <span class="brand-name">SPIKEDTECH</span>
+            <span class="brand-tag">Programación y desarrollo web</span>
+          </span>
+        </a>
 
-    <div class="wrapper">
-      <div class="logo">SPIKED<span>TECH</span></div>
-      <div class="tagline">Technology Solutions</div>
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="desarrollo-web.html">Desarrollo</a>
+          <a class="nav-link" href="proyectos.html">Proyectos</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </nav>
 
-      <div class="status-badge" aria-hidden="true">
-        <div class="status-dot"></div>
-        <span class="status-text">Mantenimiento activo</span>
-      </div>
-
-      <h1 class="headline">
-        Algo mejor<br />
-        está en <em>construcción</em>
-      </h1>
-
-      <p class="subtext">
-        Estamos renovando el sitio para traerte una experiencia más rápida y
-        moderna. Volvemos pronto.
-      </p>
-
-      <div
-        class="progress-container"
-        role="progressbar"
-        aria-valuenow="15"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        aria-label="Progreso de remodelación"
-      >
-        <div class="progress-label">
-          <span>Progreso</span>
-          <strong>15%</strong>
+        <div class="nav-actions">
+          <a class="button primary" href="contacto.html">
+            Solicitar propuesta
+            <span class="button-arrow">→</span>
+          </a>
         </div>
-        <div class="bar-track">
-          <div class="bar-fill"></div>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          data-menu-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="mobile-menu" data-mobile-menu>
+          <nav class="mobile-links" aria-label="Navegación móvil">
+            <a class="mobile-link" href="index.html">Inicio</a>
+            <a class="mobile-link" href="servicios.html">Servicios</a>
+            <a class="mobile-link" href="desarrollo-web.html">Desarrollo</a>
+            <a class="mobile-link" href="proyectos.html">Proyectos</a>
+            <a class="mobile-link" href="contacto.html">Contacto</a>
+          </nav>
+          <div class="mobile-cta">
+            <a class="button primary" href="contacto.html"
+              >Solicitar propuesta</a
+            >
+          </div>
         </div>
       </div>
+    </header>
 
-      <div class="dots" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
+    <main>
+      <section class="hero">
+        <div class="container hero-layout">
+          <article class="panel hero-main">
+            <span class="eyebrow">Programación y desarrollo web</span>
+            <h1 class="display">
+              Construimos sitios, plataformas y sistemas web listos para vender,
+              operar y crecer.
+            </h1>
+            <p class="lead">
+              SPIKEDTECH desarrolla soluciones web completas para negocios que
+              necesitan una presencia seria, procesos más claros y una base
+              técnica que pueda soportar mejoras, integraciones y crecimiento
+              real sin rehacer el proyecto cada pocos meses.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="contacto.html">
+                Contar mi proyecto
+                <span class="button-arrow">→</span>
+              </a>
+              <a class="button secondary" href="servicios.html"
+                >Ver servicios</a
+              >
+            </div>
+            <div class="pill-row" aria-label="Líneas principales de servicio">
+              <span class="pill">Sitios comerciales</span>
+              <span class="pill">Sistemas a medida</span>
+              <span class="pill">Integraciones y automatización</span>
+              <span class="pill">Soporte evolutivo</span>
+            </div>
+          </article>
+
+          <aside class="panel panel-dark hero-aside">
+            <span class="eyebrow">Qué resolvemos</span>
+            <h2 class="quote-title">
+              Una base digital seria debe comunicar mejor, ordenar procesos y
+              sostener futuras mejoras.
+            </h2>
+            <ul class="check-list">
+              <li>
+                Sitios web para presentar servicios, captar clientes y
+                profesionalizar la marca.
+              </li>
+              <li>
+                Paneles internos, módulos privados y flujos con lógica de
+                negocio propia.
+              </li>
+              <li>
+                Integraciones con pagos, formularios, correo, herramientas
+                comerciales y analítica.
+              </li>
+              <li>
+                Evolución técnica para seguir creciendo sin acumular parches.
+              </li>
+            </ul>
+            <div class="quick-stats">
+              <div class="quick-stat">
+                <span class="quick-label">Inicio</span>
+                <strong class="quick-value">Diagnóstico claro</strong>
+              </div>
+              <div class="quick-stat">
+                <span class="quick-label">Base</span>
+                <strong class="quick-value">Arquitectura útil</strong>
+              </div>
+              <div class="quick-stat">
+                <span class="quick-label">Entrega</span>
+                <strong class="quick-value">Publicación seria</strong>
+              </div>
+              <div class="quick-stat">
+                <span class="quick-label">Continuidad</span>
+                <strong class="quick-value">Mejora constante</strong>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="container">
+          <article class="note-card">
+            <strong>Qué recibes desde el inicio</strong>
+            <p class="card-copy">
+              Orden de alcance, recomendación de estructura, prioridades del
+              proyecto y una ruta de trabajo pensada para que la inversión tenga
+              sentido técnico, comercial y operativo.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head section-head-stack">
+            <div>
+              <span class="eyebrow">Panorama completo</span>
+              <h2 class="section-title">
+                Toda la oferta se concentra en programación aplicada a
+                resultados reales.
+              </h2>
+            </div>
+            <p class="section-text">
+              No separamos servicios que al final deberían trabajar juntos. La
+              solución abarca estructura, interfaz, lógica, integración y
+              continuidad para que el sitio o la plataforma cumpla una función
+              concreta dentro del negocio.
+            </p>
+          </div>
+
+          <div class="four-grid">
+            <article class="metric-card">
+              <span class="metric-number">01</span>
+              <h3 class="card-title">Sitios comerciales</h3>
+              <p class="card-copy">
+                Webs pensadas para presentar mejor servicios, captar
+                oportunidades y dar confianza.
+              </p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-number">02</span>
+              <h3 class="card-title">Sistemas a medida</h3>
+              <p class="card-copy">
+                Módulos, paneles y flujos internos para operaciones que ya
+                necesitan más estructura.
+              </p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-number">03</span>
+              <h3 class="card-title">Integraciones</h3>
+              <p class="card-copy">
+                Conexión con herramientas externas para reducir trabajo manual y
+                ganar continuidad.
+              </p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-number">04</span>
+              <h3 class="card-title">Evolución técnica</h3>
+              <p class="card-copy">
+                Mejoras, nuevas funciones y soporte para que la base siga
+                sirviendo con el tiempo.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-layout split-layout-equal">
+          <article class="panel">
+            <span class="eyebrow">Qué incluye una base</span>
+            <h2 class="section-title">
+              Antes de programar, aterrizamos alcance, estructura y prioridad.
+            </h2>
+            <ul class="clean-list">
+              <li>
+                Diagnóstico del momento actual del negocio y del problema que
+                realmente se quiere resolver.
+              </li>
+              <li>
+                Definición de secciones, módulos, flujos, usuarios y puntos de
+                contacto necesarios.
+              </li>
+              <li>
+                Orden de implementación para empezar por lo que más impacta y no
+                por lo accesorio.
+              </li>
+              <li>
+                Ruta de publicación y continuidad para que el proyecto no muera
+                al salir al aire.
+              </li>
+            </ul>
+          </article>
+
+          <aside class="panel panel-dark">
+            <span class="eyebrow">Cuándo conviene reestructurar</span>
+            <h2 class="quote-title">
+              Si tu base actual no comunica bien, no convierte o no soporta
+              procesos, ya no es un tema visual solamente.
+            </h2>
+            <ul class="check-list">
+              <li>
+                El mensaje del negocio está disperso y el usuario no entiende
+                rápido qué ofreces.
+              </li>
+              <li>
+                La estructura actual no permite crecer, integrar herramientas o
+                agregar nuevas funciones.
+              </li>
+              <li>
+                La navegación, el formulario o el contenido no acompañan bien el
+                recorrido comercial.
+              </li>
+              <li>
+                Ya existe una web, pero no está ayudando a vender mejor ni a
+                operar con claridad.
+              </li>
+            </ul>
+            <div class="button-row">
+              <a class="button secondary" href="servicios.html"
+                >Ver servicios</a
+              >
+              <a class="button ghost" href="contacto.html">Hablar del caso</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head section-head-stack">
+            <div>
+              <span class="eyebrow">Cómo trabajamos</span>
+              <h2 class="section-title">
+                Una ruta clara evita improvisación y hace más útil cada decisión
+                del proyecto.
+              </h2>
+            </div>
+            <p class="section-text">
+              El objetivo no es avanzar por avanzar. El objetivo es construir
+              una solución que se pueda publicar, mantener y escalar sin perder
+              claridad técnica ni comercial.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <article class="card process-card">
+              <span class="process-number">01</span>
+              <h3 class="card-title">Diagnóstico</h3>
+              <p class="card-copy">
+                Revisamos el contexto, el objetivo, las restricciones y el punto
+                actual del negocio.
+              </p>
+            </article>
+            <article class="card process-card">
+              <span class="process-number">02</span>
+              <h3 class="card-title">Mapa funcional</h3>
+              <p class="card-copy">
+                Ordenamos pantallas, módulos, prioridades, usuarios, formularios
+                y flujos importantes.
+              </p>
+            </article>
+            <article class="card process-card">
+              <span class="process-number">03</span>
+              <h3 class="card-title">Desarrollo y pruebas</h3>
+              <p class="card-copy">
+                Construimos la base, validamos recorridos clave y ajustamos
+                rendimiento y consistencia.
+              </p>
+            </article>
+            <article class="card process-card">
+              <span class="process-number">04</span>
+              <h3 class="card-title">Publicación y mejora</h3>
+              <p class="card-copy">
+                Lanzamos, corregimos lo necesario y dejamos espacio real para
+                nuevas iteraciones.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="panel panel-dark">
+            <span class="eyebrow">Siguiente paso</span>
+            <h2 class="page-title">
+              Si tu presencia digital ya se quedó corta, conviene reconstruirla
+              bien desde la base.
+            </h2>
+            <p class="lead">
+              Podemos empezar por una web comercial, un sistema a medida o una
+              reestructura técnica completa. Lo importante es definir primero la
+              solución correcta y luego implementarla con orden.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="contacto.html"
+                >Solicitar propuesta</a
+              >
+              <a class="button secondary" href="proyectos.html"
+                >Ver tipos de proyecto</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-layout">
+        <section class="footer-primary">
+          <span class="eyebrow">SPIKEDTECH</span>
+          <h2 class="footer-title">
+            Programación web, plataformas y sistemas a medida para negocios que
+            necesitan una base seria.
+          </h2>
+          <p class="footer-copy">
+            Trabajamos desde el alcance hasta la publicación con foco en
+            estructura, integración y evolución técnica, para que el proyecto
+            siga sirviendo cuando el negocio crece.
+          </p>
+          <div class="footer-meta">
+            <span>Alajuela, Costa Rica</span>
+            <span>Proyectos locales y remotos</span>
+          </div>
+        </section>
+
+        <section class="footer-links-grid">
+          <article class="footer-panel">
+            <h2 class="footer-title">Servicios</h2>
+            <div class="footer-links">
+              <a href="servicios.html">Panorama general</a>
+              <a href="desarrollo-web.html">Desarrollo a medida</a>
+              <a href="contacto.html">Solicitar propuesta</a>
+            </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Explorar</h2>
+            <div class="footer-links">
+              <a href="index.html">Inicio</a>
+              <a href="proyectos.html">Tipos de proyecto</a>
+              <a href="contacto.html">Contacto</a>
+            </div>
+          </article>
+          <article class="footer-panel">
+            <h2 class="footer-title">Contacto</h2>
+            <div class="footer-links">
+              <a href="https://wa.me/50687394231">WhatsApp</a>
+              <a href="mailto:spikedtech19@gmail.com">Correo directo</a>
+              <a href="contacto.html">Formulario del proyecto</a>
+            </div>
+          </article>
+        </section>
       </div>
-    </div>
+
+      <div class="container footer-meta">
+        <span>© <span data-year></span> SPIKEDTECH</span>
+        <span
+          >Programación, sistemas web, integraciones y evolución técnica</span
+        >
+      </div>
     </footer>
+
+    <script src="js/studio.js"></script>
   </body>
 </html>

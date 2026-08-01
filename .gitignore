@@ -11,9 +11,6 @@ Thumbs.db
 
 .vscode/
 
-*.html
-!index.html
-
 
 css/
 img/
