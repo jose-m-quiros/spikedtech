@@ -1,101 +1,70 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+import { Navbar } from "@/components/navbar";
+import { SiteFooter } from "@/components/site-footer";
+import { site } from "@/lib/site";
 import "./globals.css";
 
-const siteUrl = "https://spikedtech.com";
+const geist = localFont({
+  src: "./fonts/geist-latin.woff2",
+  weight: "400 800",
+  display: "swap",
+  variable: "--font-geist",
+});
+
+const homeTitle = "Desarrollo de software en Costa Rica | SPIKEDTECH";
+const verification = process.env.GOOGLE_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: {
-    default:
-      "SPIKEDTECH | Software House Premium — IA, Automatización y Ciberseguridad",
-    template: "%s | SPIKEDTECH",
-  },
-  description:
-    "Desarrollamos software personalizado con IA y automatización para empresas que necesitan crecer sin aumentar su carga operativa. Software empresarial, dashboards, APIs e integraciones a medida.",
-  keywords: [
-    "software house",
-    "desarrollo de software",
-    "inteligencia artificial",
-    "automatización de procesos",
-    "ciberseguridad",
-    "ASP.NET Core",
-    "Next.js",
-    "software a medida",
-    "Costa Rica",
-    "Latinoamérica",
-  ],
-  authors: [{ name: "José Manuel Quirós Chaves", url: siteUrl }],
-  creator: "SPIKEDTECH",
-  publisher: "SPIKEDTECH",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
+  metadataBase: new URL(site.url),
+  title: { default: homeTitle, template: "%s | SPIKEDTECH" },
+  description: site.description,
+  verification: verification ? { google: verification } : undefined,
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "es_CR",
-    url: siteUrl,
-    siteName: "SPIKEDTECH",
-    title:
-      "SPIKEDTECH | Software House Premium — IA, Automatización y Ciberseguridad",
-    description:
-      "Desarrollamos software personalizado con IA y automatización para empresas que necesitan crecer sin aumentar su carga operativa.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "SPIKEDTECH — Software House Premium",
-      },
-    ],
+    siteName: site.name,
+    title: homeTitle,
+    description: site.description,
+    url: "/",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "SPIKEDTECH | Software House Premium",
-    description:
-      "Desarrollamos software personalizado con IA y automatización para empresas que necesitan crecer sin aumentar su carga operativa.",
-    images: ["/og-image.png"],
-  },
-  alternates: { canonical: siteUrl },
+  twitter: { card: "summary_large_image" },
 };
 
-const organizationSchema = {
+const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "SPIKEDTECH",
-  url: siteUrl,
-  logo: `${siteUrl}/spikedtech-logo.png`,
-  description:
-    "Software house especializada en desarrollo de software empresarial, IA, automatización y ciberseguridad.",
-  foundingDate: "2024",
-  areaServed: "Latin America",
-  serviceType: [
-    "Software Development",
-    "Artificial Intelligence",
-    "Process Automation",
-    "Cybersecurity",
-    "Cloud Infrastructure",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${site.url}/#organizacion`,
+      name: site.name,
+      url: site.url,
+      logo: `${site.url}/spikedtech-logo.png`,
+      email: site.email,
+      description: site.description,
+      areaServed: [{ "@type": "Country", name: "Costa Rica" }, "Latinoamérica"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${site.url}/#sitio`,
+      url: site.url,
+      name: site.name,
+      inLanguage: "es-CR",
+      publisher: { "@id": `${site.url}/#organizacion` },
+    },
   ],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es">
+    <html lang="es-CR" className={geist.variable}>
       <body>
+        <a className="skip-link" href="#contenido">Ir al contenido principal</a>
+        <Navbar />
         {children}
-        {/* Schema.org Organization — safe static literal */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-          id="schema-organization"
-          type="application/ld+json"
-        />
+        <SiteFooter />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       </body>
     </html>
   );

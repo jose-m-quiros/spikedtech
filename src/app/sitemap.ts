@@ -1,12 +1,10 @@
 import type { MetadataRoute } from "next";
+import { services } from "@/lib/services";
+import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    return [
-        {
-            url: "https://spikedtech.com",
-            lastModified: new Date(),
-            changeFrequency: "monthly",
-            priority: 1,
-        },
-    ];
+  return [
+    { url: `${site.url}/` },
+    ...services.map(({ slug }) => ({ url: `${site.url}/servicios/${slug}` })),
+  ];
 }

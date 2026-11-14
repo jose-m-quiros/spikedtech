@@ -1,86 +1,54 @@
 "use client";
 
-import { Menu } from "lucide-react";
-import { useEffect, useState } from "react";
-
+import Link from "next/link";
+import { ArrowUpRight, Menu } from "lucide-react";
+import { useRef } from "react";
 import { BrandMark } from "@/components/brand-mark";
-import { Button } from "@/components/ui/button";
 
-const navigation = [
-  { href: "#servicios", label: "Servicios" },
-  { href: "#proceso", label: "Proceso" },
-  { href: "#equipo", label: "Equipo" },
-  { href: "#faq", label: "FAQ" },
+export const navigation = [
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/#proceso", label: "Proceso" },
+  { href: "/#equipo", label: "Equipo" },
+  { href: "/#faq", label: "Preguntas frecuentes" },
 ];
 
 export function Navbar() {
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const mobileMenu = useRef<HTMLDetailsElement>(null);
 
-  useEffect(() => {
-    const updateScrollState = () => setHasScrolled(window.scrollY > 12);
-
-    updateScrollState();
-    window.addEventListener("scroll", updateScrollState, { passive: true });
-
-    return () => window.removeEventListener("scroll", updateScrollState);
-  }, []);
+  function closeMenu() {
+    mobileMenu.current?.removeAttribute("open");
+  }
 
   return (
-    <header
-      className={`sticky top-0 z-50 border-b transition duration-300 ${
-        hasScrolled
-          ? "border-white/[0.12] bg-[#07090d]/80 shadow-[0_12px_42px_rgba(0,0,0,0.32)] backdrop-blur-xl"
-          : "border-transparent bg-[#07090d]/35 backdrop-blur-md"
-      }`}
-    >
-      <nav
-        aria-label="Navegación principal"
-        className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-5 sm:px-8 lg:px-10"
-      >
-        <a aria-label="SPIKEDTECH, ir al inicio" href="#inicio">
-          <BrandMark />
-        </a>
-
-        <div className="hidden items-center gap-1 lg:flex">
-          {navigation.map((item) => (
-            <a
-              className="rounded-md px-3 py-2 text-sm text-slate-300 transition hover:bg-white/[0.05] hover:text-white"
-              href={item.href}
-              key={item.href}
-            >
-              {item.label}
-            </a>
+    <header className="site-header">
+      <nav className="container header-inner" aria-label="Navegación principal">
+        <Link href="/" aria-label="SPIKEDTECH, inicio" onClick={closeMenu}><BrandMark /></Link>
+        <ul className="desktop-nav">
+          {navigation.map(({ href, label }) => (
+            <li key={href}><Link href={href}>{label}</Link></li>
           ))}
-        </div>
-
-        <div className="flex items-center gap-2">
-          <Button className="hidden sm:inline-flex" href="#contacto">
-            Agendar Reunión
-          </Button>
-          <details className="relative lg:hidden">
-            <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-md border border-white/15 bg-white/[0.045] text-slate-200 transition hover:bg-white/[0.09] [&::-webkit-details-marker]:hidden">
-              <Menu aria-hidden="true" size={19} strokeWidth={1.8} />
-              <span className="sr-only">Abrir navegación</span>
-            </summary>
-            <div className="absolute right-0 top-12 w-56 rounded-lg border border-white/[0.12] bg-[#0a0d14]/95 p-2 shadow-2xl backdrop-blur-xl">
-              {navigation.map((item) => (
-                <a
-                  className="block rounded-md px-3 py-2.5 text-sm text-slate-200 transition hover:bg-white/[0.07] hover:text-white"
-                  href={item.href}
-                  key={item.href}
-                >
-                  {item.label}
-                </a>
-              ))}
-              <a
-                className="mt-1 block rounded-md bg-cyan-300 px-3 py-2.5 text-sm font-semibold text-slate-950"
-                href="#contacto"
-              >
-                Agendar Reunión
-              </a>
-            </div>
-          </details>
-        </div>
+        </ul>
+        <Link className="button button-header" href="/#contacto">
+          Hablemos <ArrowUpRight size={16} aria-hidden="true" />
+        </Link>
+        <details
+          className="mobile-menu"
+          ref={mobileMenu}
+          onKeyDown={(event) => {
+            if (event.key === "Escape" && mobileMenu.current?.open) {
+              closeMenu();
+              mobileMenu.current.querySelector("summary")?.focus();
+            }
+          }}
+        >
+          <summary aria-label="Menú de navegación"><Menu size={22} aria-hidden="true" /></summary>
+          <ul>
+            {navigation.map(({ href, label }) => (
+              <li key={href}><Link href={href} onClick={closeMenu}>{label}</Link></li>
+            ))}
+            <li><Link href="/#contacto" onClick={closeMenu}>Contacto</Link></li>
+          </ul>
+        </details>
       </nav>
     </header>
   );
