@@ -16,7 +16,7 @@ export function BrandMark({
           alt=""
           className="scale-[1.9] object-cover"
           height={1024}
-          priority
+          preload
           src="/spikedtech-logo.png"
           width={1024}
         />

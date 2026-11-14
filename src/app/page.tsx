@@ -7,12 +7,10 @@
   Clock,
   FileText,
   GitBranch,
-  Github,
   HelpCircle,
   Layers3,
   LayoutGrid,
   LifeBuoy,
-  Linkedin,
   LockKeyhole,
   Mail,
   MapPin,
@@ -41,6 +39,7 @@ import { Card } from "@/components/ui/card";
 import { FloatContact } from "@/components/ui/float-contact";
 import { GradientBackground } from "@/components/ui/gradient-background";
 import { SectionHeader } from "@/components/ui/section-header";
+import { Github, Linkedin } from "@/components/ui/social-icons";
 
 const heroMetrics = [
   { label: "Código de tu propiedad", value: "100%" },

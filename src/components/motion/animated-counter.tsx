@@ -24,12 +24,7 @@ export function AnimatedCounter({
   const [displayValue, setDisplayValue] = useState(0);
 
   useEffect(() => {
-    if (!isInView) {
-      return;
-    }
-
-    if (shouldReduceMotion) {
-      setDisplayValue(value);
+    if (!isInView || shouldReduceMotion) {
       return;
     }
 
@@ -45,11 +40,13 @@ export function AnimatedCounter({
     return () => controls.stop();
   }, [isInView, precision, shouldReduceMotion, value]);
 
+  const visibleValue = isInView && shouldReduceMotion ? value : displayValue;
+
   return (
     <div ref={containerRef} aria-label={`${prefix}${value.toFixed(precision)}${suffix} ${label}`}>
       <p className="text-3xl font-semibold text-white sm:text-4xl">
         {prefix}
-        {displayValue.toFixed(precision)}
+        {visibleValue.toFixed(precision)}
         {suffix}
       </p>
       <p className="mt-2 text-sm leading-5 text-slate-400">{label}</p>
